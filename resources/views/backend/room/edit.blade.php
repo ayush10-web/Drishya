@@ -73,7 +73,20 @@
                         </div>
                         <div class="col-md-6">
                             <label for="room_no">Room Image</label>
-                            <input type="file" name="image[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple>
+                            <input type="file" name="image[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple> <br>
+                            <div id="img-preview">
+                              @if (count($room->images) > 0)
+                                  <div class="row">
+                                    @foreach ($room->images as $key=>$image)
+                                      <div class="col-md-3">
+                                        <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;"><br>
+                                        <button class="text-white" type="button" onclick="removeImage('{{$image->id}}')" style="background:black;width: 100px;">Remove</button>
+                                      </div>
+                                    @endforeach
+                                  </div>
+                              @endif
+                             
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,3 +110,13 @@
     </div><!-- /.container-fluid -->
   </section>
 @endsection
+@push('scripts')
+<script>
+  function removeImage(params) {
+    var conf = confirm('you want to delete this image ?')
+    if (conf == true) {
+      
+    }
+  }
+</script>
+@endpush

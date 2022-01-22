@@ -36,6 +36,7 @@
                       <th>Capacity</th>
                       <th>Price</th>
                       <th>Status</th>
+                      <th>Image</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -48,6 +49,11 @@
                         <td>{{$room->capacity}}</td>
                         <td>{{$room->room_price}}</td>
                         <td>{{$room->status}}</td>
+                        <td>@if (count($room->images) > 0)
+                            @foreach ($room->images as $image)
+                                <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;">
+                            @endforeach
+                        @endif</td>
                         <td><a href="{{route('room.edit',$room->id)}}"><i class="fa fa-edit" title="delete"></i></a> &nbsp; &nbsp; <a href="{{route('room.delete',$room->id)}}"><i class="fa fa-trash text-danger" title="delete"></i></a></td>
                       </tr>
                     @endforeach

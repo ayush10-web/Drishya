@@ -69,7 +69,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="room_no">Room Image</label>
-                            <input type="file" name="image[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple>
+                            <input type="file" name="images[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple>
                         </div>
                     </div>
                 </div>
