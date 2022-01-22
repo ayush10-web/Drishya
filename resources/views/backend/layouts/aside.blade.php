@@ -15,10 +15,10 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('room.index')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Hotel
+                Hotel Rooms
                 {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>
