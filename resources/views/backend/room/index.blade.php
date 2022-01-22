@@ -54,7 +54,7 @@
                                 <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;">
                             @endforeach
                         @endif</td>
-                        <td><a href="{{route('room.edit',$room->id)}}"><i class="fa fa-edit" title="delete"></i></a> &nbsp; &nbsp; <a href="{{route('room.delete',$room->id)}}"><i class="fa fa-trash text-danger" title="delete"></i></a></td>
+                        <td><a href="{{route('room.edit',$room->id)}}"><i class="fa fa-edit" title="delete"></i></a> &nbsp; &nbsp; <a onclick="return confirm('you sure want to delete ?')" href="{{route('room.delete',$room->id)}}"><i class="fa fa-trash text-danger" title="delete"></i></a></td>
                       </tr>
                     @endforeach
                    

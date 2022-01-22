@@ -35,7 +35,7 @@ class RoomController extends Controller
         ]);
 
         if ($request->hasFile('images')) {
-            $path = "/uploads/room/";
+            $path = "uploads/room/";
             if (!is_dir($path)) {
                 mkdir($path, 0777, true);
             }
@@ -45,7 +45,7 @@ class RoomController extends Controller
                $ext = substr($name, $pos+1); 
                $imagename = time().rand('0', '100000').$name;
                $img  = $image->move($path,$imagename);
-               $imgpath = $path.$imagename;
+               $imgpath = '/'.$path.$imagename;
                
                $image = Image::create([
                 'file_path' => $imgpath,
@@ -78,12 +78,56 @@ class RoomController extends Controller
          $room->floor_number = $request['floor_num'];
          $room->status = $request['status'];
          $room->update();
+         if ($request->hasFile('images')) {
+            $path = "uploads/room/";
+            if (!is_dir($path)) {
+                mkdir($path, 0777, true);
+            }
+            foreach ($request->images as $key => $image) {
+                $name = $image->getClientOriginalName();
+               $pos = strpos($name, ".");
+               $ext = substr($name, $pos+1); 
+               $imagename = time().rand('0', '100000').$name;
+               $img  = $image->move($path,$imagename);
+               $imgpath = '/'.$path.$imagename;
+               
+               $image = Image::create([
+                'file_path' => $imgpath,
+                'file_name' => $imagename,
+                'file_extension' => $ext,
+                'status' => 1
+                ]);
+                ImageRoom::create([
+                    'room_id' => $room->id,
+                    'image_id' => $image->id,
+                    ]);
+            }
+        }
          return redirect()->route('room.index');
      }
      public function delete($id)
      {
-        $room = Room::find($id);
+        $room = Room::with('images')->where('id',$id)->first();
+        if (count($room->images) > 0) {
+            foreach ($room->images as $value) {
+                $image_path = public_path().$value->file_path;
+                unlink($image_path);
+                $pivot = ImageRoom::where('image_id',$value->id);
+                $pivot->delete();
+                $value->delete();
+            }
+        }
         $room->delete();
         return redirect()->back();
+     }
+     public function imageDelete(Request $request)
+     {
+         $image = Image::find($request->id);
+         $pivot = ImageRoom::where('image_id',$request->id);
+         $pivot->delete();
+         $image_path = public_path().$image->file_path;
+         unlink($image_path);
+         $image->delete();
+        return response()->json($request->id);
      }
 }

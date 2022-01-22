@@ -28,6 +28,7 @@ Route::group(['prefix'=> '/backend/room'],function(){
     Route::get('/edit/{id}',[RoomController::class,'edit'])->name('room.edit');
     Route::put('/update/{id}',[RoomController::class,'update'])->name('room.update');
     Route::get('/delete/{id}',[RoomController::class,'delete'])->name('room.delete');
+    Route::get('/deleteImage/{id}',[RoomController::class,'imageDelete'])->name('room.image.delete');
 });
 
 Route::group(['prefix'=> '/backend/event'],function(){
