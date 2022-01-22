@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\RoomController;
+use App\Http\Controllers\Backend\EventController;
 use App\Http\Controllers\Frontend\IndexController;
 
 /*
@@ -27,6 +28,15 @@ Route::group(['prefix'=> '/backend/room'],function(){
     Route::get('/edit/{id}',[RoomController::class,'edit'])->name('room.edit');
     Route::put('/update/{id}',[RoomController::class,'update'])->name('room.update');
     Route::get('/delete/{id}',[RoomController::class,'delete'])->name('room.delete');
+});
+
+Route::group(['prefix'=> '/backend/event'],function(){
+    Route::get('',[EventController::class,'index'])->name('event.index');
+    Route::get('/create',[EventController::class,'create'])->name('event.create');
+    Route::post('/store',[EventController::class,'store'])->name('event.store');
+    Route::get('/edit/{id}',[EventController::class,'edit'])->name('event.edit');
+    Route::put('/update/{id}',[EventController::class,'update'])->name('event.update');
+    Route::get('/delete/{id}',[EventController::class,'delete'])->name('event.delete');
 });
 
 
