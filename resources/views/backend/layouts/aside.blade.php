@@ -96,6 +96,29 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
+                Sliders
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('slider.create')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add New Slider</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('slider.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Slider Details</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
                 Charts
                 <i class="right fas fa-angle-left"></i>
               </p>
