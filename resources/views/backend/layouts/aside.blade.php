@@ -119,6 +119,23 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
+                Contact Us
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('contactus.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Contact Details</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
                 Charts
                 <i class="right fas fa-angle-left"></i>
               </p>

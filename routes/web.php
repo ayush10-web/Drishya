@@ -9,6 +9,8 @@ use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\Backend\ContactUsController;
+
 
 
 
@@ -71,6 +73,9 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
     Route::group(['prefix'=> '/setting'],function(){
         Route::get('',[SettingController::class,'index'])->name('setting.index');
         Route::post('/store',[SettingController::class,'store'])->name('setting.store');
+    });
+    Route::group(['prefix'=> '/contactus'],function(){
+        Route::get('',[ContactUsController::class,'index'])->name('contactus.index');
     });
 });
 
