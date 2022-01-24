@@ -5,6 +5,8 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\RoomController;
 use App\Http\Controllers\Backend\EventController;
 use App\Http\Controllers\Frontend\IndexController;
+use App\Http\Controllers\Backend\ServiceController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +42,14 @@ Route::group(['prefix'=> '/backend/event'],function(){
     Route::get('/delete/{id}',[EventController::class,'delete'])->name('event.delete');
 });
 
+Route::group(['prefix'=> '/backend/service'],function(){
+    Route::get('',[ServiceController::class,'index'])->name('service.index');
+    Route::get('/create',[ServiceController::class,'create'])->name('service.create');
+    Route::post('/store',[ServiceController::class,'store'])->name('service.store');
+    Route::get('/edit/{id}',[ServiceController::class,'edit'])->name('service.edit');
+    Route::put('/update/{id}',[ServiceController::class,'update'])->name('service.update');
+    Route::get('/delete/{id}',[ServiceController::class,'delete'])->name('service.delete');
+});
 
 
 // frontend
