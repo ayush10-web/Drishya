@@ -38,8 +38,12 @@
                 <input type="text" class="form-control" name="address" value="{{$setting['address']}}" placeholder="Enter address" 
                 >
               </div> <div class="form-group">
+                <label for="Name">Email Address</label>
+                <input type="email" class="form-control" name="email" value="{{$setting['email']}}" placeholder="Enter address" 
+                >
+              </div> <div class="form-group">
                 <label for="Name">Phone Number</label>
-                <input type="email" class="form-control" name="phoneNumber" value="{{$setting['phoneNumber']}}" placeholder="Enter phone number" 
+                <input type="text" class="form-control" name="phoneNumber" value="{{$setting['phoneNumber']}}" placeholder="Enter phone number" 
                 >
               </div> 
               <div class="form-group">

@@ -213,14 +213,14 @@ p {
 
 .header_opening_closing .fa,
 .fas {
-	color: rgb(64, 64, 128);
+	color: #a18257;
 	font-size: 40px;
 	float: left;
 	/*margin-right: 5%;*/
 }
 .header_opening_closing .fa,
 .far {
-	color: rgb(64, 64, 128);
+	color: #a18257;
 	font-size: 40px;
 	float: left;
 	/*margin-right: 5%;*/
@@ -233,7 +233,7 @@ p {
 
 .header_opening_closing p {
 	font-weight: bold;
-	color: rgb(64, 64, 128);
+	color: #a18257;
 }
 
 .header_opening_closing span {
@@ -243,7 +243,7 @@ p {
 }
 
 .header_quote a {
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	padding: 10px 55px 10px 55px;
 	border-radius: 5px;
 	color: white;
@@ -277,7 +277,7 @@ p {
   z-index: 9999;
 }
 .top_nav {
-	background-color: rgb(64, 64, 128) !important;
+	background-color: #a18257 !important;
 }
 
 .top_nav .navbar {
@@ -310,7 +310,7 @@ p {
 }
 
 .bg-light {
-	background-color: rgb(64, 64, 128) !important;
+	background-color: #a18257 !important;
 	padding-bottom: 1%;
 }
 
@@ -335,7 +335,7 @@ p {
 	position: relative;
 	z-index: 999;
 	font-family: "Playfair Display", serif;
-	background-color: rgb(64, 64, 128) !important;
+	background-color: #a18257 !important;
 	background-size: auto;
 }
 
@@ -387,7 +387,7 @@ p {
 }
 
 .caption_a .caption_color1 {
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	padding: 8px 30px 8px 30px;
 	border: 2px solid white;
 	color: white;
@@ -415,7 +415,7 @@ p {
 }
 
 .image_with_box {
-	background-color: rgb(64, 64, 128) !important;
+	background-color: #a18257 !important;
 	background-image: url("../images/group_908.png"),
 		url("../images/group_908.png");
 	background-position: -18% 100%, 118% 100%;
@@ -563,7 +563,7 @@ p {
 .services_list h2 {
 	font-size: 18px;
 	font-weight: normal;
-	border-bottom: 3px solid rgb(64, 64, 128);
+	border-bottom: 3px solid #a18257;
 	font-family: "Playfair Display", serif;
 }
 
@@ -572,7 +572,7 @@ p {
 	font-weight: 600;
 	font-size: 28px;
 	color: white;
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	margin-top: 1%;
 	margin-bottom: 2%;
 	font-family: "Karla", sans-serif;
@@ -583,7 +583,7 @@ p {
 }
 
 .services_list a {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	color: white;
 	padding: 10px 30px 10px 30px;
 	border-radius: 5px;
@@ -686,8 +686,8 @@ p {
 
 .product_list {
 	font-family: "Playfair Display", serif;
-	background-color: rgb(64, 64, 128);
-	border-bottom: 20px solid rgb(64, 64, 128);
+	background-color: #a18257;
+	border-bottom: 20px solid #a18257;
 }
 
 .product_mark {
@@ -701,7 +701,7 @@ p {
 .product_mark:before {
 	content: "";
 	position: absolute;
-	border: 5px solid rgb(64, 64, 128);
+	border: 5px solid #a18257;
 	top: -15%;
 	width: 100%;
 }
@@ -709,7 +709,7 @@ p {
 .product_mark:after {
 	content: "";
 	position: absolute;
-	border: 5px solid rgb(64, 64, 128);
+	border: 5px solid #a18257;
 	bottom: -25%;
 	width: 100%;
 }
@@ -719,10 +719,10 @@ p {
 	position: absolute;
 	width: 18px;
 	height: 18px;
-	border-top: 1px solid rgb(64, 64, 128);
-	border-left: 1px solid rgb(64, 64, 128);
+	border-top: 1px solid #a18257;
+	border-left: 1px solid #a18257;
 	content: "";
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	bottom: -32%;
 	right: 44%;
 	transform: rotate(45deg);
@@ -940,7 +940,7 @@ div#slick-slide01{
 
 .choose_head h1 {
 	font-size: 25px;
-	color: rgb(64, 64, 128);;
+	color: #a18257;;
 }
 
 .choose_head p {
@@ -956,7 +956,7 @@ div#slick-slide01{
 	padding-top: 2%;
 	padding-bottom: 2%;
 	/* border-bottom: 20px solid #af0000; */
-	border-bottom: 20px solid rgb(64, 64, 128);
+	border-bottom: 20px solid #a18257;
 }
 
 .choose_block_list i {
@@ -989,7 +989,7 @@ div#slick-slide01{
 }
 
 .choose_block_list:hover {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	color: white;
 	box-shadow: none;
 }
@@ -1089,7 +1089,7 @@ textarea {
 padding-top: 2%;
 padding-bottom: 2%;
 /* border-bottom: 20px solid #af0000; */
-border-bottom: 20px solid rgb(64, 64, 128);
+border-bottom: 20px solid #a18257;
 }
 .technology-h4{
 	margin-top: 40px;
@@ -1101,7 +1101,7 @@ border-bottom: 20px solid rgb(64, 64, 128);
 	margin-bottom: 5%;
 	padding: 10px;
 	box-shadow: -9px -6px 1px 0px rgb(64 64 128);
-	color: rgb(64, 64, 128);
+	color: #a18257;
 }
 @keyframes shake {
 	0% { transform: translate(1px, 1px) rotate(5deg); }
@@ -1181,7 +1181,7 @@ border-bottom: 20px solid rgb(64, 64, 128);
 }
 
 .testimonials {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	padding-top: 2%;
 	padding-bottom: 4%;
 }
@@ -1269,8 +1269,8 @@ border-bottom: 20px solid rgb(64, 64, 128);
 	border: 2px solid grey;
 	margin-bottom: 5%;
 	padding: 10px;
-	box-shadow: -9px -6px 1px 0px rgb(64, 64, 128);
-	color: rgb(64, 64, 128);
+	box-shadow: -9px -6px 1px 0px #a18257;
+	color: #a18257;
 }
 
 .footer {
@@ -1317,7 +1317,7 @@ border-bottom: 20px solid rgb(64, 64, 128);
 .footer_links i {
 	color: white;
 	font-size: 15px;
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	padding: 8px 10px 8px 10px;
 	margin-right: 3%;
 	float: none;
@@ -1353,7 +1353,7 @@ border-bottom: 20px solid rgb(64, 64, 128);
 	list-style: none;
 	float: left;
 	margin-left: 0.4%;
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	padding: 5px 15px 2px 15px;
 }
 
@@ -1512,7 +1512,7 @@ textarea {
 }
 
 .inner_tab_banner button.button_req {
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -1576,7 +1576,7 @@ textarea {
 }
 .message_btn .button_message,
 .button_pro {
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -1587,7 +1587,7 @@ textarea {
 }
 
 .message_btn .button_pro {
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	padding: 10px 18px 10px 18px;
 	margin-top: 5%;
 }
@@ -1649,7 +1649,7 @@ textarea {
 }
 
 .product_content {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	padding-top: 2%;
 	padding-bottom: 3%;
 }
@@ -1676,7 +1676,7 @@ textarea {
 }
 
 .key_feat {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 }
 
 .image_list img {
@@ -1743,7 +1743,7 @@ textarea {
 }
 
 .register_form {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 }
 
 .form_reg_mgmt h2 {
@@ -1840,7 +1840,7 @@ textarea {
 }
 
 .career_accordn_tabs .card-header {
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	border-radius: 0px 0px 0px 35px !important;
 }
 
@@ -1849,7 +1849,7 @@ textarea {
 }
 
 .career_accordn_tabs .card-body {
-	background: rgb(64, 64, 128);
+	background: #a18257;
 	width: 96%;
 	float: right;
 	color: white;
@@ -1991,7 +1991,7 @@ textarea {
 }
 
 .custom-file input{
-	background-color: rgb(64, 64, 128);
+	background-color: #a18257;
 	color: white;
 }
 
