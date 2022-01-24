@@ -9,15 +9,12 @@ use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
-<<<<<<< HEAD
 use App\Models\Setting;
 use Illuminate\Support\Facades\View;
-=======
 use App\Http\Controllers\Backend\ContactUsController;
 
 
 
->>>>>>> 49b29a633d14c1d06e1c013f67f20596122fa0bb
 
 /*
 |--------------------------------------------------------------------------
