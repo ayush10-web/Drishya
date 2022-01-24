@@ -9,4 +9,9 @@ class Slider extends Model
 {   
     use HasFactory;
     protected $fillable = ['slider_name','description','status'];
+
+    public function images()
+    {
+        return $this->belongsToMany(Image::class,'slider_images');
+    }
 }
