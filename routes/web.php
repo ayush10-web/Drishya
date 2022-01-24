@@ -66,6 +66,7 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::get('/edit/{id}',[SliderController::class,'edit'])->name('slider.edit');
         Route::put('/update/{id}',[SliderController::class,'update'])->name('slider.update');
         Route::get('/delete/{id}',[SliderController::class,'delete'])->name('slider.delete');
+        Route::get('/deleteImage/{id}',[SliderController::class,'imageDelete'])->name('slider.image.delete');
     });
     Route::group(['prefix'=> '/setting'],function(){
         Route::get('',[SettingController::class,'index'])->name('setting.index');

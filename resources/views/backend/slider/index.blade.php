@@ -34,6 +34,7 @@
                       <th>Slider Name</th>
                       <th>Description</th>
                       <th>Status</th>
+                      <th>Image</th>
                       <th>Action</th>
 
                     </tr>
@@ -50,6 +51,11 @@
                             Unavailable
                             @endif
                            </td>
+                           <td>@if (count($slider->images) > 0)
+                            @foreach ($slider->images as $image)
+                                <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;">
+                            @endforeach
+                        @endif</td>
                         <td><a href="{{route('slider.edit',$slider->id)}}"><i class="fa fa-edit" title="delete"></i></a> &nbsp; &nbsp; <a onclick="return confirm('you sure want to delete ?')" href="{{route('slider.delete',$slider->id)}}"><i class="fa fa-trash text-danger" title="delete"></i></a></td>
                       </tr>
                     @endforeach
