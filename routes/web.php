@@ -7,6 +7,8 @@ use App\Http\Controllers\Backend\RoomController;
 use App\Http\Controllers\Backend\EventController;
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Backend\ServiceController;
+use App\Http\Controllers\Backend\SliderController;
+
 
 
 /*
@@ -54,6 +56,15 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::get('/edit/{id}',[ServiceController::class,'edit'])->name('service.edit');
         Route::put('/update/{id}',[ServiceController::class,'update'])->name('service.update');
         Route::get('/delete/{id}',[ServiceController::class,'delete'])->name('service.delete');
+    });
+
+    Route::group(['prefix'=> '/slider'],function(){
+        Route::get('',[SliderController::class,'index'])->name('slider.index');
+        Route::get('/create',[SliderController::class,'create'])->name('slider.create');
+        Route::post('/store',[SliderController::class,'store'])->name('slider.store');
+        Route::get('/edit/{id}',[SliderController::class,'edit'])->name('slider.edit');
+        Route::put('/update/{id}',[SliderController::class,'update'])->name('slider.update');
+        Route::get('/delete/{id}',[SliderController::class,'delete'])->name('slider.delete');
     });
 });
 
