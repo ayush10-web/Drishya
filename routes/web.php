@@ -55,6 +55,10 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::put('/update/{id}',[ServiceController::class,'update'])->name('service.update');
         Route::get('/delete/{id}',[ServiceController::class,'delete'])->name('service.delete');
     });
+    Route::group(['prefix'=> '/setting'],function(){
+        Route::get('',[SettingController::class,'index'])->name('setting.index');
+        Route::post('/store',[SettingController::class,'store'])->name('setting.store');
+    });
 });
 
 // frontend
