@@ -9,8 +9,8 @@ use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
-
-
+use App\Models\Setting;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,3 +76,13 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 
 // frontend
 Route::get('/',[IndexController::class,'index'])->name('index');
+
+View::composer('*', function ($view) {
+    $sets = Setting::get();
+        $setting =[];
+        foreach ($sets as $i => $set) {
+           $setting[$set->key] = $set->value;
+        }
+        // dd($setting);
+    return $view->with(['setting'=>$setting]);   
+});
