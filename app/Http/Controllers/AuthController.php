@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -23,6 +24,12 @@ class AuthController extends Controller
         }else {
             return redirect()->back()->with(["error_message" => "Email or Password do not match"]);
         }
+    }
+    public function logout()
+    {
+      Session::flush();
+      Auth::logout();
+      return redirect()->intended('/admin/login');
     }
     
 }

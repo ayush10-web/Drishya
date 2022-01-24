@@ -21,10 +21,11 @@ use App\Http\Controllers\Backend\ServiceController;
 */
 
 //login form
-Route::get('/admin/login',[AuthController::class,'loginForm'])->name('login.form');
-Route::post('/admin/login/check',[AuthController::class,'LogInToDashboard'])->name('login');
+Route::get('/admin/login',[AuthController::class,'loginForm'])->name('login');
+Route::post('/admin/login',[AuthController::class,'LogInToDashboard']);
+Route::get('/admin/logout',[AuthController::class,'logout'])->name('logout');
 
-Route::group(['prefix'=> 'backend'],function(){
+Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
     Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 
     Route::group(['prefix'=> '/room'],function(){

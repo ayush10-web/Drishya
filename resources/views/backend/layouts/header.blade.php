@@ -35,11 +35,10 @@
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="{{route('logout')}}" class="dropdown-item">
             <!-- Message Start -->
             <div class="media-body">
               <p class="text-center"><i class="fas fa-sign-out-alt"></i> &nbsp; Log Out</p>
-              
             </div>
             <!-- Message End -->
           </a>
