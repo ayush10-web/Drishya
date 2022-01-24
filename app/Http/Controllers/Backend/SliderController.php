@@ -102,6 +102,22 @@ class SliderController extends Controller
          return redirect()->route('slider.index');
      }
 
+     public function delete($id)
+     {
+        $slider = Slider::with('images')->where('id',$id)->first();
+        if (count($slider->images) > 0) {
+            foreach ($slider->images as $value) {
+                $image_path = public_path().$value->file_path;
+                unlink($image_path);
+                $pivot = SliderImage::where('image_id',$value->id);
+                $pivot->delete();
+                $value->delete();
+            }
+        }
+        $slider->delete();
+        return redirect()->back();
+     }
+
      public function imageDelete(Request $request)
      {
          $image = Image::find($request->id);

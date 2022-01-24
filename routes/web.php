@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\RoomController;
 use App\Http\Controllers\Backend\EventController;
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Backend\ServiceController;
+use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
 
 
@@ -66,6 +67,10 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::put('/update/{id}',[SliderController::class,'update'])->name('slider.update');
         Route::get('/delete/{id}',[SliderController::class,'delete'])->name('slider.delete');
         Route::get('/deleteImage/{id}',[SliderController::class,'imageDelete'])->name('slider.image.delete');
+    });
+    Route::group(['prefix'=> '/setting'],function(){
+        Route::get('',[SettingController::class,'index'])->name('setting.index');
+        Route::post('/store',[SettingController::class,'store'])->name('setting.store');
     });
 });
 
