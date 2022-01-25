@@ -95,5 +95,5 @@ View::composer('*', function ($view) {
     $services = Service::get();
     $logoImage = Image::find($setting['logo']);
         // dd($service);
-    return $view->with(['setting'=>$setting, 'logoPath'=>$logoImage->file_path, 'services'=>$services]);   
+    return $view->with(['setting'=>$setting, 'logoPath'=>($logoImage?$logoImage->file_path:'#'), 'services'=>$services]);   
 });
