@@ -12,9 +12,9 @@ use App\Http\Controllers\Backend\SliderController;
 use App\Models\Setting;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\Backend\ContactUsController;
-
-
-
+use App\Http\Controllers\Frontend\RoomController as FrontendRoomController;
+use App\Models\Image;
+use App\Models\Service;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,6 +83,9 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 
 // frontend
 Route::get('/',[IndexController::class,'index'])->name('index');
+// frontend Room SIngle Page 
+Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');
+
 
 View::composer('*', function ($view) {
     $sets = Setting::get();
@@ -91,5 +94,12 @@ View::composer('*', function ($view) {
            $setting[$set->key] = $set->value;
         }
         // dd($setting);
-    return $view->with(['setting'=>$setting]);   
+        $setting['logo'] = '';
+        $sett = Setting::where('key','logo')->first();
+        
+        if ($sett->value != null) {
+            $setting['logo'] = Image::where('id',$sett->value)->first();
+        }
+    $servicesnav = Service::get();
+    return $view->with(['setting'=>$setting,'servicesnav' => $servicesnav]);   
 });

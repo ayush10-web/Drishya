@@ -118,7 +118,7 @@
                 @if (count($rooms) > 0)
                 @foreach ($rooms as $room)
                 <div class="carousel_margin">
-                    <a href="#">
+                    <a href="{{route('room.details',$room->id)}}">
                         <img src="{{$room->images[0]->file_path}}" alt="#">
                         <span>Capacity:{{$room->capacity}} | Price: {{$room->room_price}}</span>
                     </a>

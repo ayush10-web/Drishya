@@ -53,7 +53,10 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="header_logo">
-                    <a href=""><img src="{{$logoPath}}" alt="#" /></a>
+                    @if ($setting['logo'] != null)
+                    <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
+                    @endif
+                    
                 </div><!-- header_logo -->
             </div><!-- col -->
             <div class="col-6 col-md-2 border_right">
@@ -152,7 +155,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
                                 <div class="dropdown-menu mt-0" style="background:  rgb(64, 64, 128)" aria-labelledby="navbarDropdown">
-                                @foreach($services as $service)
+                                @foreach($servicesnav as $service)
                                     <div class="row">
                                         <div class="col-md-9">
                                             <a class="dropdown-item"  href="" style="background:rgb(64, 64, 128); margin-top : 15px; ">{{$service->service_name}}</a>
