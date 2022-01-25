@@ -10,8 +10,6 @@ use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Models\Setting;
-use App\Models\Service;
-use App\Models\Image;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\Backend\ContactUsController;
 
@@ -92,8 +90,6 @@ View::composer('*', function ($view) {
         foreach ($sets as $i => $set) {
            $setting[$set->key] = $set->value;
         }
-    $services = Service::get();
-    $logoImage = Image::find($setting['logo']);
-        // dd($service);
-    return $view->with(['setting'=>$setting, 'logoPath'=>($logoImage?$logoImage->file_path:'#'), 'services'=>$services]);   
+        // dd($setting);
+    return $view->with(['setting'=>$setting]);   
 });
