@@ -1,22 +1,17 @@
 @extends('frontend.layouts.master')
 @section('content')
-
-@foreach($sliders as $slides)
+@if (count($sliders) > 0)
+@foreach($sliders as $key => $slides)
 <section class="slider_main">
     <div class="container container_custom">
         <div id="demo" class="carousel slide wow pulse"
              style=" visibility: visible; animation-delay: 0.5s; animation-name: pulse;" data-ride="carousel">
             <div class="carousel-inner">
                 <ul class="carousel-indicators">
-                    @foreach($slidersImages[$slides->id] as $key=>$value)
-                    <?php $active = ($key==0)?'active':''; ?>
-                    <li data-target="#demo" data-slide-to="{{$key}}" class="{{$active}}"></li>
-                    @endforeach
+                    <li data-target="#demo" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif"></li>
                 </ul>
-                @foreach($slidersImages[$slides->id] as $key=>$value)
-                <?php $active = ($key==0)?'active':''; ?>
-                <div class="carousel-item {{$active}} slider-descripton">
-                    <img src="{{$value->file_path}}" alt="Grow your Business online" height='500px'>
+                <div class="carousel-item @if($key == 0) active @endif slider-descripton">
+                    <img src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
                         <p class="animated bounceInRight"
                             style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">
@@ -26,7 +21,6 @@
                         </p>
                     </div>
                 </div>
-                @endforeach
             </div>
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -39,6 +33,7 @@
     </div><!-- container -->
 </section><!-- slider_main -->
 @endforeach
+@endif
 <section class="image_with_box">
     <div class="container">
         <div class="row">
@@ -83,7 +78,7 @@
                     <div class="col-md-4" style="padding-top: 15px;">
                         <div class="services_block_all">
                             <div class="services_block">
-                                <img src="{{$filePaths[$service->id]}}" alt="#"/>
+                                <img src="{{$service->image->file_path}}" alt="#"/>
                                 <a href="">
                                     <h2>{{$service->service_name}}</h2>
                                 </a>
@@ -120,14 +115,17 @@
         </div>
         <div class="container">
             <section class="center slider">
+                @if (count($rooms) > 0)
                 @foreach ($rooms as $room)
                 <div class="carousel_margin">
                     <a href="#">
-                        <img src="{{$roomImage[$room->id][0]->file_path}}" alt="#">
+                        <img src="{{$room->images[0]->file_path}}" alt="#">
                         <span>Capacity:{{$room->capacity}} | Price: {{$room->room_price}}</span>
                     </a>
                 </div>
                 @endforeach
+                @endif
+                
             </section>
         </div><!-- container -->
     </div><!--  -->
