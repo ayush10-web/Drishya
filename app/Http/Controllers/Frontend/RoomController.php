@@ -19,6 +19,11 @@ class RoomController extends Controller
         dd($request->all());
         $customer = Customer:: create([
             'name' => $request['name'],
+            'contact' => $request['number'],
+            'email' => $request['email'],
+            'address' => $request['address'],
+
+
         ]);
     }
 }
