@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Booking;
 use App\Models\Customer;
 use App\Models\Room;
 use Illuminate\Http\Request;
@@ -12,18 +13,25 @@ class RoomController extends Controller
     public function view($id)
     {
        $room = Room::with('images')->where('id',$id)->first();
-       return view('frontend.roomdetails',compact('room'));
+       $rooms = Room::with('images')->latest()->take(2)->get();
+       return view('frontend.roomdetails',compact('room','rooms'));
     }
-    public function booking(Request $request)
+    public function booking(Request $request,$id)
     {
-        dd($request->all());
+        // dd($request->all());
         $customer = Customer:: create([
             'name' => $request['name'],
             'contact' => $request['number'],
             'email' => $request['email'],
             'address' => $request['address'],
-
-
         ]);
+        Booking::create([
+            'room_id' => $id,
+            'customer_id' => $customer->id,
+            'from' => $request['from'],
+            'to' => $request['to'],
+            'days' => $request['days'],
+        ]);
+        return redirect()->back()->with('success_message','Thankyou for Booking. Details will be sent to your email');
     }
 }

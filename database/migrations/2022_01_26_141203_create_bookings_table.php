@@ -20,7 +20,7 @@ class CreateBookingsTable extends Migration
             $table->string('from');
             $table->string('to');
             $table->integer('days');
-            $table->boolean('status')->default(true);
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
