@@ -148,7 +148,7 @@
                         <ul class="navbar-nav">
                            
                             <li class="nav-item active">
-                                <a class="nav-link" href="">Home <span
+                                <a class="nav-link" href="{{route('index')}}">Home <span
                                         class="sr-only">(current)</span></a>
                             </li>
                           

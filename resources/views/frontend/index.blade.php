@@ -1,15 +1,18 @@
 @extends('frontend.layouts.master')
 @section('content')
 @if (count($sliders) > 0)
-@foreach($sliders as $key => $slides)
+
 <section class="slider_main">
     <div class="container container_custom">
         <div id="demo" class="carousel slide wow pulse"
              style=" visibility: visible; animation-delay: 0.5s; animation-name: pulse;" data-ride="carousel">
             <div class="carousel-inner">
                 <ul class="carousel-indicators">
+                    @foreach($sliders as $key => $slides)
                     <li data-target="#demo" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif"></li>
+                    @endforeach
                 </ul>
+                @foreach($sliders as $key => $slides)
                 <div class="carousel-item @if($key == 0) active @endif slider-descripton">
                     <img src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
@@ -21,6 +24,7 @@
                         </p>
                     </div>
                 </div>
+                @endforeach
             </div>
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -32,7 +36,7 @@
 
     </div><!-- container -->
 </section><!-- slider_main -->
-@endforeach
+
 @endif
 <section class="image_with_box">
     <div class="container">
