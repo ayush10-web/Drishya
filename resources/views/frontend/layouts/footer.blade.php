@@ -3,7 +3,9 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="footer_logo_lead">
-                    <a href=""><img src="{{$logoPath}}" alt="#" /></a>
+                    @if ($setting['logo'] != null)
+                    <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
+                    @endif
                     <p style="color: white !important;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
                     <!-- <a href="#">About Us</a> -->
                 </div><!-- footer_logo_lead -->
