@@ -68,11 +68,19 @@
                           </select>
                         </div>
                         <div class="col-md-6">
-                            <label for="room_no">Room Image</label>
-                            <input type="file" name="images[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple>
+                      <label for="room_no">Description</label>
+                          <textarea name="description"  class="form-control" placeholder="Enter Description Here"></textarea>
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="room_no">Room Image</label>
+                      <input type="file" name="images[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple>
+                    </div>
+                  </div>
+              </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">

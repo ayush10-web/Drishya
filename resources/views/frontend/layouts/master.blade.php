@@ -56,7 +56,7 @@ gtag('config', 'UA-147460903-1');
 <script src="{{asset('js/slick.js')}}" type="text/javascript" charset="utf-8"></script>
 
 <script src="{{asset('js/script.js')}}"></script>
-
+@stack('scripts')
 <!-- <script type="text/javascript"> -->
     <script type="text/javascript">
         window.onload=function(){

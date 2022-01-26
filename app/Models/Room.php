@@ -9,7 +9,7 @@ use App\Models\Image;
 class Room extends Model
 {
     use HasFactory;
-    protected $fillable = ['room_number','capacity','room_price','floor_number','status'];
+    protected $fillable = ['room_number','capacity','room_price','floor_number','description','status'];
     public function images()
     {
         return $this->belongsToMany(Image::class,'image_rooms');

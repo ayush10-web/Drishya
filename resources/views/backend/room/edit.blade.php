@@ -90,6 +90,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="room_no">Description</label>
+                      <textarea name="description"  class="form-control" value="{{$room->description}}" placeholder="Enter Description Here"></textarea>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">

@@ -85,6 +85,8 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 Route::get('/',[IndexController::class,'index'])->name('index');
 // frontend Room SIngle Page 
 Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');
+Route::post('/room/booking/{id}',[FrontendRoomController::class,'booking'])->name('book.room');
+
 
 
 View::composer('*', function ($view) {
