@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="footer_logo_lead">
-                    <img src="{{asset('images/softechparklogo_footer.png')}}" alt="#">
-                    <p style="color: white !important;" >Softechpark Pvt.Ltd. is a Software Development, Web development, Mobile Application Development, Desktop Based Application development company. We creates cost-effective solutions based on technical expertise to deliver the ultimate customer satisfaction while also helping each business to achieve their unique needs.</p>
+                    <a href=""><img src="{{$logoPath}}" alt="#" /></a>
+                    <p style="color: white !important;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
                     <!-- <a href="#">About Us</a> -->
                 </div><!-- footer_logo_lead -->
             </div><!-- col -->
@@ -59,13 +59,13 @@
                     <ul>
                         <h4>Main Office</h4>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt"> {{$setting['address']}}</i>
                         </li>
                         <li>
-                            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                            <i class="fas fa-phone-volume" aria-hidden="true"> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}} </i>
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope"> {{$setting['email']}}</i>
                         </li>
                     </ul>
                 </div><!-- footer_links -->
@@ -100,19 +100,19 @@
                    
                     <ul>
                         <li>
-                            <a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="{{$setting['facebook']}}"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="{{$setting['twitter']}}"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="{{$setting['instagram']}}"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                            <a href="{{$setting['youtube']}}"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                            <a href="{{$setting['website']}}"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div><!-- footer_social -->
