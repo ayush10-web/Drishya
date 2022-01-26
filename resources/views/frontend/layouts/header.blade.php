@@ -151,11 +151,11 @@
                           
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
-                                <div class="dropdown-menu mt-0" style="background:  rgb(64, 64, 128)" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu mt-0" style="background:  #a18257" aria-labelledby="navbarDropdown">
                                 @foreach($services as $service)
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <a class="dropdown-item"  href="" style="background:rgb(64, 64, 128); margin-top : 15px; ">{{$service->service_name}}</a>
+                                            <a class="dropdown-item"  href="" style="background:#a18257; margin-top : 15px; ">{{$service->service_name}}</a>
                                         </div>
                                     </div>
                                 @endforeach
