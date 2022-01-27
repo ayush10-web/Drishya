@@ -23,4 +23,12 @@ class IndexController extends Controller
         // dd($rooms);
         return view('frontend.index',compact('sliders','services','rooms'));
     }
+
+    public function contact(){
+        return view('frontend.contact');
+    }
+
+    public function about(){
+        return view('frontend.about');
+    }
 }

@@ -1926,13 +1926,13 @@ textarea {
 
 .right_career_img {
 	position: absolute;
-	background-color: #404080;
+	background-color: #a18257;
 	height: 55%;
 	width: 85%;
 	transform: rotate(50deg);
 	top: 95%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(228, 228, 228);
+	box-shadow: -63px -77px 0px 6px rgb(209, 184, 150);
 	right: -40%;
 }
 
@@ -2079,13 +2079,13 @@ textarea {
 .left_contact_img {
 	left: -35%;
 	position: absolute;
-	background-color: #404080;
+	background-color: #a18257;
 	height: 45%;
 	width: 100%;
 	transform: rotate(45deg);
 	top: 35%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(228, 228, 228);
+	box-shadow: -63px -77px 0px 6px rgb(209, 184, 150);
 
 }
 
