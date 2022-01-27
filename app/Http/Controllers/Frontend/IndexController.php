@@ -31,4 +31,8 @@ class IndexController extends Controller
     public function about(){
         return view('frontend.about');
     }
+
+    public function storeContact(Request $request){
+        dd($request);
+    }
 }

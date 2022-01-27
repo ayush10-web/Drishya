@@ -13,6 +13,7 @@ use App\Models\Setting;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\Backend\ContactUsController;
 use App\Http\Controllers\Frontend\RoomController as FrontendRoomController;
+use App\Http\Controllers\Frontend\ContactUsController as FrontendContactUsController;
 use App\Models\Image;
 use App\Models\Service;
 
@@ -89,6 +90,9 @@ Route::get('/about',[IndexController::class,'about'])->name('about');
 // frontend Room SIngle Page 
 Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');
 Route::post('/room/booking/{id}',[FrontendRoomController::class,'booking'])->name('book.room');
+
+//store contact detail from frontend
+Route::post('/conctact/add', [FrontendContactUsController::class, 'add'])->name('contact.add');
 
 
 
