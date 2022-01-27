@@ -154,7 +154,7 @@
                           
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
-                                <div class="dropdown-menu mt-0" style="background:  rgb(64, 64, 128)" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu mt-0" style="background:  #a18257" aria-labelledby="navbarDropdown">
                                 @foreach($servicesnav as $service)
                                     <div class="row">
                                         <div class="col-md-9">
