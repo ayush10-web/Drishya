@@ -1,5 +1,6 @@
 @extends('frontend.layouts.master')
 @section('content')
+@include('backend.layouts.alerts')
 <section class="service_banner">
     <div class="banner_width">
         <img src="images/contact us banner.png" alt="#">
@@ -23,19 +24,18 @@
         </div><!-- col --> 
         <div class="col-md-6">
             <div class="contact_form">
-                <h1>Start a new case. Just send us your questions or concerns by starting a new case and we will
-                    give you the help you need. Start Here</h1>
-                <form action="#" method="post"  enctype="multipart/form-data">
+                <h1 style="color:#787006;">If you have any inquiries then please feel free to contact us.</h1>
+                <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
                     @csrf
                     <input type="text" name="name" placeholder="Your Name" required>
 
-                    <input type="text" name="email_id" placeholder="Your E-mail Address" required>
+                    <input type="email" name="email" placeholder="Your E-mail Address" required>
 
 
-                    <input type="text" name="phone1" placeholder="Your Contact Number">
+                    <input type="text" name="contact_number" placeholder="Your Contact Number">
                     <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
 
-                    <button>subbmit</button>
+                    <button class="btn btn-primary">Submit</button>
 
                 </form>
             </div><!-- contact_form -->

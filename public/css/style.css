@@ -1932,7 +1932,7 @@ textarea {
 	transform: rotate(50deg);
 	top: 95%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(209, 184, 150);
+	box-shadow: -63px -77px 0px 6px rgb(175, 157, 131);
 	right: -40%;
 }
 
@@ -2030,7 +2030,6 @@ textarea {
 }
 
 .contact_form button {
-	background: #404080;
 	color: white;
 	border: none;
 	padding: 10px 85px 10px 85px;
