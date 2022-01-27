@@ -5,12 +5,12 @@
   <div class="container-fluid">
     <div class="row mb-2">
       <div class="col-sm-6">
-        <h1 class="m-0"><u>Hotel Rooms</u> </h1>
+        <h1 class="m-0"><u>Booked Room</u> </h1>
       </div><!-- /.col -->
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
           <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a></li>
-          <li class="breadcrumb-item active">Rooms</li>
+          <li class="breadcrumb-item active">Booked Room</li>
         </ol>
       </div><!-- /.col -->
     </div><!-- /.row -->
@@ -31,33 +31,35 @@
                   <thead>
                     <tr>
                       <th>S.N.</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Contact</th>
                       <th>Room Number</th>
-                      <th>Floor Number</th>
-                      <th>Capacity</th>
+                      <th>Room Price Per Day</th>
+                      <th>From Date</th>
+                      <th>To Date</th>
                       <th>Price</th>
-                      <th>Status</th>
-                      <th>Image</th>
-                      <th>Action</th>
+                      <th>Days</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($rooms as $key=>$room)
-                      <tr>
-                        <td>{{$key + 1}}</td>
-                        <td>{{$room->room_number}}</td>
-                        <td>{{$room->floor_number}}</td>
-                        <td>{{$room->capacity}}</td>
-                        <td>{{$room->room_price}}</td>
-                        <td>{{($room->status == 'U') ? 'Unavailable':'Available'}}</td>
-                        <td>@if (count($room->images) > 0)
-                            @foreach ($room->images as $image)
-                                <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;">
-                            @endforeach
-                        @endif</td>
-                        <td><a href="{{route('room.edit',$room->id)}}"><i class="fa fa-edit" title="delete"></i></a> &nbsp; &nbsp; <a onclick="return confirm('you sure want to delete ?')" href="{{route('room.delete',$room->id)}}"><i class="fa fa-trash text-danger" title="delete"></i></a></td>
-                      </tr>
-                    @endforeach
-                   
+                    @if (count($bookings) > 0)
+                        @foreach ($bookings as $key=>$booking)
+                            <tr>
+                              <td>{{$key+1}}</td>
+                              <td>{{$booking->customer->name}}</td>
+                              <td>{{$booking->customer->email}}</td>
+                              <td>{{$booking->customer->contact}}</td>
+                              <td>{{$booking->room->room_number}}</td>
+                              <td>{{$booking->room->room_price}}</td>
+                              <td>{{$booking->from}}</td>
+                              <td>{{$booking->to}} </td>
+                              <td>{{$booking->days * $booking->room->room_price}}</td>
+                              <td>{{$booking->days}}</td>
+                              
+                            </tr>
+                        @endforeach
+                    @endif
                   </tbody>
                 </table>
               </div>

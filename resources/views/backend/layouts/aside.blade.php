@@ -136,31 +136,33 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Booking
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="{{route('booked.room')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
+                  <p>Booked Room</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="{{route('bookingrequest.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
+                  <p>Booking Request</p>
                 </a>
               </li>
             </ul>
               <li class="nav-item">
-            <a href="{{route('setting.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-cog"></i>
-              <p>
-                Setting
-              </p>
-            </a>
+              <a href="{{route('setting.index')}}" class="nav-link">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>
+                  Setting
+                </p>
+              </a>
+              </li>
+            
           </li>
           </li>
         </ul>
