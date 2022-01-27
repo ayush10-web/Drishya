@@ -170,9 +170,7 @@
                             <li class="nav-item {{request()->is('/about') ? 'active' : '' }}">
                                 <a class="nav-link " href="{{('about')}}">About Us</a>
                             </li>
-                            @php
-                                dd(request())
-                            @endphp
+                           
                             <li class="nav-item {{request()->is('/contact') ? 'active' : '' }}">
                                 <a class="nav-link " href="{{route('contact')}}">Contact Us</a>
                             </li>
