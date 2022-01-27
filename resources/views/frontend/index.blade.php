@@ -1,5 +1,6 @@
 @extends('frontend.layouts.master')
 @section('content')
+@include('backend.layouts.alerts')
 @if (count($sliders) > 0)
 
 <section class="slider_main">
