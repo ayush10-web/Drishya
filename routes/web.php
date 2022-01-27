@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Backend\BookingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\RoomController;
@@ -80,6 +81,14 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
     Route::group(['prefix'=> '/contactus'],function(){
         Route::get('',[ContactUsController::class,'index'])->name('contactus.index');
     });
+    Route::group(['prefix'=> '/bookings'],function(){
+        Route::get('',[BookingController::class,'index'])->name('bookingrequest.index');
+        Route::get('/booked-room',[BookingController::class,'bookedRoom'])->name('booked.room');
+        
+        Route::get('/change-status/{id}',[BookingController::class,'changeStatus'])->name('change.status');
+    });
+    
+
 });
 
 // frontend

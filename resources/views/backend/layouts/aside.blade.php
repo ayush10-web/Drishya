@@ -12,20 +12,10 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          {{-- <li class="nav-item">
-            <a href="{{route('room.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Hotel Rooms
-               
-              </p>
-            </a>
-          </li> --}}
+          
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-hotel"></i>
               <p>
                 Hotel Rooms
                 <i class="right fas fa-angle-left"></i>
@@ -34,13 +24,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('room.create')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-plus nav-icon"></i>
                   <p>New Hotel Rooms</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('room.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-hotel nav-icon"></i>
                   <p>Hotel Rooms</p>
                 </a>
               </li>
@@ -48,7 +38,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-calendar"></i>
               <p>
                 Events
                 <i class="right fas fa-angle-left"></i>
@@ -57,13 +47,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('event.create')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-plus nav-icon"></i>
                   <p>Add New Events</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('event.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-calendar nav-icon"></i>
                   <p>Event Details</p>
                 </a>
               </li>
@@ -71,7 +61,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="fa fa-rocket nav-icon"></i>
               <p>
                 Services
                 <i class="right fas fa-angle-left"></i>
@@ -80,13 +70,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('service.create')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-plus nav-icon"></i>
                   <p>Add New Service</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('service.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-rocket nav-icon"></i>
                   <p>Service Details</p>
                 </a>
               </li>
@@ -94,7 +84,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-sliders-h"></i>
               <p>
                 Sliders
                 <i class="right fas fa-angle-left"></i>
@@ -103,13 +93,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('slider.create')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-plus nav-icon"></i>
                   <p>Add New Slider</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{route('slider.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-sliders-h nav-icon"></i>
                   <p>Slider Details</p>
                 </a>
               </li>
@@ -117,7 +107,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fa fa-address-book"></i>
               <p>
                 Contact Us
                 <i class="right fas fa-angle-left"></i>
@@ -126,7 +116,7 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('contactus.index')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-address-book nav-icon"></i>
                   <p>Contact Details</p>
                 </a>
               </li>
@@ -134,33 +124,35 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-bed"></i>
               <p>
-                Charts
+                Booking
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
+                <a href="{{route('booked.room')}}" class="nav-link">
+                  <i class="fas fa-bed nav-icon"></i>
+                  <p>Booked Room</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
+                <a href="{{route('bookingrequest.index')}}" class="nav-link">
+                  <i class="fas fa-bed nav-icon"></i>
+                  <p>Booking Request</p>
                 </a>
               </li>
             </ul>
               <li class="nav-item">
-            <a href="{{route('setting.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-cog"></i>
-              <p>
-                Setting
-              </p>
-            </a>
+              <a href="{{route('setting.index')}}" class="nav-link">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>
+                  Setting
+                </p>
+              </a>
+              </li>
+            
           </li>
           </li>
         </ul>

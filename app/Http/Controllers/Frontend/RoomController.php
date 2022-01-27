@@ -13,7 +13,7 @@ class RoomController extends Controller
     public function view($id)
     {
        $room = Room::with('images')->where('id',$id)->first();
-       $rooms = Room::with('images')->latest()->take(2)->get();
+       $rooms = Room::with('images')->where('status','A')->latest()->take(2)->get();
        return view('frontend.roomdetails',compact('room','rooms'));
     }
     public function booking(Request $request,$id)
