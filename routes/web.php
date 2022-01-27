@@ -83,7 +83,7 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 
 // frontend
 Route::get('/',[IndexController::class,'index'])->name('index');
-Route::resource('abouts','Frontend\AboutController');
+Route::get('/contact',[IndexController::class,'contact'])->name('contact');
 // frontend Room SIngle Page 
 Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');
 Route::post('/room/booking/{id}',[FrontendRoomController::class,'booking'])->name('book.room');
