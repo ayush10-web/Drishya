@@ -146,14 +146,14 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                            
-                            <li class="nav-item active">
+                            <li class="nav-item {{request()->is('/') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{route('index')}}">Home <span
                                         class="sr-only">(current)</span></a>
                             </li>
                           
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
-                                <div class="dropdown-menu mt-0" style="background:  rgb(64, 64, 128)" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu mt-0" style="background:  #a18257" aria-labelledby="navbarDropdown">
                                 @foreach($servicesnav as $service)
                                     <div class="row">
                                         <div class="col-md-9">
@@ -166,11 +166,12 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="">Rooms</a>
                             </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{('about')}}">About Us</a>
+                            <li class="nav-item {{request()->is('/about') ? 'active' : '' }}">
+                                <a class="nav-link " href="{{('about')}}">About Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
+                           
+                            <li class="nav-item {{request()->is('/contact') ? 'active' : '' }}">
+                                <a class="nav-link " href="{{route('contact')}}">Contact Us</a>
                             </li>
                         </ul>
                     </div>
