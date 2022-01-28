@@ -243,7 +243,7 @@ p {
 }
 
 .header_quote a {
-	background: #a18257;
+	background: #503a02;
 	padding: 10px 55px 10px 55px;
 	border-radius: 5px;
 	color: white;
@@ -1926,13 +1926,13 @@ textarea {
 
 .right_career_img {
 	position: absolute;
-	background-color: #a18257;
+	background-color: #d9c222;
 	height: 55%;
 	width: 85%;
 	transform: rotate(50deg);
 	top: 95%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(175, 157, 131);
+	box-shadow: -63px -77px 0px 6px rgb(211 204 155);
 	right: -40%;
 }
 
@@ -2044,8 +2044,8 @@ textarea {
 }
 
 .right_contact_img {
-	right: -69%;
-	top: 58%;
+	right: -45%;
+	top: 15%;
 }
 
 .right_contact_img_overlay {
@@ -2076,15 +2076,15 @@ textarea {
 }
 
 .left_contact_img {
-	left: -35%;
+	left: -42%;
 	position: absolute;
-	background-color: #a18257;
+	background-color: #d9c222;
 	height: 45%;
 	width: 100%;
 	transform: rotate(45deg);
-	top: 35%;
+	top: 47%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(209, 184, 150);
+	box-shadow: -63px -77px 0px 6px rgb(211 204 155);
 
 }
 

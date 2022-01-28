@@ -73,7 +73,7 @@
             </div><!-- col -->
             <div class="col-md-3">
                 <div class="header_quote">
-                    <a href="#quote" data-toggle="modal" data-target="#exampleModalCenter">Inquiry</a>
+                    <a href="#quote" data-toggle="modal" data-target="#exampleModalCenter" >Inquiry</a>
                     <!-- Button trigger modal -->
 
 
@@ -96,20 +96,19 @@
                         Please feel free to inquiry about anything. <br>
                         We are always happy to answer all your quetions anytime without any hesitation.
                     </div><!-- req_form_head -->
-                    <form action="" method="post"  enctype="multipart/form-data">
+                    <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                         <div class="col-md-6">
                             <div class="input_form">
-                                <input type="text" name="name" placeholder="First Name" required>
-                                <input type="text" name="email" placeholder="Email" required>
-                                <input type="text" name="contact" placeholder="Contact Number">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="text" name="contact_number" placeholder="Contact Number">
                             </div><!-- input_form -->
                         </div><!-- col -->
                         <div class="col-md-6">
                             <div class="input_form">
-                                <input type="text" name="subject" placeholder="Subject">
-                                <textarea rows="3" name="message" cols="50" placeholder="Describe your subject..."></textarea>
+                                <textarea rows="3" name="message" cols="50" placeholder="Your Message..."></textarea>
 {{--                                <button type="button" class="send_form" onclick="alert('Your message send successfully!')">Send--}}
 {{--                                    Message</button>--}}
                                 <button class="send_form">Send Inquiry</button>
@@ -154,7 +153,7 @@
                           
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
-                                <div class="dropdown-menu mt-0" style="background:  rgb(64, 64, 128)" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu mt-0" style="background:  #a18257" aria-labelledby="navbarDropdown">
                                 @foreach($servicesnav as $service)
                                     <div class="row">
                                         <div class="col-md-9">
