@@ -32,7 +32,7 @@ class BookingController extends Controller
             'body' => 'This email is to notify that your 
             room has been booked in drishya for'.$booking->days.' days.'
         ];
-        Mail::to('testdrishya66@gmail.com')->send(new \App\Mail\SendConfirmationMail($details));
+        Mail::to($booking->customer->email)->send(new \App\Mail\SendConfirmationMail($details));
         $room = Room::find($booking->room->id);
         $room->status = 'U';
         $room->save();
