@@ -95,6 +95,8 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/contact',[IndexController::class,'contact'])->name('contact');
 Route::get('/about',[IndexController::class,'about'])->name('about');
+Route::get('/restaurant',[IndexController::class,'restaurant'])->name('restaurant');
+
 
 // frontend Room SIngle Page 
 Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');

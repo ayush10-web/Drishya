@@ -169,8 +169,8 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="">Banquet</a>
                             </li> 
-                            <li class="nav-item ">
-                                <a class="nav-link" href="">Restaurant</a>
+                            <li class="nav-item {{request()->is('/restaurant') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>
                             </li> 
                             <li class="nav-item {{request()->is('/about') ? 'active' : '' }}">
                                 <a class="nav-link " href="{{('about')}}">About Us</a>

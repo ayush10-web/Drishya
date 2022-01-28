@@ -39,4 +39,8 @@ class IndexController extends Controller
     public function services(){
         return view();
     }
+
+    public function restaurant(){
+        return view ('frontend.restaurant');
+    }
 }

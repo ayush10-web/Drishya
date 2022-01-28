@@ -33,6 +33,7 @@
                       <th>S.N.</th>
                       <th>Slider Name</th>
                       <th>Description</th>
+                      <th>Slider code</th>
                       <th>Status</th>
                       <th>Image</th>
                       <th>Action</th>
@@ -45,6 +46,12 @@
                         <td>{{$key + 1}}</td>
                         <td>{{$slider->slider_name}}</td>
                         <td>{{$slider->description}}</td>
+                        <td>@if($slider->slider_code == '1')
+                          Restaurant
+                          @else
+                          Home
+                          @endif
+                         </td>
                         <td>@if($slider->status == '1')
                             Available
                             @else
