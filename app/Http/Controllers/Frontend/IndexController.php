@@ -35,4 +35,8 @@ class IndexController extends Controller
     public function storeContact(Request $request){
         dd($request);
     }
+
+    public function services(){
+        return view();
+    }
 }
