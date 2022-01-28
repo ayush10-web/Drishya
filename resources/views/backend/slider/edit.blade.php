@@ -50,10 +50,14 @@
                       <div class = "row">
                         <div class="col-sm-6">
                           <label for="slider">Slider Code</label>
-                          <select name="slider_code" class="form-control" id="status" required>
+                          <select name="slidercode" class="form-control" id="status" required>
                               <option value="" disabled selected>Select Slider Code</option>
-                              <option value="1">Restaurant</option>
-                              <option value="0">Home</option>
+                              <option value="1"@if ($slider->status == 'res')
+                                selected
+                            @endif>Restaurant</option>
+                              <option value="0" @if ($slider->status == 'home')
+                                selected
+                            @endif>Home</option>
                           </select>
                         </div>
                       </div>

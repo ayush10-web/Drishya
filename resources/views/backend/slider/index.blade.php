@@ -46,7 +46,7 @@
                         <td>{{$key + 1}}</td>
                         <td>{{$slider->slider_name}}</td>
                         <td>{{$slider->description}}</td>
-                        <td>@if($slider->slider_code == '1')
+                        <td>@if($slider->slider_code == 'res')
                           Restaurant
                           @else
                           Home

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 class IndexController extends Controller
 {
     public function index(){
-        $sliders = Slider::with('images')->latest()->get();
+        $sliders = Slider::with('images')->where('slider_code','home')->latest()->get();
 
         $services = Service::with('image')->latest()->get();
 
@@ -41,6 +41,8 @@ class IndexController extends Controller
     }
 
     public function restaurant(){
-        return view ('frontend.restaurant');
+        $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
+        // dd($sliders);
+        return view ('frontend.restaurant',compact('sliders'));
     }
 }

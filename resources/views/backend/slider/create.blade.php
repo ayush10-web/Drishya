@@ -49,12 +49,16 @@
                   <div class = "row">
                     <div class="col-sm-6">
                       <label for="slider">Slider Code</label>
-                      <select name="slider_code" class="form-control" id="status" required>
+                      <select name="slidercode" class="form-control" id="status" required>
                           <option value="" disabled selected>Select Slider Code</option>
-                          <option value="1">Restaurant</option>
-                          <option value="0">Home</option>
+                          <option value="res">Restaurant</option>
+                          <option value="home">Home</option>
                       </select>
                     </div>
+                    <div class="col-md-6">
+                      <label for="slider">Slider Image</label>
+                      <input type="file" name="images[]" class="form-control" id="room_capacity" placeholder="Enter Slider Image" >
+                  </div>
                   </div>
                 </div>
                 <div class="form-group">
@@ -67,10 +71,7 @@
                               <option value="0">Unavailable</option>
                           </select>
                         </div>
-                        <div class="col-md-6">
-                            <label for="slider">Slider Image</label>
-                            <input type="file" name="images[]" class="form-control" id="room_capacity" placeholder="Enter Slider Image" multiple>
-                        </div>
+                        
                     </div>
                 </div>
               </div>

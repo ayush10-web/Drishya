@@ -27,7 +27,7 @@ class SliderController extends Controller
         $slider = Slider::create([
             'slider_name' => $request['slider_name'],
             'description' => $request['description'],
-            'slider_code' => $request['slider_code'],
+            'slider_code' => $request['slidercode'],
             'status' => $request['status']
         ]);
 
@@ -73,7 +73,7 @@ class SliderController extends Controller
          
          $slider->slider_name = $request['slider_name'];
          $slider->description = $request['description'];
-         $slider->slider_code = $request['slider_code'];
+         $slider->slider_code = $request['slidercode'];
          $slider->status = $request['status'];
          $slider->update();
          if ($request->hasFile('images')) {
