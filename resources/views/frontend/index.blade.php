@@ -208,11 +208,11 @@
 
 
 <section class="testimonials">
-    <div class="container">
-        <div class="test_head">
-            <h1>TESTIMONIALS</h1>
-        </div><!-- test_head -->
-        <div class="card col-md-12 mt-2">
+    <div class="container" style="margin-top: -17px;">
+        <div class="hr_head wow fadeInRight portfolio-heading" style="margin-bottom: -55px;">    
+            <h4 align="center">TESTIMONIALS</h4>
+        </div>
+        <div class="card col-md-12 mt-2" style="margin-bottom: -30px;">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
                 <div class="w-100 carousel-inner" role="listbox">
                         <div class="carousel-item active">
