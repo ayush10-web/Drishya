@@ -74,6 +74,23 @@
                           <label for="room_no">Description</label>
                           <input type="text" value="{{$event->description}}" name="description" class="form-control" id="description" placeholder="Description">
                         </div>
+                        <div class="col-md-6">
+                          <label for="room_no">Event Image</label>
+                          <input type="file" name="images[]" class="form-control" id="event_image" multiple> <br>
+                          <div id="img-preview">
+                            @if (count($event->images) > 0)
+                                <div class="row">
+                                  @foreach ($event->images as $key=>$image)
+                                    <div class="col-md-3" id="image{{$image->id}}">
+                                      <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;"><br>
+                                      <button class="text-white" type="button" onclick="removeImage('{{$image->id}}')" style="background:black;width: 100px;">Remove</button>
+                                    </div>
+                                  @endforeach
+                                </div>
+                            @endif
+                           
+                          </div>
+                      </div>
                     </div>
                 </div>
               </div>
@@ -96,3 +113,25 @@
     </div><!-- /.container-fluid -->
   </section>
 @endsection
+@push('scripts')
+<script>
+  function removeImage(params) {
+    var conf = confirm('you want to delete this image ?')
+    if (conf == true) {
+      var token = $("meta[name='csrf-token']").attr("content");
+            $.ajax({
+                url: "{{ route('event.image.delete', '+params+') }}",
+                type: 'GET',
+                data: {
+                  "id": params,
+                    "_token": token,
+                },
+                success: function(success) {
+                    console.log(success);
+                    $('#image'+params).remove();
+                }
+            });
+    }
+  }
+</script>
+@endpush

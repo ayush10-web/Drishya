@@ -55,6 +55,7 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::get('/edit/{id}',[EventController::class,'edit'])->name('event.edit');
         Route::put('/update/{id}',[EventController::class,'update'])->name('event.update');
         Route::get('/delete/{id}',[EventController::class,'delete'])->name('event.delete');
+        Route::get('/deleteImage/{id}',[EventController::class,'imageDelete'])->name('event.image.delete');
     });
 
     Route::group(['prefix'=> '/service'],function(){
