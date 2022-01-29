@@ -37,11 +37,11 @@
                 <div class="form-group">
                   <div class="row">
                       <div class="col-md-6">
-                        <label for="room_no">Event Name</label>
+                        <label for="event_name">Event Name</label>
                         <input type="text" name="event_name" class="form-control" id="event_name" placeholder="Enter Event Name" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="room_no">Start Date</label>
+                        <label for="start_date">Start Date</label>
                         <input type="text" name="start_date" class="form-control" id="start_date" placeholder="Start Date" required>
                       </div>
                   </div>
@@ -49,11 +49,11 @@
                 <div class="form-group">
                     <div class="row">
                       <div class="col-md-6">
-                          <label for="room_no">End Date</label>
+                          <label for="end_date">End Date</label>
                           <input type="text" name="end_date" class="form-control" id="end_date" placeholder="End Date" required>
                         </div>
                         <div class="col-md-6">
-                          <label for="room_no">Status</label>
+                          <label for="status">Status</label>
                           <select name="status" class="form-control" id="status" required>
                               <option value="" disabled selected>Select Status</option>
                               <option value="U">Upcomming</option>
@@ -66,8 +66,12 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-6">
-                          <label for="room_no">Description</label>
+                          <label for="description">Description</label>
                           <input type="text" name="description" class="form-control" id="description" placeholder="Description">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="event_image">Event Image</label>
+                          <input type="file" name="images[]" class="form-control" id="event_image" multiple>
                         </div>
                     </div>
                 </div>
