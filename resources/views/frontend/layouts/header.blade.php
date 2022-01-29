@@ -68,12 +68,12 @@
             <div class="col-6 col-md-2 border_right">
                 <div class="header_opening_closing">
                  <i class="far fa-clock"></i>
-                    <p>Opening Time <span>mon - Fri : 9.00 - 6.00</span></p>
+                    <p>Opening Time <span>8:00 - 10:00</span></p>
                 </div><!-- header_closing -->
             </div><!-- col -->
             <div class="col-md-3">
                 <div class="header_quote">
-                    <a href="#quote" data-toggle="modal" data-target="#exampleModalCenter" >Inquiry</a>
+                    <a href="{{route('drishya.rooms')}}">Rooms</a>
                     <!-- Button trigger modal -->
 
 
@@ -146,7 +146,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                            
-                            <li class="nav-item {{request()->is('/') ? 'active' : '' }}">
+                            <li class="nav-item {{($menu == 'index') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{route('index')}}">Home <span
                                         class="sr-only">(current)</span></a>
                             </li>
@@ -163,14 +163,20 @@
                                 @endforeach
                                 </div>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="">Rooms</a>
+                            <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
                             </li> 
-                            <li class="nav-item {{request()->is('/about') ? 'active' : '' }}">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="">Banquet</a>
+                            </li> 
+                            <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>
+                            </li> 
+                            <li class="nav-item {{($menu == 'about') ? 'active' : '' }}">
                                 <a class="nav-link " href="{{('about')}}">About Us</a>
                             </li>
                            
-                            <li class="nav-item {{request()->is('/contact') ? 'active' : '' }}">
+                            <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
                                 <a class="nav-link " href="{{route('contact')}}">Contact Us</a>
                             </li>
                         </ul>

@@ -15,24 +15,40 @@ use Illuminate\Support\Facades\DB;
 class IndexController extends Controller
 {
     public function index(){
-        $sliders = Slider::with('images')->latest()->get();
+        $sliders = Slider::with('images')->where('slider_code','home')->latest()->get();
 
         $services = Service::with('image')->latest()->get();
 
         $rooms = Room::with('images')->where('status','A')->latest()->take(5)->get();
         // dd($rooms);
-        return view('frontend.index',compact('sliders','services','rooms'));
+        $menu = "index";
+        return view('frontend.index',compact('sliders','services','rooms','menu'));
     }
 
     public function contact(){
-        return view('frontend.contact');
+        $menu = "contact";
+
+        return view('frontend.contact',compact('menu'));
     }
 
     public function about(){
-        return view('frontend.about');
+        $menu = "about";
+        return view('frontend.about',compact('menu'));
     }
 
     public function storeContact(Request $request){
         dd($request);
+    }
+
+    public function services(){
+        return view();
+    }
+
+    public function restaurant(){
+        $menu = "restaurant";
+
+        $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
+        // dd($sliders);
+        return view ('frontend.restaurant',compact('sliders','menu'));
     }
 }

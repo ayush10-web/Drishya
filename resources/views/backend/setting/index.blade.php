@@ -77,14 +77,44 @@
                 >
               </div>
               <div class="form-group">
-                <label for="logo">Logo</label>
-               <input type="file"  class="form-control" name="logo" id="">
+                <label for="Name">Room Description</label>
+                <textarea name="room" class="form-control" placeholder="Enter room description">{{$setting['room']}}</textarea>
               </div>
-              @if ($logo != null)
-              <div class="img-preview">
-                <img src="{{$logo->file_path}}" alt="" srcset="" style="height: 100px; width:100px;">
-            </div>
-              @endif
+              <div class="form-group">
+                <label for="Name">Check IN Time</label>
+                <input type="text" class="form-control" name="checkin" value="{{$setting['checkin']}}" placeholder="Enter Check IN time" 
+                >
+              </div>
+              <div class="form-group">
+                <label for="Name">Check Out Time</label>
+                <input type="text" class="form-control" name="checkout" value="{{$setting['checkout']}}" placeholder="Enter Checkout time" 
+                >
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="logo">Logo</label>
+                   <input type="file"  class="form-control" name="logo" id="">
+                  </div>
+                  @if ($logo != null)
+                  <div class="img-preview">
+                    <img src="{{$logo->file_path}}" alt="" srcset="" style="height: 100px; width:100px;">
+                </div>
+                  @endif
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="logo">Room Image</label>
+                   <input type="file"  class="form-control" name="roomimage" id="">
+                  </div>
+                  @if ($roomimage != null)
+                  <div class="img-preview">
+                    <img src="{{$roomimage->file_path}}" alt="" srcset="" style="height: 100px; width:100px;">
+                </div>
+                  @endif
+                </div>
+              </div>
+              
               
             </div>
             <!-- /.card-body -->
