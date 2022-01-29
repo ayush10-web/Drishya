@@ -21,6 +21,8 @@ class IndexController extends Controller
         $services = Service::with('image')->latest()->get();
 
         $rooms = Room::with('images')->where('status','A')->latest()->take(5)->get();
+        // dd($sliders);
+        // return view('frontend.index',compact('sliders','services','rooms'));
         // dd($rooms);
         $menu = "index";
 
@@ -53,5 +55,9 @@ class IndexController extends Controller
         $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
         // dd($sliders);
         return view ('frontend.restaurant',compact('sliders','menu'));
+    }
+
+    public function banquet(){
+        return view ('frontend.banquet');
     }
 }

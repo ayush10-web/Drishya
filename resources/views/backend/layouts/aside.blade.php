@@ -112,6 +112,29 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item {{request()->is('backend/restaurantmenu*') ? 'menu-open' : '' }}">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-sliders-h"></i>
+              <p>
+                Restaurant Menu
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('restaurantmenu.create')}}" class="nav-link {{request()->is('backend/restaurantmenu/create') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Add New Menu Item</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('restaurantmenu.index')}}" class="nav-link {{request()->is('backend/restaurantmenu') ? 'active' : '' }}">
+                  <i class="fas fa-sliders-h nav-icon"></i>
+                  <p>Restaurant Menu Details</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-item {{request()->is('backend/contactus*') ? 'menu-open' : '' }}">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-address-book"></i>
