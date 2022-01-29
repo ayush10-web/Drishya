@@ -96,6 +96,8 @@ Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/contact',[IndexController::class,'contact'])->name('contact');
 Route::get('/about',[IndexController::class,'about'])->name('about');
 Route::get('/restaurant',[IndexController::class,'restaurant'])->name('restaurant');
+Route::get('/banquet',[IndexController::class,'banquet'])->name('banquet');
+
 
 
 // frontend Room SIngle Page 

@@ -29,71 +29,23 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-            <p>
+            
           {{-- {!! $about->description !!} --}}
+          <h2>
           Drishya
+          </h1>
+          <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, 
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+           sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+           Aldus PageMaker including versions of Lorem Ipsum.
 
             </p>
         </div><!-- banner_abt -->
     </div><!-- container -->
 </section><!-- about_top_banner -->
 
-<section class="team_blk">
-
-    <div class="container">
-        <div class="team_detail">
-            <h1>OUR TEAM</h1>
-            <div class="row">
-                <div class="col-md-5"></div><!-- col -->
-
-                <div class="col-md-7 team_show">
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p>Test<span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p><span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p>
-                                    Test<span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p>Test<span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                       <!-- <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="images/received_3467839840380570.png" alt="#">
-                                <p>Pooja Khanal<span> UK Branch Head</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                        <!-- <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="images/received_491793791551368.png " alt="#">
-                                <p>Rajan Kafle<span> Marketing Head (UK Branch)</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                    </div><!-- row -->
-                </div><!-- col -->
-            </div><!-- row -->
-        </div><!-- team detail --> 
-
-    </div><!-- container -->
-
-    <div class="team">
-</section><!-- team_blk -->
 @endsection
