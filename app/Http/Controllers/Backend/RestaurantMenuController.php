@@ -7,20 +7,22 @@ use Illuminate\Http\Request;
 use App\Models\restaurantmenu;
 use App\Models\Image;
 use App\Models\RestaurantImage;
+use App\Models\restaurantMenuCategories;
 
 class RestaurantMenuController extends Controller
 {
     public function index()
     {
        $page_name = "Restaurant Menu";
-       $restaurantmenus = restaurantmenu::latest()->with('images')->get();
+       $restaurantmenus = restaurantmenu::latest()->with('images', 'categories')->get();
        return view('backend.restaurantmenu.index',compact('page_name','restaurantmenus'));
     }
     public function create()
     {
         {
             $page_name = "Add New Menu";
-            return view('backend.restaurantmenu.create',compact('page_name'));
+            $restaurantMenuCategories = restaurantMenuCategories::latest()->get();
+            return view('backend.restaurantmenu.create',compact('page_name', 'restaurantMenuCategories'));
          }
     }
 
@@ -31,7 +33,7 @@ class RestaurantMenuController extends Controller
            'price' => $request['menu_price'],
            'description' => $request['description'],
            'status' => $request['status'],
-           'category' =>$request['category'],
+           'category_id' =>$request['category'],
        ]);
 
        if ($request->hasFile('images')) {
@@ -64,9 +66,10 @@ class RestaurantMenuController extends Controller
 
     public function edit($id)
      {
-         $restaurantmenu = restaurantmenu::with('images')->where('id',$id)->first();
+         $restaurantmenu = restaurantmenu::with('images','categories')->where('id',$id)->first();
          $page_name = "Edit Restaurant Menu";
-         return view('backend.restaurantmenu.edit',compact('page_name','restaurantmenu'));
+         $restaurantMenuCategories = restaurantMenuCategories::latest()->get();
+         return view('backend.restaurantmenu.edit',compact('page_name','restaurantmenu','restaurantMenuCategories'));
      }
 
      public function update(Request $request, $id)

@@ -50,7 +50,7 @@
                     <div class="row">
                         <div class="col-md-6">
                           <label for="restaurant_menu">Description</label>
-                          <textarea name="description"  class="form-control" id="description" value="{{($restaurantmenu->description)}}" placeholder="Enter Description Here"></textarea>
+                          <textarea name="description"  class="form-control" id="description" placeholder="Enter Description Here">{{($restaurantmenu->description)}}</textarea>
                         </div>
                         <div class="col-md-6">
                           <label for="restaurant_menu">Status</label>
@@ -71,18 +71,11 @@
                       <label for="category">Restaurant Category</label>
                       <select name="category" class="form-control" id="category" required>
                           <option value="" disabled selected>Select Category</option>
-                          <option value="Main"@if ($restaurantmenu->category == 'Main')
+                          @foreach($restaurantMenuCategories as $category)
+                          <option value="{{$category->id}}"@if ($restaurantmenu->categories->id == $category->id)
                             selected
-                        @endif>Main</option>
-                          <option value="Starter" @if ($restaurantmenu->category == 'Starter')
-                            selected
-                        @endif>Starter</option>
-                        <option value="Appetizers" @if ($restaurantmenu->category == 'Appetizers')
-                          selected
-                      @endif>Appetizers</option>
-                      <option value="Drinks" @if ($restaurantmenu->category == 'Drinks')
-                        selected
-                    @endif>Drinks</option>
+                        @endif>{{$category->category_name}}</option>
+                          @endforeach
                       </select>
                     </div>
                     <div class="col-md-6">

@@ -11,6 +11,7 @@ use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\RestaurantMenuController;
+use App\Http\Controllers\Backend\RestaurantMenuCategory;
 use App\Models\Setting;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\Backend\ContactUsController;
@@ -74,6 +75,14 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::get('/edit/{id}',[RestaurantMenuController::class,'edit'])->name('restaurantmenu.edit');
         Route::put('/update/{id}',[RestaurantMenuController::class,'update'])->name('restaurantmenu.update');
         Route::get('/delete/{id}',[RestaurantMenuController::class,'delete'])->name('restaurantmenu.delete');
+    });
+    Route::group(['prefix'=> '/restaurantMenuCategory'],function(){
+        Route::get('',[RestaurantMenuCategory::class,'index'])->name('restaurantmenucategory.index');
+        Route::get('/create',[RestaurantMenuCategory::class,'createCategory'])->name('restaurantmenu.createCategory');
+        Route::post('/store',[RestaurantMenuCategory::class,'storeCategory'])->name('restaurantmenu.storeCategory');
+        Route::get('/edit/{id}',[RestaurantMenuCategory::class,'edit'])->name('restaurantmenucategory.edit');
+        Route::put('/update/{id}',[RestaurantMenuCategory::class,'update'])->name('restaurantmenucategory.update');
+        Route::get('/delete/{id}',[RestaurantMenuCategory::class,'delete'])->name('restaurantmenucategory.delete');
     });
     Route::group(['prefix'=> '/slider'],function(){
         Route::get('',[SliderController::class,'index'])->name('slider.index');

@@ -128,9 +128,21 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a href="{{route('restaurantmenu.createCategory')}}" class="nav-link {{request()->is('backend/restaurantMenuCategory/create') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Add New Menu Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="{{route('restaurantmenu.index')}}" class="nav-link {{request()->is('backend/restaurantmenu') ? 'active' : '' }}">
                   <i class="fas fa-sliders-h nav-icon"></i>
                   <p>Restaurant Menu Details</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('restaurantmenucategory.index')}}" class="nav-link {{request()->is('backend/restaurantMenuCategory') ? 'active' : '' }}">
+                  <i class="fas fa-sliders-h nav-icon"></i>
+                  <p>Menu Category Details</p>
                 </a>
               </li>
             </ul>

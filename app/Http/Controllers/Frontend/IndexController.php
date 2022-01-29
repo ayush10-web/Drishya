@@ -11,6 +11,8 @@ use App\Models\ImageRoom;
 use App\Models\Room;
 use App\Models\Service;
 use App\Models\Event;
+use App\Models\restaurantmenu;
+use App\Models\restaurantMenuCategories;
 use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
@@ -54,7 +56,9 @@ class IndexController extends Controller
 
         $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
         // dd($sliders);
-        return view ('frontend.restaurant',compact('sliders','menu'));
+        $categories = restaurantMenuCategories::with('menus')->latest()->get();
+        // dd($categories);
+        return view ('frontend.restaurant',compact('sliders','menu','categories'));
     }
 
     public function banquet(){

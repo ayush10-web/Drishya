@@ -10,7 +10,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{route('restaurantmenu.index')}}">Restaurant</a></li>
+            <li class="breadcrumb-item"><a href="{{route('restaurantmenucategory.index')}}">Restaurant</a></li>
             <li class="breadcrumb-item active">New Menu</li>
           </ol>
         </div><!-- /.col -->
@@ -67,9 +67,10 @@
                       <label for="slider">Restaurant Category</label>
                       <select name="category" class="form-control" id="category" required>
                           <option value="" disabled selected>Select Restaurant Code</option>
-                          @foreach($restaurantMenuCategories as $category)
-                            <option value="{{$category->id}}">{{$category->category_name}}</option>
-                          @endforeach
+                          <option value="Main">Main Course</option>
+                          <option value="Starter">Starter</option>
+                          <option value ="Appetizers">Appetizers</option>
+                          <option value ="Drinks">Drinks</option>
                       </select>
                     </div>
                     <div class="col-md-6">
