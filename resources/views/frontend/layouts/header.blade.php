@@ -151,7 +151,7 @@
                                         class="sr-only">(current)</span></a>
                             </li>
                           
-                            <li class="nav-item dropdown">
+                            {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
                                 <div class="dropdown-menu mt-0" style="background:  #a18257" aria-labelledby="navbarDropdown">
                                 @foreach($servicesnav as $service)
@@ -162,7 +162,7 @@
                                     </div>
                                 @endforeach
                                 </div>
-                            </li>
+                            </li> --}}
                             <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
                             </li> 

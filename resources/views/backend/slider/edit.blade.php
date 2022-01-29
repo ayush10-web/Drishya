@@ -69,10 +69,10 @@
                               <select name="status" class="form-control" id="status" required>
                                 <option value="1" @if ($slider->status == '1')
                                     selected
-                                @endif>Available</option>
+                                @endif>Display</option>
                                 <option value="0" @if ($slider->status == '0')
                                   selected
-                              @endif>Unavailable</option>
+                              @endif>Non-Display</option>
                             </select>
                             </div>
                             <div class="col-md-6">

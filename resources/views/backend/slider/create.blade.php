@@ -67,8 +67,8 @@
                           <label for="slider">Status</label>
                           <select name="status" class="form-control" id="status" required>
                               <option value="" disabled selected>Select Status</option>
-                              <option value="1">Available</option>
-                              <option value="0">Unavailable</option>
+                              <option value="1">Display</option>
+                              <option value="0">Non-Display</option>
                           </select>
                         </div>
                         
