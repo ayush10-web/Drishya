@@ -101,11 +101,14 @@ Route::get('/banquet',[IndexController::class,'banquet'])->name('banquet');
 
 
 // frontend Room SIngle Page 
+Route::get('/room',[FrontendRoomController::class,'room'])->name('drishya.rooms');
+
 Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');
 Route::post('/room/booking/{id}',[FrontendRoomController::class,'booking'])->name('book.room');
 
 //store contact detail from frontend
 Route::post('/conctact/add', [FrontendContactUsController::class, 'add'])->name('contact.add');
+Route::get('/conctact/mark-seen-unseen/{id}',[FrontendContactUsController::class,'markSeenUnseen'])->name('contact.markSeenUnseen');
 
 
 

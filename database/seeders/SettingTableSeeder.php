@@ -62,6 +62,22 @@ class SettingTableSeeder extends Seeder
                 'key' => 'website',
                 'value' => '',
             ],
+            [
+                'key' => 'room',
+                'value' => '',
+            ],
+            [
+                'key' => 'checkin',
+                'value' => '',
+            ],
+            [
+                'key' => 'checkout',
+                'value' => '',
+            ],
+            [
+                'key' => 'roomimage',
+                'value' => '',
+            ]
         ]);
     }
 }

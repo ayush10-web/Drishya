@@ -31,25 +31,33 @@
                   <thead>
                     <tr>
                       <th>S.N.</th>
+                      <th>Name</th>
+                      <th>Number</th>
                       <th>Emai Address</th>
                       <th>Message</th>
                       <th>Status</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     @foreach ($contactus as $key=>$contact)
                       <tr>
                         <td>{{$key + 1}}</td>
-                        <td>{{$contact->email_address}}</td>
+                        <td>{{$contact->name}}</td>
+                        <td>{{$contact->contact_number}}</td>
+                        <td>{{$contact->email}}</td>
                         <td>{{$contact->message}}</td>
                         <td>
                           <?php if($contact->status == '1'){ ?> 
-                            Completed
+                            Unseen
                           <?php }else if($contact->status == '0'){ ?>
-                            Upcomming
+                            Seen
                           <?php } ?>
                         </td>
+                        <td> <a class="fa fa-eye btn btn-primary btn btn-sm" data-toggle="modal" data-target="#exampleModal{{$contact->id}}">
+                          </a> </td>
                       </tr>
+                      @include('backend.contactus.modal',['contact'=>$contact])
                     @endforeach
                    
                   </tbody>
@@ -67,6 +75,7 @@
     </section>
     <!-- /.content -->
   
+
 
 @push('scripts')
     <script>

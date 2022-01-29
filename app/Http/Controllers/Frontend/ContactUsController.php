@@ -17,4 +17,11 @@ class ContactUsController extends Controller
         ]);
         return redirect()->back()->with('success_message','Thankyou for your inquiry. We will reach back to you soon.');
     }
+
+    public function markSeenUnseen($id){
+        $contactUs = ContactUs::find($id);
+        $contactUs->status = !$contactUs->status;
+        $contactUs->save();
+        return redirect()->back()->with('success_message','Message marked {{$contactUs->status?unseen:seen}} succesfully.');
+    }
 }
