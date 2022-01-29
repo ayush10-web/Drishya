@@ -136,6 +136,59 @@
     </div><!--  -->
 </section><!-- product_list -->
 
+<section class="product_list">
+    <div class="container">
+        <div class="product_mark wow bounceInRight"
+             style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; margin-top: -20px;">
+            <h1>Events <span>In Drishya</span></h1>
+            <div class="arrow"></div><!-- arrow -->
+        </div><!-- product_mark -->
+    </div><!-- container -->
+    
+    <div class="product_carousel wow bounceInRight"
+         style="visibility: visible; animation-delay: 1s; animation-name: bounceInRight;">
+        <div class="container">
+            <section class="slider_main">
+                <div class="container container_custom">
+                    <div id="eventSlide" class="carousel slide wow pulse"
+                         style=" visibility: visible; animation-delay: 0.5s; animation-name: pulse;" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ul class="carousel-indicators">
+                                @foreach($events as $key => $event)
+                                <li data-target="#eventSlide" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif"></li>
+                                @endforeach
+                            </ul>
+                            @foreach($events as $key => $event)
+                            <div class="carousel-item @if($key == 0) active @endif slider-descripton">
+                                <img src="{{$event->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
+                                <div class="carousel-caption">
+                                    <p class="animated bounceInRight"
+                                        style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">
+                                        <h3 class="animated bounceInRight"
+                                        style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight;">{{$event->event_name}}</h3>
+                                        <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">Start Date: {{$event->start_date}} | End Date: {{$event->end_date}}</span><br>
+                                        <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">{{$event->description}}</span>
+                                        <div class="services_list" style="background-color: rgba(255, 100, 100, 0);">
+                                            <a href="{{route('event.details',$event->id)}}" style="margin-top:40px;">View Event Details</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                        <a class="carousel-control-prev" href="#eventSlide" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#eventSlide" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+            
+                </div><!-- container -->
+            </section>
+        </div><!-- container -->
+    </div><!--  -->
+</section>
 
 
 <section class="portfolio-section">

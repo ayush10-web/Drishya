@@ -10,6 +10,7 @@ use App\Models\Image;
 use App\Models\ImageRoom;
 use App\Models\Room;
 use App\Models\Service;
+use App\Models\Event;
 use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
@@ -22,7 +23,9 @@ class IndexController extends Controller
         $rooms = Room::with('images')->where('status','A')->latest()->take(5)->get();
         // dd($rooms);
         $menu = "index";
-        return view('frontend.index',compact('sliders','services','rooms','menu'));
+
+        $events = Event::with('images')->latest()->get();
+        return view('frontend.index',compact('sliders','services','rooms','menu', 'events'));
     }
 
     public function contact(){
