@@ -1,7 +1,7 @@
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="footer_logo_lead">
                     @if ($setting['logo'] != null)
                     <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
@@ -10,11 +10,9 @@
                     <!-- <a href="#">About Us</a> -->
                 </div><!-- footer_logo_lead -->
             </div><!-- col -->
-            <div class="col-md-3">
+            <div class="col-md-4 text-center">
                 <div class="footer_links">
                     <h4 class="foot_h4_pad">Useful Links</h4>
-                    <div class="row">
-                        <div class="col-6 col-md-6">
                             <ul class="foot_pad">
                                 <style>
                                     .footer_links ul li>a {
@@ -37,25 +35,10 @@
                                     <a href="">Products</a>
                                 </li>
                             </ul>
-                        </div><!-- col -->
-                        <div class="col-6 col-md-6">
-                            <ul>
-                                <li>
-                                    <a href="">Our Team </a>
-                                </li>
-                                <li>
-                                    <a href="">Career</a>
-                                </li>
-                                <li>
-                                    <a href="#">Projects</a>
-                                </li>
-                            </ul>
-                        </div><!-- col -->
-                    </div><!-- row -->
                 </div><!-- footer_links -->
 
             </div><!-- col -->
-            <div class="col-6 col-md-3">
+            <div class="col-md-4">
                 <div class="footer_links">
                     <h4>Contact Info </h4>
                     <ul>
@@ -69,29 +52,6 @@
                         <li>
                             <i class="fas fa-envelope"> {{$setting['email']}}</i>
                         </li>
-                    </ul>
-                </div><!-- footer_links -->
-            </div><!-- col -->
-            <div class="col-6 col-md-3">
-                <div class="footer_links">
-                    <ul>
-                         <h4 class="h4_branch">Branches</h4>
-                        
-                            <li>
-                                <h6 onclick="" style="color: white; cursor: pointer">dxfcgvhbjnk</a> </h6>
-                                <div id="footerbranch" style="display: none">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-map-marker-alt"></i> addesd
-                                        </li>
-                                       
-                                <li>
-                                    <i class="fas fa-envelope"></i>emailQ@
-                                </li>
-                                </ul>
-                                </div>
-                            </li>
-                        
                     </ul>
                 </div><!-- footer_links -->
             </div><!-- col -->

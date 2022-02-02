@@ -69,18 +69,16 @@
 <section class="list_content">
     <div class="container">
         <div class="row wow slideInUp">
-            <div class="col-md-3" style="padding-top: 15px;">
+            <div class="col-md-4" style="padding-top: 15px;">
                 <div class="services_list">
                     <h2>Our Line Of<span>SERVICES</span></h2>
                     <p>DRISHYA IS ONE OF THE REPUTATED HOTEL AND IS RENOWNED FOR OUR HOSPITALITY AND SERVICES</p>
-                    <a href="#">View All Services</a>
-
                 </div><!-- services_list -->
             </div><!-- col -->
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <div class="row">
-                    @foreach($services as $service)
-                    <div class="col-md-4" style="padding-top: 15px;">
+                    {{-- @foreach($services as $service)
+                    <div class="col-md-4">
                         <div class="services_block_all">
                             <div class="services_block">
                                 <img src="{{$service->image->file_path}}" alt="#"/>
@@ -93,7 +91,26 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach
+                    @endforeach --}}
+                   
+                    </a>
+                    <div class="col-md-6">
+                        <a href="{{route('banquet')}}">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
+                           
+                            <h5 class="card-title text-center">Banquet</h5>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{{route('restaurant')}}">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
+                              <h5 class="card-title text-center">Restaurant</h5>
+                          </div>
+                        </a>
+                    </div>
                 </div>
                  
             </div>

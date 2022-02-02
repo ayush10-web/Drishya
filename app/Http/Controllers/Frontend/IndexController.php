@@ -62,6 +62,7 @@ class IndexController extends Controller
     }
 
     public function banquet(){
-        return view ('frontend.banquet');
+        $menu = "banquet";
+        return view ('frontend.banquet',compact('menu'));
     }
 }
