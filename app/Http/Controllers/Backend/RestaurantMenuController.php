@@ -80,7 +80,7 @@ class RestaurantMenuController extends Controller
          $restaurantmenu->price = $request['menu_price'];
          $restaurantmenu->description = $request['description'];
          $restaurantmenu->status = $request['status'];
-         $restaurantmenu->category=$request['category'];
+         $restaurantmenu->category_id=$request['category'];
 
          $restaurantmenu->update();
          if ($request->hasFile('images')) {

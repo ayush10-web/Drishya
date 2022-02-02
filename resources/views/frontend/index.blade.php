@@ -135,7 +135,7 @@
         </div><!-- container -->
     </div><!--  -->
 </section><!-- product_list -->
-
+@if(count($events)>0)
 <section class="product_list">
     <div class="container">
         <div class="product_mark wow bounceInRight"
@@ -189,7 +189,7 @@
         </div><!-- container -->
     </div><!--  -->
 </section>
-
+@endif
 
 <section class="portfolio-section">
     <div class="container">
@@ -249,7 +249,7 @@
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-dumbbell"></i>
-                    <p>Quick Response<br><span>Softechpark has always striven to <br>deliver timely technical support, a goal that most of our customers<br> agree we deliver on.</span>
+                    <p>Quick Response<br><span> <br>deliver timely technical support, a goal that most of our customers<br> agree we deliver on.</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 

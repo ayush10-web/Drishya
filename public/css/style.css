@@ -213,14 +213,14 @@ p {
 
 .header_opening_closing .fa,
 .fas {
-	color: #a18257;
+	color: #0e334a;
 	font-size: 40px;
 	float: left;
 	/*margin-right: 5%;*/
 }
 .header_opening_closing .fa,
 .far {
-	color: #a18257;
+	color: #0e334a;
 	font-size: 40px;
 	float: left;
 	/*margin-right: 5%;*/
@@ -233,7 +233,7 @@ p {
 
 .header_opening_closing p {
 	font-weight: bold;
-	color: #a18257;
+	color: #0e334a;
 }
 
 .header_opening_closing span {
@@ -243,7 +243,7 @@ p {
 }
 
 .header_quote a {
-	background: #503a02;
+	background: #0e334a;
 	padding: 10px 55px 10px 55px;
 	border-radius: 5px;
 	color: white;
@@ -277,7 +277,7 @@ p {
   z-index: 9999;
 }
 .top_nav {
-	background-color: #a18257 !important;
+	background-color: #0e334a !important;
 }
 
 .top_nav .navbar {
@@ -310,7 +310,7 @@ p {
 }
 
 .bg-light {
-	background-color: #a18257 !important;
+	background-color: #0e334a !important;
 	padding-bottom: 1%;
 }
 
@@ -335,7 +335,7 @@ p {
 	position: relative;
 	z-index: 999;
 	font-family: "Playfair Display", serif;
-	background-color: #a18257 !important;
+	background-color: #0e334a !important;
 	background-size: auto;
 }
 
@@ -387,7 +387,7 @@ p {
 }
 
 .caption_a .caption_color1 {
-	background: #a18257;
+	background: #0e334a;
 	padding: 8px 30px 8px 30px;
 	border: 2px solid white;
 	color: white;
@@ -415,7 +415,7 @@ p {
 }
 
 .image_with_box {
-	background-color: #a18257 !important;
+	background-color: #0e334a !important;
 	background-image: url("../images/group_908.png"),
 		url("../images/group_908.png");
 	background-position: -18% 100%, 118% 100%;
@@ -563,7 +563,7 @@ p {
 .services_list h2 {
 	font-size: 18px;
 	font-weight: normal;
-	border-bottom: 3px solid #a18257;
+	border-bottom: 3px solid #0e334a;
 	font-family: "Playfair Display", serif;
 }
 
@@ -572,7 +572,7 @@ p {
 	font-weight: 600;
 	font-size: 28px;
 	color: white;
-	background-color: #a18257;
+	background-color: #0e334a;
 	margin-top: 1%;
 	margin-bottom: 2%;
 	font-family: "Karla", sans-serif;
@@ -583,7 +583,7 @@ p {
 }
 
 .services_list a {
-	background-color: #a18257;
+	background-color: #0e334a;
 	color: white;
 	padding: 10px 30px 10px 30px;
 	border-radius: 5px;
@@ -686,8 +686,8 @@ p {
 
 .product_list {
 	font-family: "Playfair Display", serif;
-	background-color: #a18257;
-	border-bottom: 20px solid #a18257;
+	background-color: #0e334a;
+	border-bottom: 20px solid #0e334a;
 }
 
 .product_mark {
@@ -701,7 +701,7 @@ p {
 .product_mark:before {
 	content: "";
 	position: absolute;
-	border: 5px solid #a18257;
+	border: 5px solid #0e334a;
 	top: -15%;
 	width: 100%;
 }
@@ -709,7 +709,7 @@ p {
 .product_mark:after {
 	content: "";
 	position: absolute;
-	border: 5px solid #a18257;
+	border: 5px solid #0e334a;
 	bottom: -25%;
 	width: 100%;
 }
@@ -719,10 +719,10 @@ p {
 	position: absolute;
 	width: 18px;
 	height: 18px;
-	border-top: 1px solid #a18257;
-	border-left: 1px solid #a18257;
+	border-top: 1px solid #0e334a;
+	border-left: 1px solid #0e334a;
 	content: "";
-	background: #a18257;
+	background: #0e334a;
 	bottom: -32%;
 	right: 44%;
 	transform: rotate(45deg);
@@ -1269,12 +1269,12 @@ border-bottom: 20px solid #a18257;
 	border: 2px solid grey;
 	margin-bottom: 5%;
 	padding: 10px;
-	box-shadow: -9px -6px 1px 0px #a18257;
-	color: #a18257;
+	box-shadow: -9px -6px 1px 0px #0e334a;
+	color: #0e334a;
 }
 
 .footer {
-	background: #a18257;
+	background: #0e334a;
 	padding-top: 3%;
 	padding-bottom: 2%;
 }
@@ -1317,7 +1317,7 @@ border-bottom: 20px solid #a18257;
 .footer_links i {
 	color: white;
 	font-size: 15px;
-	background: #a18257;
+	background: #0e334a;
 	padding: 8px 10px 8px 10px;
 	margin-right: 3%;
 	float: none;
@@ -1353,7 +1353,7 @@ border-bottom: 20px solid #a18257;
 	list-style: none;
 	float: left;
 	margin-left: 0.4%;
-	background: #a18257;
+	background: #0e334a;
 	padding: 5px 15px 2px 15px;
 }
 
