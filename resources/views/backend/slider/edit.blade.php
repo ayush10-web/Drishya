@@ -52,12 +52,15 @@
                           <label for="slider">Slider Code</label>
                           <select name="slidercode" class="form-control" id="status" required>
                               <option value="" disabled selected>Select Slider Code</option>
-                              <option value="1"@if ($slider->status == 'res')
+                              <option value="res"@if ($slider->status == 'res')
                                 selected
                             @endif>Restaurant</option>
-                              <option value="0" @if ($slider->status == 'home')
+                              <option value="home" @if ($slider->status == 'home')
                                 selected
                             @endif>Home</option>
+                            <option value = "banquet" @if ($slide->status == 'banquet')
+                              selected
+                              @endif>Banquet</option>
                           </select>
                         </div>
                       </div>

@@ -22,6 +22,11 @@ class ContactUsController extends Controller
         $contactUs = ContactUs::find($id);
         $contactUs->status = !$contactUs->status;
         $contactUs->save();
-        return redirect()->back()->with('success_message','Message marked {{$contactUs->status?unseen:seen}} succesfully.');
+        if ($contactUs->status==0) {
+            $status = "seen";
+        } else {
+            $status = "unseen";
+        }
+        return redirect()->back()->with('success_message','Message marked '.$status.' succesfully.');
     }
 }

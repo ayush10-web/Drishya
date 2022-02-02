@@ -53,6 +53,7 @@
                           <option value="" disabled selected>Select Slider Code</option>
                           <option value="res">Restaurant</option>
                           <option value="home">Home</option>
+                          <option value="banquet">Banquet</option>
                       </select>
                     </div>
                     <div class="col-md-6">
