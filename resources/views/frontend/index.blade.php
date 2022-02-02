@@ -207,32 +207,11 @@
     </div><!--  -->
 </section>
 @endif
-
-<section class="portfolio-section">
-    <div class="container">
-        <div class="hr_head wow fadeInRight portfolio-heading">    
-            <h4 align="center">OUR PORTFOLIO</h4>
-        </div>
-            <div id="portfolio-items">
-               
-                <div class="slide">
-                        <img src="/images/IMG1.jpg" style="height: 140px;" width="400%" >
-                </div>
-                <div class="slide">
-                    <img src="/images/IMG2.jpg" alt="#" class="img-responsive" style="height: 140px;" width="400%" >
-            </div>
-            <div class="slide">
-                <img src="/images/IMG3.jpg" alt="#" class="img-responsive" style="height: 140px;" width="400%" >
-        </div>
-            </div>
-    </div>
-</section>
 <section class="choose_blk">
     <div class="container">
         <div class="choose_head wow fadeInDown">
             <h1>Why choose us ?</h1>
-            <p>Our projects are always successful and we always have focused on delivering products on time.<br>We
-                are one of the most favored software company in the market.</p>
+            <p>We Are Very The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.</p>
         </div><!-- choose_head -->
         <div class="row wow flipInX">
             
