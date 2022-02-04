@@ -69,18 +69,16 @@
 <section class="list_content">
     <div class="container">
         <div class="row wow slideInUp">
-            <div class="col-md-3" style="padding-top: 15px;">
+            <div class="col-md-4" style="padding-top: 15px;">
                 <div class="services_list">
                     <h2>Our Line Of<span>SERVICES</span></h2>
                     <p>DRISHYA IS ONE OF THE REPUTATED HOTEL AND IS RENOWNED FOR OUR HOSPITALITY AND SERVICES</p>
-                    <a href="#">View All Services</a>
-
                 </div><!-- services_list -->
             </div><!-- col -->
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <div class="row">
-                    @foreach($services as $service)
-                    <div class="col-md-4" style="padding-top: 15px;">
+                    {{-- @foreach($services as $service)
+                    <div class="col-md-4">
                         <div class="services_block_all">
                             <div class="services_block">
                                 <img src="{{$service->image->file_path}}" alt="#"/>
@@ -93,7 +91,26 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach
+                    @endforeach --}}
+                   
+                    </a>
+                    <div class="col-md-6">
+                        <a href="{{route('banquet')}}">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
+                           
+                            <h5 class="card-title text-center">Banquet</h5>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{{route('restaurant')}}">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
+                              <h5 class="card-title text-center">Restaurant</h5>
+                          </div>
+                        </a>
+                    </div>
                 </div>
                  
             </div>
@@ -190,32 +207,11 @@
     </div><!--  -->
 </section>
 @endif
-
-<section class="portfolio-section">
-    <div class="container">
-        <div class="hr_head wow fadeInRight portfolio-heading">    
-            <h4 align="center">OUR PORTFOLIO</h4>
-        </div>
-            <div id="portfolio-items">
-               
-                <div class="slide">
-                        <img src="/images/IMG1.jpg" style="height: 140px;" width="400%" >
-                </div>
-                <div class="slide">
-                    <img src="/images/IMG2.jpg" alt="#" class="img-responsive" style="height: 140px;" width="400%" >
-            </div>
-            <div class="slide">
-                <img src="/images/IMG3.jpg" alt="#" class="img-responsive" style="height: 140px;" width="400%" >
-        </div>
-            </div>
-    </div>
-</section>
 <section class="choose_blk">
     <div class="container">
         <div class="choose_head wow fadeInDown">
             <h1>Why choose us ?</h1>
-            <p>Our projects are always successful and we always have focused on delivering products on time.<br>We
-                are one of the most favored software company in the market.</p>
+            <p>We Are Very The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.</p>
         </div><!-- choose_head -->
         <div class="row wow flipInX">
             
