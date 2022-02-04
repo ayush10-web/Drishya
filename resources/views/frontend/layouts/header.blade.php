@@ -167,7 +167,7 @@
                                 <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
                             </li> 
                             <li class="nav-item ">
-                                <a class="nav-link" href="">Banquet</a>
+                                <a class="nav-link" href="{{('banquet')}}">Banquet</a>
                             </li> 
                             <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>

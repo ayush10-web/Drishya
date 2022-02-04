@@ -4,73 +4,62 @@
 
     <div class="container">
         <div class="banner_abt">
-            <h1>ABOUT US</h1>
-            <img src="images/test.jpeg">
+            <h1>Banquet</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" style="height:400px;">
+                    <ul class="carousel-indicators">
+                        @foreach ($sliders as $key => $slides)
+                            <li data-target="#demo" data-slide-to="{{ $key }}"
+                                class=" @if ($key == 0) active @endif"></li>
+                        @endforeach
+                    </ul>
+                    @foreach ($sliders as $key => $slides)
+                        <div class="carousel-item @if ($key == 0) active @endif">
+                            <img class="d-block w-100" src="{{ $slides->images[0]->file_path }}" alt="First slide" style="height:399px;">
+                        </div>
+                    @endforeach
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
             <p>
           {{-- {!! $about->description !!} --}}
-          Drishya
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
             </p>
         </div><!-- banner_abt -->
     </div><!-- container -->
 </section><!-- about_top_banner -->
 
-<section class="team_blk">
+<section class="career_blk contact_blk" style =" max-width: 1000px;
+margin: auto;">
+<div class="row no-pad">
+<div class="col-md-6">
+    <div class="contact_form">
+        <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
+        <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
+            @csrf
+            <input type="text" name="name" placeholder="Your Name" required>
 
-    <div class="container">
-        <div class="team_detail">
-            <h1>OUR TEAM</h1>
-            <div class="row">
-                <div class="col-md-5"></div><!-- col -->
+            <input type="email" name="email" placeholder="Your E-mail Address" required>
 
-                <div class="col-md-7 team_show">
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p>Test<span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p><span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p>
-                                    Test<span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
+            <input type="text" name="contact_number" placeholder="Your Contact Number">
+            <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
 
-                        <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="" alt="#">
-                                <p>Test<span>Test</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                       <!-- <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="images/received_3467839840380570.png" alt="#">
-                                <p>Pooja Khanal<span> UK Branch Head</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                        <!-- <div class="col-md-4">
-                            <div class="team_img">
-                                <img src="images/received_491793791551368.png " alt="#">
-                                <p>Rajan Kafle<span> Marketing Head (UK Branch)</span></p>
-                            </div><!-- team_img -->
-                        </div><!-- col -->
-                    </div><!-- row -->
-                </div><!-- col -->
-            </div><!-- row -->
-        </div><!-- team detail --> 
+            <button class="btn btn-primary">Submit</button>
 
-    </div><!-- container -->
+        </form>
+    </div><!-- contact_form -->
+</div><!-- col -->
+</div>
+</section>
 
-    <div class="team">
-</section><!-- team_blk -->
 @endsection

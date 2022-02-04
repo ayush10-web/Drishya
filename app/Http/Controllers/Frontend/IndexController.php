@@ -62,6 +62,8 @@ class IndexController extends Controller
     }
 
     public function banquet(){
-        return view ('frontend.banquet');
+        $menu = "banquet";
+        $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
+        return view ('frontend.banquet',compact('sliders','menu'));
     }
 }
