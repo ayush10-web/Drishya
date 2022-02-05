@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="div" style="">
-                <h1 style="color: #cb9f72"><strong>R O O M S</strong></h1>
+                <h1 style="color: #0e334a"><strong>R O O M S</strong></h1>
             </div>
             
             <p>{{$setting['room']}}</p>
@@ -32,7 +32,7 @@
     </div>
     <br>
     <br>
-    <div class="text-center"style="color: #cb9f72"><h1><u><u>AVAILABLE ROOMS</u></u></h1></div>
+    <div class="text-center"style="color: #0e334a"><h1><u><u>AVAILABLE ROOMS</u></u></h1></div>
     <br>
     <div class="row" >
         @foreach ($rooms as $room)
@@ -40,7 +40,7 @@
                 <a href="{{route('room.details',$room->id)}}">
                     <div class="card">
                       <div class="card-body">
-                        <img src="{{$room->images[0]->file_path}}" alt="" srcset="">
+                        <img src="{{$room->images[0]->file_path}}" alt="" style="height: 200px" srcset="">
                         <br>
                         <br>
                         <strong>Capacity: {{$room->capacity}}</strong> <br>
@@ -54,4 +54,6 @@
 
 </div>
 </section>
+<br>
+<br>
 @endsection

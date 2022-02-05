@@ -37,7 +37,7 @@ gtag('config', 'UA-147460903-1');
     <link rel='stylesheet' href={{asset('css/hover.css')}} type='text/css' media='all' />
     <link rel='stylesheet' href="{{asset('css/mobile.css')}}"type='text/css' media='all' />
    <!--  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"> -->
-   <link rel="shortcut icon" href="{{ asset('images/fav_icon.png')}}">
+   <link rel="shortcut icon" href="{{ asset('images/logo.jpeg')}}">
 
 
 </head>
