@@ -255,57 +255,6 @@
     </div><!-- container -->
 </section><!-- choose_blk -->
 
-
-<section class="testimonials">
-    <div class="container" style="margin-top: -17px;">
-        <div class="hr_head wow fadeInRight portfolio-heading" style="margin-bottom: -55px;">    
-            <h4 align="center">TESTIMONIALS</h4>
-        </div>
-        <div class="card col-md-12 mt-2" style="margin-bottom: -30px;">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
-                <div class="w-100 carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-md-12 d-flex justify-content-center" >
-                                        <img src="https://cdn.pixabay.com/photo/2021/01/27/15/16/girl-5955207_960_720.jpg" alt="#" style="height: 80px; width:80px; border-radius: 50%">
-                                    </div>
-                                </div>
-                                <div class="col-md-12 d-flex justify-content-center">
-                                    <h5>Loreint</h5>
-                                </div>
-                                <div class="col-md-12 d-flex justify-content-center " >
-                                    Great Place
-                                </div>
-                                <div class="col-md-12 d-flex justify-content-center">
-                                    <small class="description-testi">I suggest all to visit here for great meal</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-md-12 d-flex justify-content-center" >
-                                        <img src="https://cdn.pixabay.com/photo/2021/01/27/15/16/girl-5955207_960_720.jpg" alt="#" style="height: 80px; width:80px; border-radius: 50%">
-                                    </div>
-                                </div>
-                                <div class="col-md-12 d-flex justify-content-center">
-                                    <h5>Drishya</h5>
-                                </div>
-                                <div class="col-md-12 d-flex justify-content-center " >
-                                    Peaceful
-                                </div>
-                                <div class="col-md-12 d-flex justify-content-center">
-                                    <small class="description-testi">Want some peace place to spen your weekend? then Drishya is the best place to be.</small>
-                                </div>
-                            
-                            </div>
-                        </div>
-            </div>
-        </div>
-    </div><!-- container -->
-</section>
-
 <br>
 
 @endsection
