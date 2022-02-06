@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <div class="row mb-2">
       <div class="col-sm-6">
-        <h1 class="m-0"><u>Contact Us Lists</u> </h1>
+        <h1 class="m-0"><u>Received Messages</u> </h1>
       </div><!-- /.col -->
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
@@ -34,7 +34,7 @@
                       <th>S.N.</th>
                       <th>Name</th>
                       <th>Number</th>
-                      <th>Emai Address</th>
+                      <th>Email Address</th>
                       <th>Message</th>
                       <th>Status</th>
                       <th>Action</th>

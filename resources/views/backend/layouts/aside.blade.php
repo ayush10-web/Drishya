@@ -148,21 +148,12 @@
             </ul>
           </li>
           <li class="nav-item {{request()->is('backend/contactus*') ? 'menu-open' : '' }}">
-            <a href="#" class="nav-link">
+            <a href="{{route('contactus.index')}}" class="nav-link">
               <i class="nav-icon fa fa-address-book"></i>
               <p>
-                Contact Us
-                <i class="right fas fa-angle-left"></i>
+                Messages
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{route('contactus.index')}}" class="nav-link {{request()->is('backend/contactus*') ? 'active' : '' }}">
-                  <i class="fa fa-address-book nav-icon"></i>
-                  <p>Contact Details</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item {{request()->is('backend/bookings*') ? 'menu-open' : '' }}">
             <a href="#" class="nav-link">
