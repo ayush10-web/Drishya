@@ -15,10 +15,29 @@ class RoomController extends Controller
     public function view($id)
     {
        $room = Room::with('images')->where('id',$id)->first();
+       $booking = Booking::where('room_id',$id)->where('from', '>=', date('Y-m-d'))->get();
+       
+       $dateArray = [];
+          if (count($booking) > 0) {
+              foreach ($booking as $value) {
+                $startDate = strtotime($value->from);
+                $endDate = strtotime($value->to);
+                for ($currentDate = $startDate; $currentDate < $endDate; 
+                                                $currentDate += (86400)) {
+                                                        
+                    $date = date('Y-m-d', $currentDate);
+                    if (!in_array($date, $dateArray))
+                        {
+                            $dateArray[] = $date;
+                        }
+                }
+              }
+          }  
+    //    dd($dateArray);
        $rooms = Room::with('images')->where('status','A')->latest()->take(2)->get();
        $menu = 'rooms';
 
-       return view('frontend.roomdetails',compact('room','rooms','menu'));
+       return view('frontend.roomdetails',compact('room','rooms','menu','dateArray'));
     }
     public function booking(Request $request,$id)
     {
@@ -47,7 +66,42 @@ class RoomController extends Controller
             $roomimage = Image::where('id',$sett->value)->first();
         }
         $menu = 'rooms';
-        $rooms = Room::with('images')->where('status','A')->latest()->get();
+        $rooms = Room::with('images')->latest()->get();
         return view('frontend.room',compact('rooms','roomimage','menu'));
+    }
+    public function checkDate(Request $request)
+    {
+        $checkdate = $request->date;
+        $id = $request->id;
+
+       $room = Room::with('images')->where('id',$id)->first();
+       $booking = Booking::where('room_id',$id)->where('from', '>=', date('Y-m-d'))->get();
+       
+       $dateArray = [];
+          if (count($booking) > 0) {
+              foreach ($booking as $value) {
+                $startDate = strtotime($value->from);
+                $endDate = strtotime($value->to);
+                for ($currentDate = $startDate; $currentDate < $endDate; 
+                                                $currentDate += (86400)) {
+                                                        
+                    $date = date('Y-m-d', $currentDate);
+                    if (!in_array($date, $dateArray))
+                        {
+                            $dateArray[] = $date;
+                        }
+                }
+              }
+          }  
+          if (in_array($checkdate, $dateArray)) {
+            return response()->json('y');
+          } else {
+            return response()->json('n');
+          }
+          
+        return response()->json([
+            $date,
+            $id
+        ]);
     }
 }
