@@ -14,10 +14,10 @@
                     <div class="col-sm-2" >
                           <i class="far fa-clock fa-4x"></i>
                     </div>
-                    <div class="col-sm-3" style="color: #cb9f72; margin-right:-25px;">
+                    <div class="col-sm-3" style="color: #0e334a; margin-right:-25px;">
                         <strong>CHECK IN <br> {{$setting['checkin']}}</strong>
                     </div>
-                    <div class="col-sm-3" style=" border-left: 6px solid green; color: #cb9f72" >
+                    <div class="col-sm-3" style=" border-left: 6px solid green; color: #0e334a" >
                         <strong>CHECK OUT <br> {{$setting['checkout']}}</strong>
                     </div>
                 </div>

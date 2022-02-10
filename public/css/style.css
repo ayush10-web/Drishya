@@ -940,7 +940,7 @@ div#slick-slide01{
 
 .choose_head h1 {
 	font-size: 25px;
-	color: #a18257;;
+	color: #0e334a;;
 }
 
 .choose_head p {
@@ -956,7 +956,7 @@ div#slick-slide01{
 	padding-top: 2%;
 	padding-bottom: 2%;
 	/* border-bottom: 20px solid #af0000; */
-	border-bottom: 20px solid #a18257;
+	border-bottom: 20px solid #0e334a;
 }
 
 .choose_block_list i {
@@ -989,7 +989,7 @@ div#slick-slide01{
 }
 
 .choose_block_list:hover {
-	background-color: #a18257;
+	background-color: #0e334a;
 	color: white;
 	box-shadow: none;
 }
