@@ -36,6 +36,17 @@
                             </a>
                           </div>
                       </div>
+                      @if (count($dateArray) > 0)
+                      <div class="note text-danger">Note: This room is not available for these days&nbsp;(@foreach ($dateArray as $item)
+                        
+                        @if($loop->last)
+                        <span>{{$item}}.</span>
+                        @else
+                        <span>{{$item}}, &nbsp;</span>
+                        @endif
+                    @endforeach)</div>
+                      @endif
+                     
                       <div class="div text-center">
                          <strong>Room's Capacity: {{$room->capacity}}</strong> <br>
                           <strong>Floor Number:{{$room->floor_number}}</strong> <br>
@@ -44,6 +55,7 @@
                           <i class="card-text">{{$room->description}}</i>
                         <br>
                         <br>
+                        <input type="hidden" id="roomId" value="{{$room->id}}">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                           Book ROom
@@ -153,6 +165,8 @@
     function dsfgrthyju() {
        var from = $('#fromdate').val();
        var to = $('#todate').val();
+       var roomid = $('#roomId').val();
+       
        $('#todate').attr("min",from);
        var date1 = new Date(from);
         var date2 = new Date(to);
@@ -160,19 +174,56 @@
 
         $('#days').val(diffDays);
         $('#sendDays').val(diffDays);
+        var token = '{!! csrf_token() !!}';
+          $.ajax({
+            url: "/room/check-availability",
+            type: 'GET',
+            data: {
+              "id": roomid,
+                "date": from,
+            },
+            success: function(success) {
+              console.log(success);
+              if (success == 'y') {
+                alert('Sorry, room is not available for this date.')
+                $('#fromdate').val('')
+              }
+             }
+          });
 
     }
     function efgrthyjumk() {
       var from = $('#fromdate').val();
        var to = $('#todate').val();
+       var roomid = $('#roomId').val();
+
        var date1 = new Date(from);
         var date2 = new Date(to);
         var diffDays = parseInt((date2 - date1) / (1000 * 60 * 60 * 24), 10); 
         $('#days').val(diffDays);
 
         $('#sendDays').val(diffDays);
+        var token = '{!! csrf_token() !!}';
+          $.ajax({
+            url: "/room/check-availability",
+            type: 'GET',
+            data: {
+              "id": roomid,
+                "date": to,
+            },
+            success: function(success) {
+              console.log(success);
+              if (success == 'y') {
+                alert('Sorry, room is not available for this date.')
+                $('#todate').val('')
+              }
+             }
+          });
 
     }
+
+            
+
 </script>
 @endpush
 @endsection

@@ -121,6 +121,8 @@ Route::get('/banquet',[IndexController::class,'banquet'])->name('banquet');
 
 // frontend Room SIngle Page 
 Route::get('/room',[FrontendRoomController::class,'room'])->name('drishya.rooms');
+Route::get('/room/check-availability',[FrontendRoomController::class,'checkDate']);
+
 
 Route::get('/room/{id}',[FrontendRoomController::class,'view'])->name('room.details');
 Route::post('/room/booking/{id}',[FrontendRoomController::class,'booking'])->name('book.room');

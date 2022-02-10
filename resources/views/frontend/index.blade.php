@@ -132,7 +132,7 @@
 
          <div class="col-md-3" style="padding-top: 0;">
             <div class="services_list" >
-                <a href="#" style="margin-top:-10px; margin-left: 80px;">View All Rooms</a>
+                <a href="{{route('drishya.rooms')}}" style="margin-top:-10px; margin-left: 80px;">View All Rooms</a>
             </div>
         </div>
         <div class="container">
