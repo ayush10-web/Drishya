@@ -14,6 +14,7 @@ class ContactUsController extends Controller
             'contact_number' => $request['contact_number'],
             'email' => $request['email'],
             'message' => $request['message'],
+            'message_from' => $request['message_from'],
         ]);
         return redirect()->back()->with('success_message','Thankyou for your inquiry. We will reach back to you soon.');
     }

@@ -11,7 +11,15 @@ class ContactUsController extends Controller
     public function index()
     {
        $page_name = "ContactUs";
-       $contactus = ContactUs::latest()->get();
+       $contactus = ContactUs::latest()->where('message_from','m')->get();
     //    dd($services);
        return view('backend.contactus.index',compact('page_name','contactus'));
-    }}
+    }
+   public function banquet()
+   {
+      $page_name = "Banquet Inquiries";
+      $contactus = ContactUs::latest()->where('message_from','b')->get();
+   //    dd($services);
+      return view('backend.contactus.banquetInquiry',compact('page_name','contactus'));
+   }
+}
