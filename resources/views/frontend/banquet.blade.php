@@ -5,7 +5,7 @@
 <section class="about_top_banner">
 
     <div class="container">
-        <div class="banner_abt">
+        <div class="banner_banquet">
             <h1>Banquet</h1>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" style="height:400px;">
@@ -68,5 +68,4 @@ margin-bottom: 50px; margin-left:300px;">
 </div>
 
 </section>
-
 @endsection

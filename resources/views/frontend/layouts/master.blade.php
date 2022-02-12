@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Drishya</title>
+    <title>Drishya Hotel & Restaurant</title>
 <meta
   name="description"           
-  content="Softechpark is a software and IT company based in Nepal
- which provides complete IT solution, web designing, Mobile app development, 
-CMS, Ecommerce Websites, IT support,ebilling.">
+  content="Drishya is one of the lively place to be in kathmandu valley right now.
+   As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it. ">
     <meta charset="utf-8">
-    <meta tag="It company in Kathmandu nepal,website design,list of it company in nepal,software development company in nepal,ebilling,best website desginer in nepal,app development company,dairy management,project management,ecommerce"
-   <meta name="keywords" content="It company in Kathmandu nepal,website design,list of it company in nepal,software development company in nepal,ebilling,best website desginer in nepal,app development company,dairy management,project management,ecommerce"
+    <meta tag="Drishya is one of the lively place to be in kathmandu valley right now.
+    As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it."
+   <meta name="keywords" content="Drishya is one of the lively place to be in kathmandu valley right now.
+   As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it."
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="KwlJzJeCLJBUSXYnTahL18KQjA8UFE8nNg6iGv6rkZo" />
@@ -22,7 +23,7 @@ window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
 gtag('config', 'UA-147460903-1');
 </script>
-    <title>Softechpark | Software company in Nepal</title>
+    <title>Drishya Hotel & Restaurant</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" />

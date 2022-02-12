@@ -101,22 +101,22 @@
                     <h4 class="text-center"><u>Useful Links</u></h4><br>
                     <ul style="color:white; margin-left:110px;">
                         <li>
-                            <a href="#" style="color:white"> <i>Home</i> </a>
+                            <a href="{{route('index')}}" style="color:white"> <i>Home</i> </a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>Rooms</i></a>
+                            <a href="{{route('drishya.rooms')}}" style="color:white"><i>Rooms</i></a>
                         </li>
                         <li>
-                            <a href="#" style="color:white"><i>Banquet</i></a>
+                            <a href="{{('banquet')}}" style="color:white"><i>Banquet</i></a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>Restaurant</i></a>
+                            <a href="{{('restaurant')}}" style="color:white"><i>Restaurant</i></a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>Contact Us</i></a>
+                            <a href="{{route('contact')}}" style="color:white"><i>Contact Us</i></a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>About Us</i></a>
+                            <a href="{{('about')}}" style="color:white"><i>About Us</i></a>
                         </li>
                     </ul>
                 </div>
@@ -139,19 +139,19 @@
                     <br><br>
                     <ul style="position: relative; left:70px;">
                         <li style="display: inline">
-                            <a href="{{$setting['facebook']}}"><i class="fab fa-facebook-f fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x text-white" aria-hidden="true"></i></a>
                         </li> &nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['twitter']}}"><i class="fab fa-twitter fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['twitter']}}" target='_blank'><i class="fab fa-twitter fa-1x text-white" aria-hidden="true"></i></a>
                         </li>&nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['instagram']}}"><i class="fab fa-instagram fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['instagram']}}" target='_blank'><i class="fab fa-instagram fa-1x text-white" aria-hidden="true"></i></a>
                         </li>&nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['youtube']}}"><i class="fab fa-youtube fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['youtube']}}" target='_blank'><i class="fab fa-youtube fa-1x text-white" aria-hidden="true"></i></a>
                         </li>&nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['website']}}"><i class="fab fa-google-plus-g fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['website']}}" target='_blank'><i class="fab fa-google-plus-g fa-1x text-white" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>

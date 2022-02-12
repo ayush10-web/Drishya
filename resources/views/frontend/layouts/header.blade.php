@@ -132,6 +132,7 @@
         </div><!-- row -->
     </div><!-- container -->
 </section><!-- header_logo -->
+<div style='width:100%; background-color:white;height:3px;'></div>
 <section id="main_navigation" class="top_nav">
     <div class="container">
         <div class="nav_search clearfix">
@@ -166,7 +167,7 @@
                             <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
                             </li> 
-                            <li class="nav-item ">
+                            <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{('banquet')}}">Banquet</a>
                             </li> 
                             <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">

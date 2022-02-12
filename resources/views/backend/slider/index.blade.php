@@ -48,8 +48,10 @@
                         <td>{{$slider->description}}</td>
                         <td>@if($slider->slider_code == 'res')
                           Restaurant
-                          @else
+                          @elseif($slider->slider_code == 'home')
                           Home
+                          @else
+                          Banquet
                           @endif
                          </td>
                         <td>@if($slider->status == '1')

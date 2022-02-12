@@ -18,10 +18,10 @@
                     <img src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
                         <p class="animated bounceInRight"
-                            style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">
+                            style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">
                             <h3 class="animated bounceInRight"
-                            style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight;">Title</h3>
-                            <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">{{$slides->description}}</span>
+                            style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight;">{{$slides->slider_name}}</h3>
+                            <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">{{$slides->description}}</span>
                         </p>
                     </div>
                 </div>
@@ -218,14 +218,7 @@
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-award"></i>
-                    <p>Best Service <br>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "</p>
-                </div><!-- choose_block_list -->
-            </div><!-- col -->
-            
-            <div class="col-6 col-md-3">
-                <div class="choose_block_list">
-                    <i class="far fa-gem"></i>
-                    <p>High quality Deliverables <br><span>We go beyond just<br> delivering research results in your projects</span></p>
+                    <p>Best Service <br><span>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
@@ -234,7 +227,7 @@
                     <p>Experienced Team<br><span>We take great pride<br> in our work and <br>strive for <br>consistent excellence.</span>
                     </p>
                 </div><!-- choose_block_list -->
-            </div><!-- col --> =
+            </div><!-- col --> 
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-trophy"></i>
@@ -255,6 +248,8 @@
     </div><!-- container -->
 </section><!-- choose_blk -->
 
+<section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.743903426665!2d85.28259231506178!3d27.694309082797293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19dffb5c3e1f%3A0xb1b59d70fb2b8c55!2sDrishya%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2smy!4v1644655525665!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
 <br>
-
 @endsection

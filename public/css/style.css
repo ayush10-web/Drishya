@@ -204,23 +204,23 @@ p {
 .header_logo {
 	    padding-top: 0.5%;
     padding-bottom: 0.5%;
+	background-color: #0e334a;
 }
 
 .header_logo img {
-	width: 171.683px;
-	height: 60px;
+	width: 171px;
 }
 
 .header_opening_closing .fa,
 .fas {
-	color: #0e334a;
+	color: white;
 	font-size: 40px;
 	float: left;
 	/*margin-right: 5%;*/
 }
 .header_opening_closing .fa,
 .far {
-	color: #0e334a;
+	color: white;
 	font-size: 40px;
 	float: left;
 	/*margin-right: 5%;*/
@@ -233,7 +233,7 @@ p {
 
 .header_opening_closing p {
 	font-weight: bold;
-	color: #0e334a;
+	color: white;
 }
 
 .header_opening_closing span {
@@ -243,11 +243,12 @@ p {
 }
 
 .header_quote a {
-	background: #0e334a;
+	background: white;
 	padding: 10px 55px 10px 55px;
 	border-radius: 5px;
-	color: white;
+	color: #0e334a;
 	display: inline-block;
+	font-weight: bold;
 }
 
 .header_logo .border_right {
@@ -258,7 +259,7 @@ p {
 	content: "";
 	position: absolute;
 	height: 60%;
-	top: 30%;
+	top: 10%;
 	right: 0;
 	bottom: 0;
 	border: 1px solid rgb(112, 112, 112);
@@ -416,8 +417,6 @@ p {
 
 .image_with_box {
 	background-color: #0e334a !important;
-	background-image: url("../images/group_908.png"),
-		url("../images/group_908.png");
 	background-position: -18% 100%, 118% 100%;
 	background-repeat: no-repeat;
 	background-blend-mode: soft-light;
@@ -969,11 +968,11 @@ div#slick-slide01{
 .choose_block_list p {
 	font-size: 15px;
 	margin-top: 5%;
-	color: #171717;
+	color: #000;
 }
 
 .choose_block_list span {
-	color: rgba(119, 119, 119, 1);
+	color: rgb(5, 5, 5);
 	margin-top: 4%;
 	display: block;
 }
@@ -1000,6 +999,10 @@ div#slick-slide01{
 }
 
 .choose_block_list:hover span {
+	color: white;
+}
+
+.choose_block_list:hover p {
 	color: white;
 }
 
@@ -1926,13 +1929,13 @@ textarea {
 
 .right_career_img {
 	position: absolute;
-	background-color: #d9c222;
+	background-color: #0e334a;
 	height: 55%;
 	width: 85%;
 	transform: rotate(50deg);
 	top: 95%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(211 204 155);
+	box-shadow: -63px -77px 0px 6px rgb(118 169 193);
 	right: -40%;
 }
 
@@ -2078,13 +2081,13 @@ textarea {
 .left_contact_img {
 	left: -42%;
 	position: absolute;
-	background-color: #d9c222;
+	background-color: #0e334a;
 	height: 45%;
 	width: 100%;
 	transform: rotate(45deg);
 	top: 47%;
 	border-radius: 16%;
-	box-shadow: -63px -77px 0px 6px rgb(211 204 155);
+	box-shadow: -63px -77px 0px 6px rgb(118 169 193);
 
 }
 
@@ -2107,7 +2110,20 @@ textarea {
 	padding-top: 2%;
 }
 
+.banner_restaurant h1 {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
 
+.banner_restaurant h1:after {
+	content: "";
+	position: absolute;
+	border: 1px solid black;
+	left: 0;
+	width: 32.5%;
+	bottom: 0%;
+}
 /*.......................................about us page..................................*/
 
 
@@ -2122,9 +2138,25 @@ textarea {
 	position: absolute;
 	border: 1px solid black;
 	left: 0;
-	width: 11%;
+	width: 17%;
 	bottom: 0%;
 }
+
+.banner_banquet h1 {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+.banner_banquet h1:after {
+	content: "";
+	position: absolute;
+	border: 1px solid black;
+	left: 0;
+	width: 14%;
+	bottom: 0%;
+}
+
 
 .right_abt_overlay {
 	/*	position: absolute;
