@@ -155,6 +155,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item {{request()->is('backend/banquet/inquiries') ? 'menu-open' : '' }}">
+            <a href="{{route('banquet.inquiry')}}" class="nav-link">
+              <i class="nav-icon fa fa-address-book"></i>
+              <p>
+                Banquet Inquiry
+              </p>
+            </a>
+          </li>
           <li class="nav-item {{request()->is('backend/bookings*') ? 'menu-open' : '' }}">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-bed"></i>
