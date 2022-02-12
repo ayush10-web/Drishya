@@ -7,30 +7,7 @@
     <div class="container">
         <div class="banner_banquet">
             <h1>Banquet</h1>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" style="height:400px;">
-                    <ul class="carousel-indicators">
-                        @foreach ($sliders as $key => $slides)
-                            <li data-target="#demo" data-slide-to="{{ $key }}"
-                                class=" @if ($key == 0) active @endif"></li>
-                        @endforeach
-                    </ul>
-                    @foreach ($sliders as $key => $slides)
-                        <div class="carousel-item @if ($key == 0) active @endif">
-                            <img class="d-block w-100" src="{{ $slides->images[0]->file_path }}" alt="First slide" style="height:399px;">
-                        </div>
-                    @endforeach
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+            
            
         </div><!-- banner_abt -->
         <p>
@@ -41,31 +18,56 @@
     </div><!-- container -->
 </section><!-- about_top_banner -->
 
-<section class="career_blk contact_blk" style =" max-width: 700px;
-margin-bottom: 50px; margin-left:300px;">
-<div class="container">
-    <div class="row no-pad">
-        <div class="col-md-12">
-            <div class="contact_form">
-                <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
-                <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
-                    @csrf
-                    <input type="text" name="name" placeholder="Your Name" required>
-        
-                    <input type="email" name="email" placeholder="Your E-mail Address" required>
-                    <input type="hidden" name="message_from" value="b">
-        
-        
-                    <input type="text" name="contact_number" placeholder="Your Contact Number">
-                    <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
-        
-                    <button class="btn btn-primary">Submit</button>
-        
-                </form>
-            </div><!-- contact_form -->
-        </div><!-- col -->
+<section style="margin-bottom: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="row overflow-auto" style="height: 680px;">
+                    <div class="col-sm-4" style="padding-left:5px;padding-right:5px;">
+                        @for ($i = 0; $i < count($sliders); $i=$i+3)
+                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$i}}">
+                                <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
+                            </a>
+                        @endfor
+                    </div>
+                    <div class="col-sm-4" style="padding-left:5px;padding-right:5px;">
+                       @for ($i = 1; $i < count($sliders); $i=$i+3)
+                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$i}}">
+                                <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
+                            </a>
+                        @endfor
+                    </div>
+                    <div class="col-sm-4" style="padding-left:5px;padding-right:5px;">
+                        @for ($i = 2; $i < count($sliders); $i=$i+3)
+                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$i}}">
+                                <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
+                            </a>
+                        @endfor
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="contact_form" style="background-color: #0e334a; padding:20px;">
+                    <h1 style="color:white;">If you have any inquiries then please feel free to contact us.</h1>
+                    <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
+                        @csrf
+                        <input type="text" name="name" placeholder="Your Name" required>
+            
+                        <input type="email" name="email" placeholder="Your E-mail Address" required>
+                        <input type="hidden" name="message_from" value="b">
+            
+            
+                        <input type="text" name="contact_number" placeholder="Your Contact Number">
+                        <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
+            
+                        <button class="btn btn-primary">Submit</button>
+            
+                    </form>
+                </div><!-- contact_form -->
+            </div>
+            @include('frontend.sliderImagePreviewModal',['images'=>$sliders])
         </div>
-</div>
-
+        
+    </div>
 </section>
 @endsection
