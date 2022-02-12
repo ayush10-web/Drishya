@@ -104,19 +104,19 @@
                             <a href="#" style="color:white"> <i>Home</i> </a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>Rooms</i></a>
+                            <a href="{{route('drishya.rooms')}}" style="color:white"><i>Rooms</i></a>
                         </li>
                         <li>
-                            <a href="#" style="color:white"><i>Banquet</i></a>
+                            <a href="{{('banquet')}}" style="color:white"><i>Banquet</i></a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>Restaurant</i></a>
+                            <a href="{{('restaurant')}}" style="color:white"><i>Restaurant</i></a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>Contact Us</i></a>
+                            <a href="{{route('contact')}}" style="color:white"><i>Contact Us</i></a>
                         </li>
                         <li>
-                            <a href="" style="color:white"><i>About Us</i></a>
+                            <a href="{{('about')}}" style="color:white"><i>About Us</i></a>
                         </li>
                     </ul>
                 </div>

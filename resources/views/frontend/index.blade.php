@@ -18,10 +18,10 @@
                     <img src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
                         <p class="animated bounceInRight"
-                            style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">
+                            style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">
                             <h3 class="animated bounceInRight"
-                            style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight;">Title</h3>
-                            <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight; color: white;">{{$slides->description}}</span>
+                            style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight;">Title</h3>
+                            <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">{{$slides->description}}</span>
                         </p>
                     </div>
                 </div>
