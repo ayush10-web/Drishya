@@ -10,7 +10,6 @@
         <h1>CONTACT</h1>
     </div><!-- service_overlay -->
 </section><!-- service_banner -->
-
 <section class="career_blk contact_blk">
     <div class="row no-pad">
         <div class="col-md-3">
@@ -31,7 +30,7 @@
 
                     <input type="email" name="email" placeholder="Your E-mail Address" required>
 
-
+                    <input type="hidden" name="message_from" value="m">
                     <input type="text" name="contact_number" placeholder="Your Contact Number">
                     <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
 

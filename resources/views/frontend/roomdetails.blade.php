@@ -58,7 +58,7 @@
                         <input type="hidden" id="roomId" value="{{$room->id}}">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                          Book ROom
+                          Book Room
                         </button>
                       </div>
                       <!-- Modal -->

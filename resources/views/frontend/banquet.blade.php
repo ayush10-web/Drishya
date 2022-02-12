@@ -1,5 +1,7 @@
 @extends('frontend.layouts.master')
 @section('content')
+@include('backend.layouts.alerts')
+
 <section class="about_top_banner">
 
     <div class="container">
@@ -29,37 +31,42 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <p>
-          {{-- {!! $about->description !!} --}}
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-            </p>
+           
         </div><!-- banner_abt -->
+        <p>
+            {{-- {!! $about->description !!} --}}
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  
+              </p>
     </div><!-- container -->
 </section><!-- about_top_banner -->
 
-<section class="career_blk contact_blk" style =" max-width: 1000px;
-margin: auto;">
-<div class="row no-pad">
-<div class="col-md-6">
-    <div class="contact_form">
-        <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
-        <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
-            @csrf
-            <input type="text" name="name" placeholder="Your Name" required>
-
-            <input type="email" name="email" placeholder="Your E-mail Address" required>
-
-
-            <input type="text" name="contact_number" placeholder="Your Contact Number">
-            <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
-
-            <button class="btn btn-primary">Submit</button>
-
-        </form>
-    </div><!-- contact_form -->
-</div><!-- col -->
+<section class="career_blk contact_blk" style =" max-width: 700px;
+margin-bottom: 50px; margin-left:300px;">
+<div class="container">
+    <div class="row no-pad">
+        <div class="col-md-12">
+            <div class="contact_form">
+                <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
+                <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
+                    @csrf
+                    <input type="text" name="name" placeholder="Your Name" required>
+        
+                    <input type="email" name="email" placeholder="Your E-mail Address" required>
+                    <input type="hidden" name="message_from" value="b">
+        
+        
+                    <input type="text" name="contact_number" placeholder="Your Contact Number">
+                    <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
+        
+                    <button class="btn btn-primary">Submit</button>
+        
+                </form>
+            </div><!-- contact_form -->
+        </div><!-- col -->
+        </div>
 </div>
+
 </section>
 
 @endsection
