@@ -132,6 +132,7 @@
         </div><!-- row -->
     </div><!-- container -->
 </section><!-- header_logo -->
+<div style='width:100%; background-color:white;height:3px;'></div>
 <section id="main_navigation" class="top_nav">
     <div class="container">
         <div class="nav_search clearfix">

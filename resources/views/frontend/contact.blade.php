@@ -23,7 +23,7 @@
         </div><!-- col --> 
         <div class="col-md-6">
             <div class="contact_form">
-                <h1 style="color:#787006;">If you have any inquiries then please feel free to contact us.</h1>
+                <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
                 <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
                     @csrf
                     <input type="text" name="name" placeholder="Your Name" required>
