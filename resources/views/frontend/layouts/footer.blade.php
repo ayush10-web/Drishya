@@ -101,7 +101,7 @@
                     <h4 class="text-center"><u>Useful Links</u></h4><br>
                     <ul style="color:white; margin-left:110px;">
                         <li>
-                            <a href="#" style="color:white"> <i>Home</i> </a>
+                            <a href="{{route('index')}}" style="color:white"> <i>Home</i> </a>
                         </li>
                         <li>
                             <a href="{{route('drishya.rooms')}}" style="color:white"><i>Rooms</i></a>

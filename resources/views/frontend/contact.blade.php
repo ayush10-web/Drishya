@@ -49,8 +49,8 @@
         </div><!-- col --> 
     </div>
 </section>
-
+<br>
 <section>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.9036089914966!2d85.52285901440283!3d27.627501835604555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb08d22bb2376d%3A0x5f4077732a14fdf4!2sEverfresh%20Bakery!5e0!3m2!1sen!2snp!4v1643294722225!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.743903426665!2d85.28259231506178!3d27.694309082797293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19dffb5c3e1f%3A0xb1b59d70fb2b8c55!2sDrishya%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2smy!4v1644655525665!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 @endsection

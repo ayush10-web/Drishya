@@ -4,8 +4,9 @@
 
         <div class="container">
                 <div class="col-md-12">
+                    <div class ="banner_restaurant">
                     <h1>Drishya Restaurant</h1>
-                    {{-- <img src="images/test.jpeg"> --}}
+                    </div>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" style="height:400px;">
                             <ul class="carousel-indicators">
