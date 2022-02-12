@@ -51,7 +51,7 @@
                 </div>
         </div><!-- container -->
 
-        <div class="container py-5">
+        {{-- <div class="container py-5">
             <div class="row">
                 <div class="col-lg-10 mx-auto col-12 text-center mb-3">
                     <h1 class="mt-0 text-primary">Our Menu</h1>
@@ -76,7 +76,7 @@
                     <hr class="accent my-5">
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section><!-- about_top_banner -->
 
 @endsection

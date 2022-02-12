@@ -68,5 +68,4 @@ margin-bottom: 50px; margin-left:300px;">
 </div>
 
 </section>
-
 @endsection

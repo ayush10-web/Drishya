@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Drishya</title>
+    <title>Drishya Hotel & Restaurant</title>
 <meta
   name="description"           
   content="Drishya is one of the lively place to be in kathmandu valley right now.
@@ -23,7 +23,7 @@ window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
 gtag('config', 'UA-147460903-1');
 </script>
-    <title>Softechpark | Software company in Nepal</title>
+    <title>Drishya Hotel & Restaurant</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" />
