@@ -56,7 +56,7 @@ class IndexController extends Controller
 
         $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
         // dd($sliders);
-        $categories = restaurantMenuCategories::with('menus')->latest()->get();
+        $categories = restaurantMenuCategories::with('menus.images')->latest()->get();
         // dd($categories);
         return view ('frontend.restaurant',compact('sliders','menu','categories'));
     }
