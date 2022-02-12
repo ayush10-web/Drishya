@@ -139,19 +139,19 @@
                     <br><br>
                     <ul style="position: relative; left:70px;">
                         <li style="display: inline">
-                            <a href="{{$setting['facebook']}}"><i class="fab fa-facebook-f fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x text-white" aria-hidden="true"></i></a>
                         </li> &nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['twitter']}}"><i class="fab fa-twitter fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['twitter']}}" target='_blank'><i class="fab fa-twitter fa-1x text-white" aria-hidden="true"></i></a>
                         </li>&nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['instagram']}}"><i class="fab fa-instagram fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['instagram']}}" target='_blank'><i class="fab fa-instagram fa-1x text-white" aria-hidden="true"></i></a>
                         </li>&nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['youtube']}}"><i class="fab fa-youtube fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['youtube']}}" target='_blank'><i class="fab fa-youtube fa-1x text-white" aria-hidden="true"></i></a>
                         </li>&nbsp;&nbsp;
                         <li style="display: inline">
-                            <a href="{{$setting['website']}}"><i class="fab fa-google-plus-g fa-1x text-white" aria-hidden="true"></i></a>
+                            <a href="{{$setting['website']}}" target='_blank'><i class="fab fa-google-plus-g fa-1x text-white" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
