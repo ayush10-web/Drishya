@@ -968,11 +968,11 @@ div#slick-slide01{
 .choose_block_list p {
 	font-size: 15px;
 	margin-top: 5%;
-	color: #171717;
+	color: #000;
 }
 
 .choose_block_list span {
-	color: rgba(119, 119, 119, 1);
+	color: rgb(5, 5, 5);
 	margin-top: 4%;
 	display: block;
 }
@@ -999,6 +999,10 @@ div#slick-slide01{
 }
 
 .choose_block_list:hover span {
+	color: white;
+}
+
+.choose_block_list:hover p {
 	color: white;
 }
 
@@ -2106,7 +2110,20 @@ textarea {
 	padding-top: 2%;
 }
 
+.banner_restaurant h1 {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
 
+.banner_restaurant h1:after {
+	content: "";
+	position: absolute;
+	border: 1px solid black;
+	left: 0;
+	width: 32.5%;
+	bottom: 0%;
+}
 /*.......................................about us page..................................*/
 
 
@@ -2121,9 +2138,25 @@ textarea {
 	position: absolute;
 	border: 1px solid black;
 	left: 0;
-	width: 11%;
+	width: 17%;
 	bottom: 0%;
 }
+
+.banner_banquet h1 {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+.banner_banquet h1:after {
+	content: "";
+	position: absolute;
+	border: 1px solid black;
+	left: 0;
+	width: 14%;
+	bottom: 0%;
+}
+
 
 .right_abt_overlay {
 	/*	position: absolute;

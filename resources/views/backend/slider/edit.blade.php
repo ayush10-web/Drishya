@@ -58,7 +58,7 @@
                               <option value="home" @if ($slider->status == 'home')
                                 selected
                             @endif>Home</option>
-                            <option value = "banquet" @if ($slide->status == 'banquet')
+                            <option value = "banquet" @if ($slider->status == 'banquet')
                               selected
                               @endif>Banquet</option>
                           </select>
