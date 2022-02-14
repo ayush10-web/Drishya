@@ -25,23 +25,29 @@
                 <div class="row overflow-auto" style="height: 680px;">
                     <div class="col-sm-4" style="padding-left:5px;padding-right:5px;">
                         @for ($i = 0; $i < count($sliders); $i=$i+3)
-                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$i}}">
+                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$sliders[$i]->images[0]->id}}">
                                 <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
                             </a>
+                            @include('frontend.sliderImagePreviewModal',['images'=>$sliders[$i]])
+
                         @endfor
                     </div>
                     <div class="col-sm-4" style="padding-left:5px;padding-right:5px;">
                        @for ($i = 1; $i < count($sliders); $i=$i+3)
-                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$i}}">
+                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$sliders[$i]->images[0]->id}}">
                                 <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
                             </a>
+                            @include('frontend.sliderImagePreviewModal',['images'=>$sliders[$i]])
+
                         @endfor
                     </div>
                     <div class="col-sm-4" style="padding-left:5px;padding-right:5px;">
                         @for ($i = 2; $i < count($sliders); $i=$i+3)
-                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$i}}">
+                            <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$sliders[$i]->images[0]->id}}">
                                 <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
                             </a>
+                            @include('frontend.sliderImagePreviewModal',['images'=>$sliders[$i]])
+
                         @endfor
                     </div>
                 </div>
@@ -65,7 +71,6 @@
                     </form>
                 </div><!-- contact_form -->
             </div>
-            @include('frontend.sliderImagePreviewModal',['images'=>$sliders])
         </div>
         
     </div>
