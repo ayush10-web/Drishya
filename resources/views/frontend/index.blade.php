@@ -106,7 +106,7 @@
                     <div class="col-md-6">
                         <a href="{{route('restaurant')}}">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="{{asset('images/restaurant.jpg')}}" alt="Card image cap">
                               <h5 class="card-title text-center">Restaurant</h5>
                           </div>
                         </a>

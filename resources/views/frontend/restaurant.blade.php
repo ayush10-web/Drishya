@@ -36,36 +36,22 @@
                 </span>
             </div>
             <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-7">
-                        @if (count($sliders) > 0)
-                         <img class="d-block w-100" src="{{ $sliders[0]->images[0]->file_path }}" alt="First slide" style="height:225px;">
-                        @else
-                        <img src="images/kitchen_adventurer_donut.jpg" alt="" style="height:225px;">
-                        @endif
+                <div class="row overflow-auto" style="height: 450px;">
+                    <div class="col-md-6" style="padding-left:5px;padding-right:5px;">
+                    @for($i = 0; $i < count($sliders); $i=$i+2)
+                        <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$sliders[$i]->images[0]->id}}">
+                            <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
+                        </a>
+                        @include('frontend.sliderImagePreviewModal',['images'=>$sliders[$i]])
+                    @endfor
                     </div>
-                    <div class="col-md-5">
-                        @if (count($sliders) > 1)
-                        <img class="d-block w-100" src="{{ $sliders[1]->images[0]->file_path }}" alt="First slide" style="height:225px; margin-left: -20px;">
-                       @else
-                       <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" alt="" style="height:225px; margin-left: -20px;">
-                       @endif
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 15px;">
-                    <div class="col-md-5">
-                        @if (count($sliders) > 2)
-                            <img class="d-block w-100" src="{{ $sliders[2]->images[0]->file_path }}" alt="First slide" style="height:225px;">
-                        @else
-                            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" alt="" style="height:225px;">
-                        @endif
-                    </div>
-                    <div class="col-md-7">
-                        @if (count($sliders) > 3)
-                            <img class="d-block w-100" src="{{ $sliders[3]->images[0]->file_path }}" alt="First slide" style="height:225px;  margin-left: -20px;">
-                        @else
-                            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" alt="" style="height:225px; margin-left: -20px;">
-                        @endif
+                    <div class="col-md-6" style="padding-left:5px;padding-right:5px;">
+                    @for($i = 1; $i < count($sliders); $i=$i+2)
+                        <a data-toggle="modal" data-target="#sliderImagePreviewModal{{$sliders[$i]->images[0]->id}}">
+                            <img class="d-block w-100" src="{{ $sliders[$i]->images[0]->file_path }}" alt="First slide" style="width:100%;margin-top:10px;">
+                        </a>
+                        @include('frontend.sliderImagePreviewModal',['images'=>$sliders[$i]])
+                    @endfor
                     </div>
                 </div>
             </div>

@@ -325,8 +325,7 @@ p {
 	z-index: 999;
 }
 
-.slider_main .carousel-control-next,
-.carousel-control-prev {
+.slider_main .carousel-control-next{
 	top: 50%;
 	width: inherit;
 	height: 10%;
