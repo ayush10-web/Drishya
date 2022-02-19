@@ -59,21 +59,13 @@
                     
                 </div><!-- header_logo -->
             </div><!-- col -->
-            <div class="col-6 col-md-2 border_right">
-                <div class="header_opening_closing">
-                    <i class="fas fa-phone-volume"></i>
-                    <p>Phone Number <span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span></p>
-                </div>
-            </div><!-- col -->
-            <div class="col-6 col-md-2 border_right">
-                <div class="header_opening_closing">
-                 <i class="far fa-clock"></i>
-                    <p>Opening Time <span>8:00 - 10:00</span></p>
-                </div><!-- header_closing -->
-            </div><!-- col -->
-            <div class="col-md-3">
+           
+            <div class="col-6 col-md-7">
                 <div class="header_quote">
                     <a href="{{route('drishya.rooms')}}">Rooms</a>
+                </div><!-- header_closing -->
+            </div><!-- col -->
+                
                     <!-- Button trigger modal -->
 
 
