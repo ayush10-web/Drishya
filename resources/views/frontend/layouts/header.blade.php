@@ -91,6 +91,9 @@
             <div class="col-md-3">
                 <div class="header_quote">
                     <a href="{{route('drishya.rooms')}}">Rooms</a>
+                </div><!-- header_closing -->
+            </div><!-- col -->
+                
                     <!-- Button trigger modal -->
                     */ ?>
 
