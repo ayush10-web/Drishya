@@ -158,7 +158,9 @@ p {
 
 .social_media ul li {
 	float: left;
-	padding: 5px 15px 5px 15px;
+	padding: 1px 2px 1px 9px;
+	border-radius: 100%;
+	margin-top: 4px;
 }
 
 .social_media .icon_bg1 {
@@ -201,14 +203,30 @@ p {
 	color: rgb(252, 83, 69);
 }
 
-.header_logo {
-	    padding-top: 0.5%;
+.header_logo2 {
+	padding-top: 2%;
     padding-bottom: 0.5%;
+	background-color: #0e334a;
+	height: 200px;
+}
+
+.header_logo {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 	background-color: #0e334a;
 }
 
 .header_logo img {
-	width: 171px;
+	width: 100%;
+}
+
+.heading_main{
+	color: white;
+}
+
+.heading_main p{
+	color: white;
+	letter-spacing: 15px;
 }
 
 .header_opening_closing .fa,
@@ -246,9 +264,15 @@ p {
 	background: white;
 	padding: 10px 55px 10px 55px;
 	border-radius: 5px;
-	color: #0e334a;
+	color: #0e334a !important;
 	display: inline-block;
 	font-weight: bold;
+	height: 30px;
+	padding-top: 4px;
+}
+
+.header_quote a:before {
+	border-bottom: none !important;
 }
 
 .header_logo .border_right {
@@ -283,6 +307,7 @@ p {
 
 .top_nav .navbar {
 	padding-left: 0;
+	padding-right: 0;
 }
 
 .navbar-nav {
@@ -303,7 +328,7 @@ p {
 }
 
 .navbar-nav li {
-	margin-left: 1%;
+	margin-left: 3%;
 }
 
 .navbar-nav li:first-child {
@@ -319,6 +344,9 @@ p {
 	color: white !important;
 }
 
+.sticky img{
+	display: block !important;
+}
 /*..............main_slider...................*/
 .carousel-control-next,
 .carousel-control-prev {
@@ -529,7 +557,7 @@ p {
 
 .main_nav {
 	float: left;
-	width: 98%;
+	width: 100%;
 }
 
 .main_search {
