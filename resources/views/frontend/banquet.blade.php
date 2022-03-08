@@ -10,9 +10,9 @@
             
            
         </div><!-- banner_abt -->
-        <p>
+        <p style = "font-size: 30px;">
             {{-- {!! $about->description !!} --}}
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Our banquet is best for the events, as the food and the venue we offer is of top notch in the town. Our banquet has the capacity of. We offer events like wedding, bartabandha, birthday and so on. Drishya makes the event very much convenient as it offers such as catering, interior decoration, entertainment and many more other facilities upon request.
   
               </p>
     </div><!-- container -->

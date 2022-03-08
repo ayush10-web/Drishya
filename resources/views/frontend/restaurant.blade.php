@@ -19,21 +19,10 @@
                 font-weight: 400;
                 line-height: 58px;">Drishya Restaurant</h1>
 
-                <span style="font-style: italic;">
-                    Lorem Ipsum is simply dummy text of the printing and type jh setting industry.
-                        Lorem Ipsum has been the in standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to .
+                <span style="font-size : 25px;">
+                    Drishya resturanrt serves one of the best food as it has experienced chef who will staisfy your hunger with the delicious food upon your request. We offer wide range of food variety. Our restaurant is located at the 5Th floor where you can enjoy your food with scenic view of Kathmandu valley. 
                 </span> <br> <br>
-                <span style="font-style: italic;">
-                    Lorem Ipsum is simply dummy text of the printing and type jh setting industry.
-                        Lorem Ipsum has been the in standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to .
-                </span> <br> <br>
-                <span style="font-style: italic;">
-                    Lorem Ipsum is simply dummy text of the printing and type jh setting industry.
-                        Lorem Ipsum has been the in standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to .
-                </span>
+
             </div>
             <div class="col-md-6">
                 <div class="row overflow-auto" style="height: 450px;">

@@ -72,7 +72,7 @@
             <div class="col-md-4" style="padding-top: 15px;">
                 <div class="services_list">
                     <h2>Our Line Of<span>SERVICES</span></h2>
-                    <p>DRISHYA IS ONE OF THE REPUTATED HOTEL AND IS RENOWNED FOR OUR HOSPITALITY AND SERVICES</p>
+                    <p>DRISHYA IS ONE OF THE REPUTATED HOTEL AND IS RENOWNED FOR ITS HOSPITALITY AND SERVICES</p>
                 </div><!-- services_list -->
             </div><!-- col -->
             <div class="col-md-8">
@@ -218,27 +218,26 @@
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-award"></i>
-                    <p>Best Service <br><span>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "</span></p>
+                    <p>Best Service <br><span>" Drishya service is one of the renowned as it have the best chef and staff to serve. "</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-chart-bar"></i>
-                    <p>Experienced Team<br><span>We take great pride<br> in our work and <br>strive for <br>consistent excellence.</span>
+                    <p>Home Like Experience<br><span>"Our hotel has the best room service which allows our guest to have home like atmosphere."</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-trophy"></i>
-                    <p>Super Quality<br><span>We don't want to push our ideas<br> on to customers we simply<br> want to make
-                        what <br>they want.</span></p>
+                    <p>Super Quality<br><span>We Have the best rooms and restaurant quality.</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
                     <i class="fas fa-dumbbell"></i>
-                    <p>Quick Response<br><span> <br>deliver timely technical support, a goal that most of our customers<br> agree we deliver on.</span>
+                    <p>Quick Response<br><span> Our staff would be ready to support in any sort of inconvenience</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 
