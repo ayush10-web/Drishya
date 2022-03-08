@@ -1,3 +1,4 @@
+<?php /* 
 <section class="header_top">
     <div class="container-fluid">
         <div class="row">
@@ -47,11 +48,12 @@
         </div><!-- row -->
     </div><!-- container -->
 </section><!-- header-top -->
-<section class="header_logo  wow rubberBand"
+*/ ?>
+<section class="header_logo2"
          style=" visibility: visible; animation-delay: 0.9s; animation-name: rubberBand;">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-3">
                 <div class="header_logo">
                     @if ($setting['logo'] != null)
                     <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
@@ -59,23 +61,41 @@
                     
                 </div><!-- header_logo -->
             </div><!-- col -->
-            <div class="col-6 col-md-2 border_right">
-                <div class="header_opening_closing">
-                    <i class="fas fa-phone-volume"></i>
-                    <p>Phone Number <span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span></p>
+            <div class="col-md-6 heading_main wow rubberBand">
+                <h1>Drishya Hotel & Restaurant</h1>
+                <p>FOOD • DRINKS • MUSIC</p>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-6">
+                        <h6><i class="fa fa-map-marker-check"></i> <span> {{$setting['address']}}</span></h6>
+                    </div>
+                    <div class="col-md-6" align='center'>
+                        <h6><i class="fa fa-phone-alt"></i> <span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span></h6>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-3 no-pad media_respo">
+                <div class="social_media wow bounceInRight"
+                    style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight;">
+                    
+                        <ul>
+                            <li style="float: none; margin-top:0;" class="icon_bg1"><a href="{{$setting['facebook']}}" rel="noopener"` target="_blank" accesskey="a"><i class="fab fa-facebook-f"></i></a></li>
+                            <li style="float: none;" class="icon_bg2"><a href="{{$setting['twitter']}}" rel="noopener"` target="_blank" accesskey="b"><i class="fab fa-twitter"></i></a></li>
+                            <li style="float: none;" class="icon_bg1"><a href="{{$setting['instagram']}}" rel="noopener" target="_blank" accesskey="c"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="float: none;" class="icon_bg2"><a href="{{$setting['youtube']}}" rel="noopener" target="_blank" accesskey="d"><i class="fab fa-youtube"></i></a> </li>
+                            <li style="float: none;" class="icon_bg1"><a href="{{$setting['website']}}" target="_blank" rel="noopener" ><i class="fab fa-google-plus-g" accesskey="f"></i></a></li>
+                        </ul>
+                </div><!-- social_media -->
             </div><!-- col -->
-            <div class="col-6 col-md-2 border_right">
-                <div class="header_opening_closing">
-                 <i class="far fa-clock"></i>
-                    <p>Opening Time <span>8:00 - 10:00</span></p>
-                </div><!-- header_closing -->
-            </div><!-- col -->
+            <?php /*
             <div class="col-md-3">
                 <div class="header_quote">
                     <a href="{{route('drishya.rooms')}}">Rooms</a>
+                </div><!-- header_closing -->
+            </div><!-- col -->
+                
                     <!-- Button trigger modal -->
-
+                    */ ?>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -89,7 +109,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      <div class="col-md-12">
+        <div class="col-md-12">
                 <div class="form_border">
                     <div class="req_form_head">
                         <h2>Inquiry about our Hotel</h2>
@@ -109,8 +129,6 @@
                         <div class="col-md-6">
                             <div class="input_form">
                                 <textarea rows="3" name="message" cols="50" placeholder="Your Message..."></textarea>
-{{--                                <button type="button" class="send_form" onclick="alert('Your message send successfully!')">Send--}}
-{{--                                    Message</button>--}}
                                 <button class="send_form">Send Inquiry</button>
                             </div><!-- input_form -->
                         </div><!-- col -->
@@ -118,11 +136,7 @@
                     </form>
                 </div><!-- form_border -->
             </div>
-      </div>
-   <!--    <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+        </div>
     </div>
   </div>
 </div>
@@ -146,8 +160,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                           
-                            <li class="nav-item {{($menu == 'index') ? 'active' : '' }}">
+                            <li style="width: 50px">
+                    <img src="/images/mini-logo.jpeg" alt="#" style="width: 50px; display:none;" class="wow rubberBand"/>
+
+                            </li>
+                            <li class="nav-item {{($menu == 'index') ? 'active' : '' }}" style="margin-left:7%;">
                                 <a class="nav-link" href="{{route('index')}}">Home <span
                                         class="sr-only">(current)</span></a>
                             </li>
@@ -179,6 +196,11 @@
                            
                             <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
                                 <a class="nav-link " href="{{route('contact')}}">Contact Us</a>
+                            </li>
+                            <li style="margin-left: 162px;">
+                                <div class="header_quote">
+                                    <a href="{{route('drishya.rooms')}}" style="color: #0e334a !important; padding-left: 20px;padding-right: 20px;">Book Rooms</a>
+                                </div>
                             </li>
                         </ul>
                     </div>

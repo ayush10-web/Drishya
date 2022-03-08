@@ -82,14 +82,8 @@
             <div class="col-12 mt-4">
                 <hr class="accent my-5">
             </div>
-<<<<<<< HEAD
         </div>
     </div>
 </section>
 <!-- about_top_banner -->
-=======
-        </div> --}}
-    </section><!-- about_top_banner -->
->>>>>>> fc1c2aa9a3e10ab78578020f36c3fa36c054ba4d
-
 @endsection
