@@ -185,13 +185,13 @@
                                 <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
                             </li> 
                             <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
-                                <a class="nav-link" href="{{('banquet')}}">Banquet</a>
+                                <a class="nav-link" href="{{route('banquet')}}">Banquet</a>
                             </li> 
                             <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
-                                <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>
+                                <a class="nav-link" href="{{route('restaurant')}}">Restaurant</a>
                             </li> 
-                            <li class="nav-item {{($menu == 'about') ? 'active' : '' }}">
-                                <a class="nav-link " href="{{('about')}}">About Us</a>
+                            <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
+                                <a class="nav-link " href="{{route('gallery.view')}}">Photos</a>
                             </li>
                            
                             <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">

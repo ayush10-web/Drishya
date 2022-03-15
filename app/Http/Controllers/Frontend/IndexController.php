@@ -53,7 +53,6 @@ class IndexController extends Controller
 
     public function restaurant(){
         $menu = "restaurant";
-
         $sliders = Slider::with('images')->where('slider_code','res')->latest()->get();
         // dd($sliders);
         $categories = restaurantMenuCategories::with('menus.images')->latest()->get();
@@ -66,5 +65,11 @@ class IndexController extends Controller
         $sliders = Slider::with('images')->where('slider_code','banquet')->latest()->get();
         return view ('frontend.banquet',compact('sliders','menu'));
         return view ('frontend.banquet',compact('menu'));
+    }
+
+    public function gallery()
+    {
+        $menu = "gallery";
+        return view ('frontend.gallery',compact('menu'));
     }
 }
