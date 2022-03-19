@@ -49,11 +49,37 @@
     </div><!-- container -->
 </section><!-- header-top -->
 */ ?>
-<section class="header_logo2"
-         style=" visibility: visible; animation-delay: 0.9s; animation-name: rubberBand;">
+<section class = "header-top">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-8">
+                <ul class="tn-left">
+                    <li><a href="tel:+977-9844888116"><i class="fa fa-phone-alt"></i><span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span>                                </a></li>
+
+                    <li><a href="mailto:info@lapsitree.com.np"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="tn-right">
+                    <div class="top-social">
+                        <ul>
+                            <li class="icon_bg1"><a href="{{$setting['facebook']}}" rel="noopener"` target="_blank" accesskey="a"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="icon_bg2"><a href="{{$setting['twitter']}}" rel="noopener"` target="_blank" accesskey="b"><i class="fab fa-twitter"></i></a></li>
+                            <li class="icon_bg1"><a href="{{$setting['instagram']}}" rel="noopener" target="_blank" accesskey="c"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class="icon_bg2"><a href="{{$setting['youtube']}}" rel="noopener" target="_blank" accesskey="d"><i class="fab fa-youtube"></i></a> </li>
+                            <li class="icon_bg1"><a href="{{$setting['website']}}" target="_blank" rel="noopener" ><i class="fab fa-google-plus-g" accesskey="f"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="header_logo2"
+         style=" visibility: visible;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
                 <div class="header_logo">
                     @if ($setting['logo'] != null)
                     <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
@@ -61,161 +87,71 @@
                     
                 </div><!-- header_logo -->
             </div><!-- col -->
-            <div class="col-md-6 heading_main wow rubberBand">
+            <div class="col-md-8 heading_main">
                 <h1>Drishya Hotel & Restaurant</h1>
                 <p>FOOD • DRINKS • MUSIC</p>
-                <div class="row" style="margin-top: 10px;">
-                    <div class="col-md-6">
-                        <h6><i class="fa fa-map-marker-check"></i> <span> {{$setting['address']}}</span></h6>
-                    </div>
-                    <div class="col-md-6" align='center'>
-                        <h6><i class="fa fa-phone-alt"></i> <span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span></h6>
-                    </div>
+                <div class="navdown nav_search clearfix" id="main_navigation" style="border-top: 1px solid #e5e5e5; margin-top:10px;">
+                    <div class="main_nav">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light wow fadeInDown"
+                             style=" visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">
+                            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li style="width: 50px; display:none;" class = "temp">
+                                        <img src="/images/mini-logo.jpeg" alt="#" style="width: 50px; display:none; border-radius:50%;" class="wow rubberBand"/>
+                                    </li>
+                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }}">
+                                        <a class="nav-link" href="{{route('index')}}">Home <span
+                                                class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">
+                                        <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
+                                    </li> 
+                                    <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
+                                        <a class="nav-link" href="{{('banquet')}}">Banquet</a>
+                                    </li> 
+                                    <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
+                                        <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>
+                                    </li> 
+                                    <li class="nav-item {{($menu == 'about') ? 'active' : '' }}">
+                                        <a class="nav-link " href="{{('about')}}">About Us</a>
+                                    </li>
+                                   
+                                    <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
+                                        <a class="nav-link " href="{{route('contact')}}">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <div class="tn-right">
+                                            <a href="{{route('drishya.rooms')}}" class="bk-btn" style="display: none;">Book Now</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div><!-- main_nav -->
+                    {{-- <div class="main_search">
+                        <ul>
+                            <li class="search_width">
+                                <a href="#search">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!-- Search Form -->
+                            </li>
+                        </ul>
+                    </div><!-- main_search --> --}}
                 </div>
             </div>
-            <div class="col-md-3 no-pad media_respo">
-                <div class="social_media wow bounceInRight"
-                    style=" visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight;">
-                    
-                        <ul>
-                            <li style="float: none; margin-top:0;" class="icon_bg1"><a href="{{$setting['facebook']}}" rel="noopener"` target="_blank" accesskey="a"><i class="fab fa-facebook-f"></i></a></li>
-                            <li style="float: none;" class="icon_bg2"><a href="{{$setting['twitter']}}" rel="noopener"` target="_blank" accesskey="b"><i class="fab fa-twitter"></i></a></li>
-                            <li style="float: none;" class="icon_bg1"><a href="{{$setting['instagram']}}" rel="noopener" target="_blank" accesskey="c"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                            </li>
-                            <li style="float: none;" class="icon_bg2"><a href="{{$setting['youtube']}}" rel="noopener" target="_blank" accesskey="d"><i class="fab fa-youtube"></i></a> </li>
-                            <li style="float: none;" class="icon_bg1"><a href="{{$setting['website']}}" target="_blank" rel="noopener" ><i class="fab fa-google-plus-g" accesskey="f"></i></a></li>
-                        </ul>
-                </div><!-- social_media -->
-            </div><!-- col -->
-            <?php /*
-            <div class="col-md-3">
-                <div class="header_quote">
-                    <a href="{{route('drishya.rooms')}}">Rooms</a>
-                </div><!-- header_closing -->
-            </div><!-- col -->
-                
-                    <!-- Button trigger modal -->
-                    */ ?>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal_request_header" role="document">
-    <div class="modal-content">
-   <!--    <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        
-      </div> -->
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="col-md-12">
-                <div class="form_border">
-                    <div class="req_form_head">
-                        <h2>Inquiry about our Hotel</h2>
-                        Please feel free to inquiry about anything. <br>
-                        We are always happy to answer all your quetions anytime without any hesitation.
-                    </div><!-- req_form_head -->
-                    <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
-                        @csrf
-                        <div class="row">
-                        <div class="col-md-6">
-                            <div class="input_form">
-                                <input type="text" name="name" placeholder="Your Name" required>
-                                <input type="email" name="email" placeholder="Email" required>
-                                <input type="text" name="contact_number" placeholder="Contact Number">
-                            </div><!-- input_form -->
-                        </div><!-- col -->
-                        <div class="col-md-6">
-                            <div class="input_form">
-                                <textarea rows="3" name="message" cols="50" placeholder="Your Message..."></textarea>
-                                <button class="send_form">Send Inquiry</button>
-                            </div><!-- input_form -->
-                        </div><!-- col -->
-                    </div><!-- row -->
-                    </form>
-                </div><!-- form_border -->
+            <div class="col-lg-2">
+                <div class="tn-right">
+                    <a href="{{route('drishya.rooms')}}" class="bk-btn">Book Now</a>
+                </div>
             </div>
-        </div>
-    </div>
-  </div>
-</div>
-                </div><!-- header_quote -->
-            </div><!-- col -->
-
         </div><!-- row -->
     </div><!-- container -->
 </section><!-- header_logo -->
 <div style='width:100%; background-color:white;height:3px;'></div>
-<section id="main_navigation" class="top_nav">
-    <div class="container">
-        <div class="nav_search clearfix">
-            <div class="main_nav">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light wow fadeInDown"
-                     style=" visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li style="width: 50px">
-                    <img src="/images/mini-logo.jpeg" alt="#" style="width: 50px; display:none;" class="wow rubberBand"/>
-
-                            </li>
-                            <li class="nav-item {{($menu == 'index') ? 'active' : '' }}" style="margin-left:7%;">
-                                <a class="nav-link" href="{{route('index')}}">Home <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                          
-                            {{-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Services</a>
-                                <div class="dropdown-menu mt-0" style="background:  #a18257" aria-labelledby="navbarDropdown">
-                                @foreach($servicesnav as $service)
-                                    <div class="row">
-                                        <div class="col-md-9">
-                                            <a class="dropdown-item"  href="" style="background:#a18257; margin-top : 15px; ">{{$service->service_name}}</a>
-                                        </div>
-                                    </div>
-                                @endforeach
-                                </div>
-                            </li> --}}
-                            <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">
-                                <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
-                            </li> 
-                            <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
-                                <a class="nav-link" href="{{('banquet')}}">Banquet</a>
-                            </li> 
-                            <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
-                                <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>
-                            </li> 
-                            <li class="nav-item {{($menu == 'about') ? 'active' : '' }}">
-                                <a class="nav-link " href="{{('about')}}">About Us</a>
-                            </li>
-                           
-                            <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
-                                <a class="nav-link " href="{{route('contact')}}">Contact Us</a>
-                            </li>
-                            <li style="margin-left: 162px;">
-                                <div class="header_quote">
-                                    <a href="{{route('drishya.rooms')}}" style="color: #0e334a !important; padding-left: 20px;padding-right: 20px;">Book Rooms</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div><!-- main_nav -->
-            {{-- <div class="main_search">
-                <ul>
-                    <li class="search_width">
-                        <a href="#search">
-                            <i class="fa fa-search"></i>
-                        </a>
-                        <!-- Search Form -->
-                    </li>
-                </ul>
-            </div><!-- main_search --> --}}
-        </div><!-- nav_search -->
-    </div><!-- container -->
-</section><!-- top_nav -->
