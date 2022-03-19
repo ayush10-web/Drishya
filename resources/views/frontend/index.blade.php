@@ -4,7 +4,6 @@
 @if (count($sliders) > 0)
 
 <section class="slider_main">
-    <div class="container container_custom">
         <div id="demo" class="carousel slide wow pulse"
              style=" visibility: visible; animation-delay: 0.5s; animation-name: pulse;" data-ride="carousel">
             <div class="carousel-inner">
@@ -18,9 +17,9 @@
                     <img src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
                         <p class="animated bounceInRight"
-                            style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">
+                            style=" visibility: visible; color: white;">
                             <h3 class="animated bounceInRight"
-                            style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight;">{{$slides->slider_name}}</h3>
+                            style=" visibility: visible;">{{$slides->slider_name}}</h3>
                             <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">{{$slides->description}}</span>
                         </p>
                     </div>
@@ -35,68 +34,22 @@
             </a>
         </div>
 
-    </div><!-- container -->
 </section><!-- slider_main -->
 
 @endif
-<section class="image_with_box">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="border_box wow bounceInLeft"
-                     style="visibility: visible; animation-delay: 1s; animation-name: bounceInLeft;">
-                    <img src="images/customer-service.png" alt="#">
-                    <h1>Feel<span>feel like home</span></h1>
-                </div><!-- border_box -->
-            </div><!-- col -->
-            <div class="col-md-4">
-                <div class="border_box wow bounceInDown"
-                     style="visibility: visible; animation-delay: 1s; animation-name: bounceInDown;">
-                    <img src="images/customer_review.png" alt="24*7 support">
-                    <h1>1st<span>priority customer</span></h1>
-                </div><!-- border_box -->
-            </div><!-- col -->
-            <div class="col-md-4">
-                <div class="border_box wow bounceInRight"
-                     style="visibility: visible; animation-delay: 1s; animation-name: bounceInRight;">
-                    <img src="images/portfolio.png" alt="customer first piority">
-                    <h1>Best<span>Hospitality Services</span></h1>
-                </div><!-- border_box -->
-            </div><!-- col -->
-        </div><!-- row -->
-    </div><!-- conntainer -->
-</section>
+<br>
 <section class="list_content">
+        <h2 style = "text-align:center; font-size:1.75rem;"><u>Our Services</u></h2>
+        <br>
     <div class="container">
         <div class="row wow slideInUp">
-            <div class="col-md-4" style="padding-top: 15px;">
-                <div class="services_list">
-                    <h2>Our Line Of<span>SERVICES</span></h2>
-                    <p>DRISHYA IS ONE OF THE REPUTATED HOTEL AND IS RENOWNED FOR ITS HOSPITALITY AND SERVICES</p>
-                </div><!-- services_list -->
-            </div><!-- col -->
+
             <div class="col-md-8">
-                <div class="row">
-                    {{-- @foreach($services as $service)
-                    <div class="col-md-4">
-                        <div class="services_block_all">
-                            <div class="services_block">
-                                <img src="{{$service->image->file_path}}" alt="#"/>
-                                <a href="">
-                                    <h2>{{$service->service_name}}</h2>
-                                </a>
-                            </div>
-                            <div class="services_block_lead">
-                                {{$service->description}}
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach --}}
-                   
+                <div class="row">                   
                     </a>
                     <div class="col-md-6">
                         <a href="{{route('banquet')}}">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 35rem;">
                             <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
                            
                             <h5 class="card-title text-center">Banquet</h5>
@@ -105,7 +58,7 @@
                     </div>
                     <div class="col-md-6">
                         <a href="{{route('restaurant')}}">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 35rem; margin-left: 250px;">
                             <img class="card-img-top" src="{{asset('images/restaurant.jpg')}}" alt="Card image cap">
                               <h5 class="card-title text-center">Restaurant</h5>
                           </div>
@@ -118,23 +71,16 @@
         </div><!-- row -->
     </div><!-- container -->
 </section>
-<section class="product_list">
-    <div class="container">
-        <div class="product_mark wow bounceInRight"
-             style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight;">
-            <h1>Book <span>Rooms</span></h1>
-            <div class="arrow"></div><!-- arrow -->
-        </div><!-- product_mark -->
-    </div><!-- container -->
+
+            
+            <h3 style = "text-align:center;"><u>Our Rooms</u></h3>
+
+ 
     
     <div class="product_carousel wow bounceInRight"
-         style="visibility: visible; animation-delay: 1s; animation-name: bounceInRight;">
+         style="visibility: visible;">
 
-         <div class="col-md-3" style="padding-top: 0;">
-            <div class="services_list" >
-                <a href="{{route('drishya.rooms')}}" style="margin-top:-10px; margin-left: 80px;">View All Rooms</a>
-            </div>
-        </div>
+
         <div class="container">
             <section class="center slider">
                 @if (count($rooms) > 0)
@@ -147,23 +93,26 @@
                 </div>
                 @endforeach
                 @endif
-                
             </section>
         </div><!-- container -->
+        <div class="col-md-12" style="padding-top: 0;">
+            <div class="services_list" >
+                <a href="{{route('drishya.rooms')}}" style="margin-top:-10px; margin-left: 550px;">View All Rooms</a>
+            </div>
+        </div>
     </div><!--  -->
-</section><!-- product_list -->
 @if(count($events)>0)
 <section class="product_list">
     <div class="container">
         <div class="product_mark wow bounceInRight"
-             style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; margin-top: -20px;">
+             style=" visibility: visible; margin-top: -20px;">
             <h1>Events <span>In Drishya</span></h1>
             <div class="arrow"></div><!-- arrow -->
         </div><!-- product_mark -->
     </div><!-- container -->
     
     <div class="product_carousel wow bounceInRight"
-         style="visibility: visible; animation-delay: 1s; animation-name: bounceInRight;">
+         style="visibility: visible;">
         <div class="container">
             <section class="slider_main">
                 <div class="container container_custom">

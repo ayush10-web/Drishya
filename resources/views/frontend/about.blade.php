@@ -5,10 +5,11 @@
     <div class="container">
         <div class="banner_abt">
             <h1>ABOUT US</h1>
+            <p style = "width:100%; font-size:30px;">This is Drishya, kathmandu kalanki, situated in the heart of bustling Capital, hotel location will appeal to quest looking to unwind, explore and experience the true essence of Nepal. We have 360° breathe taking panoramical view of the entire city and Himalayan ranges.</p>
             <img src="images/test.jpeg">
-            <p>
+            <p style = "width:100%; font-size:30px;">
           {{-- {!! $about->description !!} --}}
-          Drishya
+          Our heritage of warm hospitality inspires us to always provide an inviting and effortless experience. This is what we have always done and what we will continue to do. Consequently, our ultimate aim is to create a milestone in Hospitality industry by delivering quality food and rooms.
 
             </p>
         </div><!-- banner_abt -->
