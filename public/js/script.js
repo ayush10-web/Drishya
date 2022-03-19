@@ -45,11 +45,16 @@ var navbar = document.getElementById("main_navigation");
 var sticky = main_navigation.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    main_navigation.classList.add("sticky")
+  if (window.pageYOffset >= 220) {
+    main_navigation.classList.add("sticky");
+    $('.navdown').addClass('stricky-fixed slideInDown animated');
+    $('.navbar').addClass('leftPadding');
   } else {
     main_navigation.classList.remove("sticky");
+    $('.navdown').removeClass('stricky-fixed slideInDown animated');
+    $('.navbar').removeClass('leftPadding');
   }
+  
 }
 
 
