@@ -114,6 +114,8 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/contact',[IndexController::class,'contact'])->name('contact');
 Route::get('/about',[IndexController::class,'about'])->name('about');
+Route::get('/photos',[IndexController::class,'gallery'])->name('gallery.view');
+
 Route::get('/restaurant',[IndexController::class,'restaurant'])->name('restaurant');
 Route::get('/banquet',[IndexController::class,'banquet'])->name('banquet');
 

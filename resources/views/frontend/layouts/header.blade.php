@@ -54,9 +54,9 @@
         <div class="row">
             <div class="col-lg-8">
                 <ul class="tn-left">
-                    <li><a href="tel:+977-9844888116"><i class="fa fa-phone-alt"></i><span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span>                                </a></li>
+                    <li><a href="tel:+{{$setting['phoneNumber']}}"><i class="fa fa-phone-alt"></i><span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span>                                </a></li>
 
-                    <li><a href="mailto:info@lapsitree.com.np"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></li>
+                    <li><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></li>
                 </ul>
             </div>
             <div class="col-lg-4">
@@ -82,7 +82,7 @@
             <div class="col-md-2">
                 <div class="header_logo">
                     @if ($setting['logo'] != null)
-                    <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
+                    <a href="/"><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
                     @endif
                     
                 </div><!-- header_logo -->
@@ -104,7 +104,7 @@
                                     <li style="width: 50px; display:none;" class = "temp">
                                         <img src="/images/mini-logo.jpeg" alt="#" style="width: 50px; display:none; border-radius:50%;" class="wow rubberBand"/>
                                     </li>
-                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }}">
+                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }}" style="margin-left:7%;">
                                         <a class="nav-link" href="{{route('index')}}">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>
@@ -112,13 +112,13 @@
                                         <a class="nav-link" href="{{route('drishya.rooms')}}">Rooms</a>
                                     </li> 
                                     <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{('banquet')}}">Banquet</a>
+                                        <a class="nav-link" href="{{route('banquet')}}">Banquet</a>
                                     </li> 
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{('restaurant')}}">Restaurant</a>
+                                        <a class="nav-link" href="{{route('restaurant')}}">Restaurant</a>
                                     </li> 
-                                    <li class="nav-item {{($menu == 'about') ? 'active' : '' }}">
-                                        <a class="nav-link " href="{{('about')}}">About Us</a>
+                                    <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
+                                        <a class="nav-link " href="{{route('gallery.view')}}">Photos</a>
                                     </li>
                                    
                                     <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
@@ -155,3 +155,4 @@
     </div><!-- container -->
 </section><!-- header_logo -->
 <div style='width:100%; background-color:white;height:3px;'></div>
+
