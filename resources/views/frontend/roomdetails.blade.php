@@ -17,6 +17,10 @@
                           <p>High quality parquet floored, spacious, bright deluxe room. The room comes with one king size bed, free WIFI, AC, 32 Led TV, and wall-in showers with rainfall showerheads and including minibar. </p>
                           <br>
                           <p>{{$room->description}}</p>
+                      @else
+                        <p>High quality parquet floored, spacious, bright rooms are available here at drishya.  </p>
+                        <br>
+                        <p>{{$room->description}}</p>
                       @endif
                       <br>
                       <div class="row">
