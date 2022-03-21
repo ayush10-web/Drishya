@@ -8,7 +8,7 @@
                 <h1 style="color: #0e334a"><strong>R O O M S</strong></h1>
             </div>
             
-            <p style="font-size:30px;">{{$setting['room']}}</p>
+            <p style="font-size:16px;">{{$setting['room']}}</p>
             <div class="time" style="margin-top: 35px;">
                 <div class="row">
                     <div class="col-sm-2" >

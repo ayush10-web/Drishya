@@ -31,12 +31,16 @@
                   <thead>
                     <tr>
                       <th>S.N.</th>
+                      <th>Category</th>
                       <th>Room Number</th>
                       <th>Floor Number</th>
                       <th>Capacity</th>
                       <th>Price</th>
                       <th>Status</th>
+                      <th>Bed</th>
+                      <th>View</th>
                       <th>Image</th>
+
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -44,11 +48,14 @@
                     @foreach ($rooms as $key=>$room)
                       <tr>
                         <td>{{$key + 1}}</td>
+                        <td>{{$room->category}}</td>
                         <td>{{$room->room_number}}</td>
                         <td>{{$room->floor_number}}</td>
                         <td>{{$room->capacity}}</td>
                         <td>{{$room->room_price}}</td>
                         <td>{{($room->status == 'U') ? 'Unavailable':'Available'}}</td>
+                        <td>{{$room->bed}}</td>
+                        <td>{{$room->view}}</td>
                         <td>@if (count($room->images) > 0)
                             @foreach ($room->images as $image)
                                 <img src="{{$image->file_path}}" alt="img" style="height:100px; width:100px;">

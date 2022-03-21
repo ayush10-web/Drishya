@@ -4,35 +4,37 @@
 @if (count($sliders) > 0)
 
 <section class="slider_main">
-        <div id="demo" class="carousel slide wow pulse"
-             style=" visibility: visible; animation-delay: 0.5s; animation-name: pulse;" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                @foreach($sliders as $key => $slides)
+                <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif"></li>
+                @endforeach
+            </ol>
             <div class="carousel-inner">
-                <ul class="carousel-indicators">
-                    @foreach($sliders as $key => $slides)
-                    <li data-target="#demo" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif"></li>
-                    @endforeach
-                </ul>
+
                 @foreach($sliders as $key => $slides)
                 <div class="carousel-item @if($key == 0) active @endif slider-descripton">
-                    <img src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
+                    <img class="d-block w-100" src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
-                        <p class="animated bounceInRight"
+                        {{-- <p class="animated bounceInRight"
                             style=" visibility: visible; color: white;">
                             <h3 class="animated bounceInRight"
                             style=" visibility: visible;">{{$slides->slider_name}}</h3>
                             <span class="float-left animated bounceInRight"  style=" visibility: visible; animation-delay: 0.1s; animation-name: bounceInRight; color: white;">{{$slides->description}}</span>
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
                 @endforeach
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <a class="carousel-control-prev" style="color: black" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
             </a>
-        </div>
+          </div>
 
 </section><!-- slider_main -->
 
@@ -42,65 +44,56 @@
         <h2 style = "text-align:center; font-size:1.75rem;"><u>Our Services</u></h2>
         <br>
     <div class="container">
-        <div class="row wow slideInUp">
-
-            <div class="col-md-8">
-                <div class="row">                   
-                    </a>
-                    <div class="col-md-6">
-                        <a href="{{route('banquet')}}">
-                        <div class="card" style="width: 35rem;">
-                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" alt="Card image cap">
-                           
-                            <h5 class="card-title text-center">Banquet</h5>
-                          </div>
-                        </a>
+        <div class="row">                   
+            <div class="col-md-6">
+                <a href="{{route('banquet')}}">
+                    <div class="card service-card-1">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" style="height: 350px;" alt="Card image cap">
+                        <h5 class="card-title text-center">Banquet</h5>
                     </div>
-                    <div class="col-md-6">
-                        <a href="{{route('restaurant')}}">
-                        <div class="card" style="width: 35rem; margin-left: 250px;">
-                            <img class="card-img-top" src="{{asset('images/restaurant.jpg')}}" alt="Card image cap">
-                              <h5 class="card-title text-center">Restaurant</h5>
-                          </div>
-                        </a>
-                    </div>
-                </div>
-                 
+                </a>
             </div>
-           
-        </div><!-- row -->
+            <div class="col-md-6">
+                <a href="{{route('restaurant')}}">
+                    <div class="card service-card-1">
+                        <img class="card-img-top" style="height: 350px;" src="{{asset('images/restaurant.jpg')}}" alt="Card image cap">
+                            <h5 class="card-title text-center">Restaurant</h5>
+                    </div>
+                </a>
+            </div>
+                 
+        </div>
     </div><!-- container -->
 </section>
-
-            
-            <h3 style = "text-align:center;"><u>Our Rooms</u></h3>
-
- 
-    
-    <div class="product_carousel wow bounceInRight"
-         style="visibility: visible;">
-
-
+<br>
         <div class="container">
-            <section class="center slider">
-                @if (count($rooms) > 0)
+            <center>
+                <h3 style = "text-align:center;"><u>OUR ROOMS</u></h3>
+            <i>Pick a room that best suits your choice and budget</i>
+            </center>
+            <br>
+            <div class="row">
                 @foreach ($rooms as $room)
-                <div class="carousel_margin">
-                    <a href="{{route('room.details',$room->id)}}">
-                        <img src="{{$room->images[0]->file_path}}" alt="#">
-                        <span>Capacity:{{$room->capacity}} | Price: {{$room->room_price}}</span>
-                    </a>
-                </div>
+                    <div class="col-md-3 " >
+                        <div class="card room-image-block">
+                            <a href="{{route('room.details',$room->id)}}">
+                                <img src="{{$room->images[0]->file_path}}" alt="#" style="height:300px;">
+                                <div class="room-details-category">
+                                    <center><h5> <i>{{$room->category}} </i> </h5></center>
+                                </div>
+                                <div class="room-image-overlay">
+                                    <h5> <i> <u> View Details </u></i> </h5>
+                                </div>
+                                {{-- <span>Capacity:{{$room->capacity}} | Price: {{$room->room_price}}</span> --}}
+                            </a>
+                        </div>
+                    </div>
                 @endforeach
-                @endif
-            </section>
-        </div><!-- container -->
-        <div class="col-md-12" style="padding-top: 0;">
-            <div class="services_list" >
-                <a href="{{route('drishya.rooms')}}" style="margin-top:-10px; margin-left: 550px;">View All Rooms</a>
             </div>
+            <br>
+              <center><a class="btn btn-success" href="{{route('drishya.rooms')}}">View All Rooms</a></center>  
+              <br>
         </div>
-    </div><!--  -->
 @if(count($events)>0)
 <section class="product_list">
     <div class="container">

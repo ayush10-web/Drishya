@@ -4,38 +4,80 @@
 <section style="margin: 20px">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 shadow p-3 mb-5 bg-white rounded">
+            <div class="col-md-12 shadow p-3 mb-5 bg-white rounded">
                 <div class="card">
                     <div class="card-body">
                       <h4 class="card-title"> <strong><u> Room Details</u></strong></h4>
-                      <div class="div" style="height: 370px;">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              @if (count($room->images) > 0)
-                                  @foreach ($room->images as $key=>$item)
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif "></li>
-                                  @endforeach
-                              @endif
-                            </ol>
-                            <div class="carousel-inner" style="height: 350px">
-                              @if (count($room->images) > 0)
-                                @foreach ($room->images as $key=>$value)
-                                <div class="carousel-item @if($key == 0) active @endif">
-                                  <img class="d-block w-100" src="{{$value->file_path}}" alt="First slide">
+
+                      @if ($room->category == "Suit Deluxe Room")
+                          <p>Spacious, Bright Suit Room comes with a king size bed with comfortable mattress, fully equipped bathroom finished with top quality bath tub</p>
+                          <br>
+                          <p>{{$room->description}}</p>
+                      @elseif ($room->category == "Double Deluxe Room")
+                          <p>High quality parquet floored, spacious, bright deluxe room. The room comes with one king size bed, free WIFI, AC, 32 Led TV, and wall-in showers with rainfall showerheads and including minibar. </p>
+                          <br>
+                          <p>{{$room->description}}</p>
+                      @endif
+                      <br>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <br>
+                          <br>
+                            <ul>
+                              <h6>
+                                
+                              <li> <span> Room's Capacity : </span>{{$room->capacity}} Person</li><br>
+                              <li> <span> Room's Price : </span>Rs.{{$room->room_price}} per day </li><br>
+                              <li> <span> Bed : </span>{{$room->bed}}</li><br>
+                              <li> <span> Wifi Availability : </span> @if ($room->wifi == "1")
+                                  <i class="fa fa-check" style="color: green" aria-hidden="true"></i>
+                              @else
+                                  <i class="fa fa-times" style="color: red" aria-hidden="true"></i>
+                              @endif</li><br>
+                              <li> <span> Room Service : </span> @if ($room->wifi == "1")
+                                <i class="fa fa-check" style="color: green" aria-hidden="true"></i>
+                            @else
+                                <i class="fa fa-times" style="color: red" aria-hidden="true"></i>
+                            @endif</li><br>
+                            </h6>
+                              
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                              Book Room
+                            </button>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="div" style="height: 370px;">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  @if (count($room->images) > 0)
+                                      @foreach ($room->images as $key=>$item)
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif "></li>
+                                      @endforeach
+                                  @endif
+                                </ol>
+                                <div class="carousel-inner" style="height: 350px">
+                                  @if (count($room->images) > 0)
+                                    @foreach ($room->images as $key=>$value)
+                                    <div class="carousel-item @if($key == 0) active @endif">
+                                      <img class="d-block w-100" src="{{$value->file_path}}" alt="First slide">
+                                    </div>
+                                    @endforeach
+                                  @endif
                                 </div>
-                                @endforeach
-                              @endif
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
                           </div>
+                        </div>
                       </div>
+                      
                       @if (count($dateArray) > 0)
                       <div class="note text-danger">Note: This room is not available for these days&nbsp;(@foreach ($dateArray as $item)
                         
@@ -48,18 +90,16 @@
                       @endif
                      
                       <div class="div text-center">
-                         <strong>Room's Capacity: {{$room->capacity}}</strong> <br>
+                         {{-- <strong>Room's Capacity: {{$room->capacity}}</strong> <br>
                           <strong>Floor Number:{{$room->floor_number}}</strong> <br>
                           <strong>Room Price:{{$room->room_price}}</strong> <br>
 
                           <i class="card-text">{{$room->description}}</i>
                         <br>
-                        <br>
+                        <br> --}}
                         <input type="hidden" id="roomId" value="{{$room->id}}">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                          Book Room
-                        </button>
+                       
                       </div>
                       <!-- Modal -->
                       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -127,7 +167,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-md-5"> 
+            {{-- <div class="col-md-5"> 
               <div class="div text-center shadow p-3 mb-5 bg-white rounded">
                 <h4><strong>Other Available Rooms</strong></h4>
                 <div class="div">
@@ -153,7 +193,7 @@
                 </div>
                 
               </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     

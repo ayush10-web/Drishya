@@ -22,7 +22,7 @@ class IndexController extends Controller
 
         $services = Service::with('image')->latest()->get();
 
-        $rooms = Room::with('images')->latest()->take(5)->get();
+        $rooms = Room::with('images')->latest()->take(4)->get();
         // dd($sliders);
         // return view('frontend.index',compact('sliders','services','rooms'));
         // dd($rooms);

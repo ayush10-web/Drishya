@@ -21,6 +21,11 @@ class CreateRoomsTable extends Migration
             $table->string('status');
             $table->integer('floor_number')->nullable();
             $table->longText('description')->nullable();
+            $table->string('category')->nullable();
+            $table->string('view')->nullable();
+            $table->string('bed')->nullable();
+            $table->string('room_service')->boolean(false);
+            $table->string('wifi')->boolean(false);
             $table->timestamps();
         });
     }

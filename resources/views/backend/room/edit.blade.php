@@ -96,8 +96,66 @@
                       <label for="room_no">Description</label>
                       <textarea name="description"  class="form-control" value="{{$room->description}}" placeholder="Enter Description Here"></textarea>
                     </div>
+                    <div class="col-md-6">
+                      <label for="room_no">Category</label>
+                      <select name="category" class="form-control" id="category" required>
+                          <option value="" disabled selected>Select Category</option>
+                          <option value="Twin Deluxe Room" @if ($room->category == "Twin Deluxe Room")
+                              selected
+                          @endif>Twin Deluxe Room</option>
+                          <option value="Suit Deluxe Room" @if ($room->category == "Suit Deluxe Room")
+                            selected
+                        @endif>Suit Deluxe Room</option>
+                          <option value="Double Deluxe Room" @if ($room->category == "Double Deluxe Room")
+                            selected
+                        @endif>Double Deluxe Room</option>
+                          <option value="Triple Deluxe Room" @if ($room->category == "Triple Deluxe Room")
+                            selected
+                        @endif>Triple Deluxe Room</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="bed">No. Of  Bed</label>
+                      <input type="text" name="bed" class="form-control" id="room_capacity" value="{{$room->bed}}" placeholder="Enter number of bed" multiple>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="room_no">View From Room</label>
+                      <input type="text" name="view" class="form-control" value="{{$room->view}}">
+                    </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="room_no">Room Service</label>
+                    <select name="room_service" class="form-control" id="Room Service" required>
+                        <option value="" disabled selected>Select Room Service</option>
+                        <option value="1"@if ($room->room_service == "1")
+                          selected
+                      @endif>Available</option>
+                        <option value="0" @if ($room->room_service == "0")
+                          selected
+                      @endif>Unavailable</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="wifi">WIFI</label>
+                    <select name="wifi" class="form-control" id="Room Service" required>
+                      <option value="" disabled selected>Select Wifi Availability</option>
+                      <option value="1" @if ($room->wifi == "1")
+                        selected
+                    @endif>Available</option>
+                      <option value="0" @if ($room->wifi == "0")
+                        selected
+                    @endif>Unavailable</option>
+                  </select>
+                  </div>
+                </div>
+            </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">

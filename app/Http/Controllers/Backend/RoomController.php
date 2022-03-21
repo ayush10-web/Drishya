@@ -32,7 +32,15 @@ class RoomController extends Controller
             'room_price' => $request['room_price'],
             'floor_number' => $request['floor_num'],
             'status' => $request['status'],
-            'description' => $request['description']
+            'description' => $request['description'],
+            'category' => $request['category'],
+            'view' => $request['view'],
+            'wifi' => $request['wifi'],
+            'bed' => $request['bed'],
+            'room_service' => $request['room_service'],
+
+
+
         ]);
 
         if ($request->hasFile('images')) {
@@ -79,7 +87,11 @@ class RoomController extends Controller
          $room->floor_number = $request['floor_num'];
          $room->status = $request['status'];
          $room->description = $request['description'];
-
+         $room->category = $request['category'];
+         $room->view = $request['view'];
+         $room->wifi = $request['wifi'];
+         $room->bed = $request['bed'];
+         $room->room_service = $request['room_service'];
          $room->update();
          if ($request->hasFile('images')) {
             $path = "uploads/room/";

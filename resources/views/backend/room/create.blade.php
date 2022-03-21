@@ -49,11 +49,11 @@
                     <div class="row">
                         <div class="col-md-6">
                           <label for="room_no">Room Price</label>
-                          <input type="integer" step="0.01" name="room_price" class="form-control" id="room_price" placeholder="Enter Room Number" required>
+                          <input type="integer" step="0.01" name="room_price" class="form-control" id="room_price" placeholder="Enter Room Price" required>
                         </div>
                         <div class="col-md-6">
                           <label for="room_no">Floor Number</label>
-                          <input type="number" name="floor_num" class="form-control" id="floor_num" placeholder="Enter Room's Capacity" required>
+                          <input type="number" name="floor_num" class="form-control" id="floor_num" placeholder="Enter Floor's Number" required>
                       </div>
                     </div>
                 </div>
@@ -76,8 +76,50 @@
                 <div class="form-group">
                   <div class="row">
                     <div class="col-md-6">
+                      <label for="bed">No. Of  Bed</label>
+                      <input type="text" name="bed" class="form-control" id="room_capacity" placeholder="Enter number of bed" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="room_no">View From Room</label>
+                      <input type="text" class="form-control" placeholder="View From Room" name="view">
+                    </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="room_no">Room Service</label>
+                    <select name="room_service" class="form-control" id="Room Service" required>
+                        <option value="" disabled selected>Select Room Service</option>
+                        <option value="1">Available</option>
+                        <option value="0">Unavailable</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="wifi">WIFI</label>
+                    <select name="wifi" class="form-control" id="Room Service" required>
+                      <option value="" disabled selected>Select Wifi Availability</option>
+                      <option value="1">Available</option>
+                      <option value="0">Unavailable</option>
+                  </select>
+                  </div>
+                </div>
+            </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
                       <label for="room_no">Room Image</label>
-                      <input type="file" name="images[]" class="form-control" id="room_capacity" placeholder="Enter Room's Capacity" multiple>
+                      <input type="file" name="images[]" class="form-control" id="room_capacity" multiple>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="room_no">Category</label>
+                      <select name="category" class="form-control" id="category" required>
+                          <option value="" disabled selected>Select Category</option>
+                          <option value="Twin Deluxe Room">Twin Deluxe Room</option>
+                          <option value="Suit Deluxe Room">Suit Deluxe Room</option>
+                          <option value="Double Deluxe Room">Double Deluxe Room</option>
+                          <option value="Triple Deluxe Room">Triple Deluxe Room</option>
+                      </select>
                     </div>
                   </div>
               </div>

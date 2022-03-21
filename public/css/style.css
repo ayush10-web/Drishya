@@ -1069,7 +1069,33 @@ div#slick-slide01{
 	color: white;
 	box-shadow: none;
 }
+.room-image-overlay > * {
+    transform: translateY(0px);
+    transition: transform 0.25s;
+}
+.room-image-overlay--primary {
+    background: #009578;
+}
+.room-image-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: flex;
+	background: rgb(0, 0, 0,0.6);
+	font-family: 'Quicksand',sans-seriff;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+	justify-content: center;
+	transition: opacity 0.25s;
+}
 
+.room-image-overlay:hover{
+	opacity: 1;
+}
 .choose_block_list:hover i {
 	transition: all 0.65s;
 	transform: rotateY(360deg);
