@@ -8,7 +8,7 @@
     </div>
     <br>
     <div class="text-center" >
-      <h6>  <a href="http://">HOME</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="http://">CONTACT US</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="">ROOMS</a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="">BANQUETS</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="">RESTAURANT</a></h1>
+      {{-- <h6>  <a href="http://">HOME</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="http://">CONTACT US</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="">ROOMS</a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="">BANQUETS</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="">RESTAURANT</a></h1> --}}
    </div>
    <h1 class="text-center" style="color: #043249;
    text-decoration-color: antiquewhite;
