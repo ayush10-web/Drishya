@@ -19,6 +19,7 @@ use App\Http\Controllers\Frontend\RoomController as FrontendRoomController;
 use App\Http\Controllers\Frontend\ContactUsController as FrontendContactUsController;
 use App\Http\Controllers\Frontend\EventController as FrontendEventController;
 use App\Models\Image;
+use App\Models\Room;
 use App\Models\Service;
 
 /*
@@ -150,6 +151,8 @@ View::composer('*', function ($view) {
         if ($sett->value != null) {
             $setting['logo'] = Image::where('id',$sett->value)->first();
         }
+    $navmenurooms = Room::where('status','A')->get();
+    // dd($navmenurooms);
     $servicesnav = Service::get();
-    return $view->with(['setting'=>$setting,'servicesnav' => $servicesnav]);   
+    return $view->with(['setting'=>$setting,'servicesnav' => $servicesnav, 'navmenurooms' => $navmenurooms]);   
 });

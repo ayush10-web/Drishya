@@ -49,6 +49,9 @@
     </div><!-- container -->
 </section><!-- header-top -->
 */ ?>
+<style>
+    .dropdown:hover .dropdown-toggle {display: block;}
+</style>
 <section class = "header-top">
     <div class="container">
         <div class="row">
@@ -108,18 +111,23 @@
                                         <a class="nav-link" href="{{route('index')}}">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>
-                                        <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">   
-                                    <div class="dropdown show">
+                                    <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">   
+                                        <div class="dropdown show">
                                         <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                           Rooms
                                         </a>
                                       
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                          <a class="dropdown-item" href="#">deluxe roo,</a>
-                                          <a class="dropdown-item" href="#">sdehcfsdf</a>
-                                          <a class="dropdown-item" href="#">Something else here</a>
+                                            @foreach ($navmenurooms as $item)
+                                                <a class="dropdown-item" style="color: black" href="{{route('room.details',$item->id)}}">{{$item->category}}</a>
+                                            @endforeach
+                                          
+                                          {{-- <a class="dropdown-item" style="color: black" href="#">Suit Deluxe Room</a>
+                                          <a class="dropdown-item" style="color: black" href="#">Double Deluxe Room</a>
+                                          <a class="dropdown-item"  style="color: black" href="#">Triple Deluxe Room</a> --}}
+
                                         </div>
-                                      </div>
+                                        </div>
                                     </li>
                                     <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
                                         <a class="nav-link" href="{{route('banquet')}}">Banquet</a>
