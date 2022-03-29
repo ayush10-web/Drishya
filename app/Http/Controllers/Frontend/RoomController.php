@@ -55,6 +55,7 @@ class RoomController extends Controller
             'to' => $request['to'],
             'days' => $request['days'],
         ]);
+        
         return redirect()->back()->with('success_message','Thankyou for Booking. Details will be sent to your email');
     }
     public function room()
