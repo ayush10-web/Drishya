@@ -75,9 +75,9 @@
             <div class="row">
                 @foreach ($rooms as $room)
                     <div class="col-md-3 " >
-                        <div class="card room-image-block">
+                        <div class="card room-image-block" style="overflow: hidden;">
                             <a href="{{route('room.details',$room->id)}}">
-                                <img src="{{$room->images[0]->file_path}}" alt="#" style="height:300px;">
+                                <img src="{{$room->images[0]->file_path}}" alt="#" style="height:300px;transform: translateX(-22%); width:auto !important">
                                 <div class="room-details-category">
                                     <center><h5> <i>{{$room->category}} </i> </h5></center>
                                 </div>
