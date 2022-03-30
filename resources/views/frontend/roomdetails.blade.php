@@ -1,14 +1,12 @@
 @extends('frontend.layouts.master')
 @section('content')
 @include('backend.layouts.alerts')
-<section class="service_banner" style="height:300px;">
+<section class="service_banner" style="height:300px; overflow:hidden">
   <div class="banner_width" >
-      <img src="/images/download.jpg" alt="#" style="height:300px;">
+      <img src="/images/bedroom-416062_960_720.webp" alt="#" style="height:100%; margin-top: -23%">
   </div><!-- banner_width -->
   <div class="service_overlay contact_overlay">
-      <h1 class="text-center" style="color: #043249;
-      text-decoration-color: antiquewhite;
-      font-style: italic; margin-top:30px">Welcome To Our<br> Restaurant </h1>
+      <h1 class="text-center" style="color: #043249; margin-top:7%"> {{$room->category}} </h1>
   </div><!-- service_overlay -->
 </section><!-- service_banner -->
 <section>
@@ -180,22 +178,22 @@
 
         $('#days').val(diffDays);
         $('#sendDays').val(diffDays);
-        var token = '{!! csrf_token() !!}';
-          $.ajax({
-            url: "/room/check-availability",
-            type: 'GET',
-            data: {
-              "id": roomid,
-                "date": from,
-            },
-            success: function(success) {
-              console.log(success);
-              if (success == 'y') {
-                alert('Sorry, room is not available for this date.')
-                $('#fromdate').val('')
-              }
-             }
-          });
+        // var token = '{!! csrf_token() !!}';
+        //   $.ajax({
+        //     url: "/room/check-availability",
+        //     type: 'GET',
+        //     data: {
+        //       "id": roomid,
+        //         "date": from,
+        //     },
+        //     success: function(success) {
+        //       console.log(success);
+        //       if (success == 'y') {
+        //         alert('Sorry, room is not available for this date.')
+        //         $('#fromdate').val('')
+        //       }
+        //      }
+        //   });
 
     }
     function efgrthyjumk() {
@@ -209,22 +207,22 @@
         $('#days').val(diffDays);
 
         $('#sendDays').val(diffDays);
-        var token = '{!! csrf_token() !!}';
-          $.ajax({
-            url: "/room/check-availability",
-            type: 'GET',
-            data: {
-              "id": roomid,
-                "date": to,
-            },
-            success: function(success) {
-              console.log(success);
-              if (success == 'y') {
-                alert('Sorry, room is not available for this date.')
-                $('#todate').val('')
-              }
-             }
-          });
+        // var token = '{!! csrf_token() !!}';
+        //   $.ajax({
+        //     url: "/room/check-availability",
+        //     type: 'GET',
+        //     data: {
+        //       "id": roomid,
+        //         "date": to,
+        //     },
+        //     success: function(success) {
+        //       console.log(success);
+        //       if (success == 'y') {
+        //         alert('Sorry, room is not available for this date.')
+        //         $('#todate').val('')
+        //       }
+        //      }
+        //   });
 
     }
 
