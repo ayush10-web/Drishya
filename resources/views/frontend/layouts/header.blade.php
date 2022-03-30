@@ -49,7 +49,7 @@
     </div><!-- container -->
 </section><!-- header-top -->
 */ ?>
-<section class = "header-top">
+<section class = "header-top" style="display: none;">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -90,17 +90,17 @@
             <div class="col-md-8 heading_main">
                 <h1>Drishya Hotel & Restaurant</h1>
                 <p>FOOD • DRINKS • MUSIC</p>
-                <div class="navdown nav_search clearfix" id="main_navigation" style="border-top: 1px solid #e5e5e5; margin-top:10px;">
-                    <div class="main_nav">
+                <div class="navdown nav_search clearfix" id="main_navigation" style="background-color: rgba(255, 255, 255, 0); margin-top:10px;">
+                    <div class="main_nav" style="background-color: rgba(255, 255, 255, 0);">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light wow fadeInDown"
-                             style=" visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">
+                             style=" visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;" style="background-color: rgba(255, 255, 255, 0);">
                             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(255, 255, 255, 0);">
+                                <span class="navbar-toggler-icon" style="background-color: rgba(255, 255, 255, 0);"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
+                            <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(255, 255, 255, 0);">
+                                <ul class="navbar-nav" style="background-color: rgba(255, 255, 255, 0);">
                                     <li style="width: 50px; display:none;" class = "temp">
                                         <img src="/images/mini-logo.jpeg" alt="#" style="width: 50px; display:none; border-radius:50%;" class="wow rubberBand"/>
                                     </li>

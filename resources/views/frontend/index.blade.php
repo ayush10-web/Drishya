@@ -4,7 +4,7 @@
 @if (count($sliders) > 0)
 
 <section class="slider_main">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="border:0;">
             <ol class="carousel-indicators">
                 @foreach($sliders as $key => $slides)
                 <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" class=" @if($key == 0) active @endif"></li>
