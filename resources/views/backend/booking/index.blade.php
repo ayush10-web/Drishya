@@ -1,5 +1,6 @@
 @extends('backend.layouts.master')
 @section('content')
+@include('backend.layouts.alerts')
  <!-- Content Header (Page header) -->
  <div class="content-header">
   <div class="container-fluid">
