@@ -125,7 +125,15 @@
                                         <a class="nav-link" href="{{route('banquet')}}">Banquet</a>
                                     </li> 
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{route('restaurant')}}">Restaurant</a>
+                                        <div class="dropdown show">
+                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Restaurant
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                              <a class="dropdown-item" href="www.google.com">Menu</a>
+                                            </div>
+                                          </div>
                                     </li> 
                                     <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
                                         <a class="nav-link " href="{{route('gallery.view')}}">Photos</a>

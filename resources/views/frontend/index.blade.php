@@ -153,7 +153,6 @@
     <div class="container">
         <div class="choose_head wow fadeInDown">
             <h1>Amenities</h1>
-            <p>We Are Very The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.</p>
         </div><!-- choose_head -->
         <div class="row wow flipInX">
             
