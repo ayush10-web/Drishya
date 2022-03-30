@@ -34,7 +34,7 @@ class BookingController extends Controller
         ];
         Mail::to($booking->customer->email)->send(new \App\Mail\SendConfirmationMail($details));
         $room = Room::find($booking->room->id);
-        $room->status = 'U';
+        $room->room_number = $room->room_number - 1;
         $room->save();
         $booking->status = 'B';
         $booking->save();

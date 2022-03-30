@@ -34,7 +34,7 @@
                       <th>Name</th>
                       <th>Email</th>
                       <th>Contact</th>
-                      <th>Room Number</th>
+                      <th>Room Booked</th>
                       <th>Room Price Per Day</th>
                       <th>From Date</th>
                       <th>To Date</th>

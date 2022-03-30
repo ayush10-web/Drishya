@@ -49,7 +49,7 @@
    
 </section>
 <br><br>
-<section>
+{{-- <section>
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto col-12 text-center mb-3">
@@ -84,6 +84,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- about_top_banner -->
 @endsection

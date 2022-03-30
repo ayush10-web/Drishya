@@ -1,28 +1,79 @@
 @extends('frontend.layouts.master')
 @section('content')
 @include('backend.layouts.alerts')
-<section style="margin: 20px">
-    <div class="container">
+<section class="service_banner" style="height:300px;">
+  <div class="banner_width" >
+      <img src="/images/download.jpg" alt="#" style="height:300px;">
+  </div><!-- banner_width -->
+  <div class="service_overlay contact_overlay">
+      <h1 class="text-center" style="color: #043249;
+      text-decoration-color: antiquewhite;
+      font-style: italic; margin-top:30px">Welcome To Our<br> Restaurant </h1>
+  </div><!-- service_overlay -->
+</section><!-- service_banner -->
+<section>
+  <div id="checkinout" style="height:150px; background:azure">
+      <div class="container" >
+        <form action="{{route('book.room',$room->id)}}" method="post">
+          @csrf
         <div class="row">
-            <div class="col-md-12 shadow p-3 mb-5 bg-white rounded">
-                <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title"> <strong><u> Room Details</u></strong></h4>
+          
+          <div class="col-md-2">
+          <center>
+              <strong style="top: 45px; position: relative;">Your Name</center>
+              <input type="text" name="name" class="form-control" id="room_no" placeholder="Enter Name" required> </strong>
+          </div>
+          <div class="col-md-2">
+            <center>
+              <strong style="top: 45px; position: relative;">Phone Number
+              <input type="integer" name="number" class="form-control" id="room_capacity" placeholder="Enter Number" required> </strong>
+</center>          </div>
+          <div class="col-md-2">
+            <center>
+              <strong style="top: 45px; position: relative;">Email Address
+              <input type="email" name="email" class="form-control" id="room_no" placeholder="Enter Email Address" required> </strong>
 
+              </center>          </div>
+                <div class="col-md-2">
+                  <center>
+                    <strong style="top: 45px; position: relative;">Arrival Date
+                      <input type="date" name="from" class="form-control" id="fromdate" placeholder="Enter From Date"  onchange="dsfgrthyju()" min="@php echo date('Y-m-d') @endphp" required> </strong>
+                  </center>         
+                 </div>
+                 <div class="col-md-2">
+                  <center>
+                    <strong style="top: 45px; position: relative;">Departure Date
+
+                      <input type="date" name="to" class="form-control" id="todate" placeholder="Enter To Date" onchange="efgrthyjumk()" min="" required></strong>
+                  </center>         
+                 </div>
+                 <div class="col-md-2">
+                  
+                    <strong style="top: 75px; position: relative;">
+
+                      <button type="submit" class="btn btn-primary">Book Now</button>
+                      <input type="hidden" id="sendDays" value="" name="days">
+                 </div>
+        </div>
+        </form>
+      </div>
+  </div>
+</section>
+    <div class="container" style="margin-top: -35px;">
+                      <center>
+                        <h3>{{$room->category}}</h3>
+                      </center>
                       @if ($room->category == "Suit Deluxe Room")
-                          <p>Spacious, Bright Suit Room comes with a king size bed with comfortable mattress, fully equipped bathroom finished with top quality bath tub</p>
-                          <br>
-                          <p>{{$room->description}}</p>
+                          <center><p>Spacious, Bright Suit Room comes with a king size bed with comfortable mattress, fully equipped bathroom finished with top quality bath tub</p>
+                          <p>{{$room->description}}</p></center>
                       @elseif ($room->category == "Double Deluxe Room")
-                          <p>High quality parquet floored, spacious, bright deluxe room. The room comes with one king size bed, free WIFI, AC, 32 Led TV, and wall-in showers with rainfall showerheads and including minibar. </p>
-                          <br>
-                          <p>{{$room->description}}</p>
+                         <center> <p>High quality parquet floored, spacious, bright deluxe room. The room comes with one king size bed, free WIFI, AC, 32 Led TV, and wall-in showers with rainfall showerheads and including minibar. </p>
+                          <p>{{$room->description}}</p></center>
                       @else
-                        <p>High quality parquet floored, spacious, bright rooms are available here at drishya.  </p>
-                        <br>
-                        <p>{{$room->description}}</p>
+                        <center><p>High quality parquet floored, spacious, bright rooms are available here at drishya. High quality parquet floored, spacious, bright rooms are available here at drishya.</p>
+                        <p>{{$room->description}}</p></center>
                       @endif
-                      <br>
+                      {{-- <br>
                       <div class="row">
                         <div class="col-md-5">
                           <br>
@@ -45,13 +96,12 @@
                             @endif</li><br>
                             </h6>
                               
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            </ul> --}}
+                            {{-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                               Book Room
-                            </button>
-                        </div>
-                        <div class="col-md-7">
-                          <div class="div" style="height: 370px;">
+                            </button> --}}
+                        {{-- </div> --}}
+                          <div class="div" style="height: 350px; margin-bottom:5px;">
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                   @if (count($room->images) > 0)
@@ -64,7 +114,7 @@
                                   @if (count($room->images) > 0)
                                     @foreach ($room->images as $key=>$value)
                                     <div class="carousel-item @if($key == 0) active @endif">
-                                      <img class="d-block w-100" src="{{$value->file_path}}" alt="First slide">
+                                      <img class="d-block w-100" src="{{$value->file_path}}" style="height: 350px;" alt="First slide">
                                     </div>
                                     @endforeach
                                   @endif
@@ -79,126 +129,38 @@
                                 </a>
                               </div>
                           </div>
-                        </div>
-                      </div>
-                      
-                      @if (count($dateArray) > 0)
-                      <div class="note text-danger">Note: This room is not available for these days&nbsp;(@foreach ($dateArray as $item)
-                        
-                        @if($loop->last)
-                        <span>{{$item}}.</span>
-                        @else
-                        <span>{{$item}}, &nbsp;</span>
-                        @endif
-                    @endforeach)</div>
-                      @endif
-                     
-                      <div class="div text-center">
-                         {{-- <strong>Room's Capacity: {{$room->capacity}}</strong> <br>
-                          <strong>Floor Number:{{$room->floor_number}}</strong> <br>
-                          <strong>Room Price:{{$room->room_price}}</strong> <br>
-
-                          <i class="card-text">{{$room->description}}</i>
-                        <br>
-                        <br> --}}
-                        <input type="hidden" id="roomId" value="{{$room->id}}">
-                        <!-- Button trigger modal -->
-                       
-                      </div>
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                          <form action="{{route('book.room',$room->id)}}" method="post">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Book A Room</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            
-                            <div class="modal-body">
-                              
-                                @csrf
-                                <div class="form-group">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control" id="room_no" placeholder="Enter Your Name" required>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <input type="integer" name="number" class="form-control" id="room_capacity" placeholder="Enter Your Number" required>
-                                    </div>
-                                  </div>
+                          <br>
+                          <br>
+                          <div class="amenities" style="margin-bottom: 55px;">
+                            <center><h4>Amenities</h4></center>
+                            <br>
+                            <br><br>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <i class="fa fa-money-check" aria-hidden="true"></i> <span> Room's Price : </span>Rs.{{$room->room_price}} per day <br> <br>
+                                  <i class="fa fa-bed" aria-hidden="true"></i> <span> Bed : </span>{{$room->bed}}
                                 </div>
-                                <div class="form-group">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                        <input type="email" name="email" class="form-control" id="room_no" placeholder="Enter Email Address" required>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <input type="integer" name="address" class="form-control" id="room_capacity" placeholder="Enter Address" required>
-                                    </div>
-                                  </div>
+                                <div class="col-md-4">
+                                  <i class="fa fa-wifi" aria-hidden="true"></i> <span> Wifi Availability : </span> @if ($room->wifi == "1")
+                                  <i class="fa fa-check" style="color: green" aria-hidden="true"></i>
+                              @else
+                                  <i class="fa fa-times" style="color: red" aria-hidden="true"></i>
+                              @endif <br> <br>
+                              <i class="fa fa-wrench" aria-hidden="true"></i> <span> Room Service : </span> @if ($room->wifi == "1")
+                                <i class="fa fa-check" style="color: green" aria-hidden="true"></i>
+                            @else
+                                <i class="fa fa-times" style="color: red" aria-hidden="true"></i>
+                            @endif
                                 </div>
-                                <div class="form-group">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                        <input type="date" name="from" class="form-control" id="fromdate" placeholder="Enter From Date"  onchange="dsfgrthyju()" min="@php echo date('Y-m-d') @endphp" required>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <input type="date" name="to" class="form-control" id="todate" placeholder="Enter To Date" onchange="efgrthyjumk()" min="" required>
-                                    </div>
-                                  </div>
+                                <div class="colmd-4">
+                                  <i class="fa fa-tv" aria-hidden="true"></i> <span> Television : </span> 
+                                  <i class="fa fa-check" style="color: green" aria-hidden="true"></i> <br> <br>
                                 </div>
-                                <div class="form-group">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                        <input type="text" class="form-control" id="days" value="0 days" readonly>
-                                      </div>
-                                      <input type="hidden" id="sendDays" value="" name="days">
-                                  </div>
                               </div>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="submit" class="btn btn-primary">Book</button>
-                            </div>
                           </div>
-                        </form>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
-            </div>
-            {{-- <div class="col-md-5"> 
-              <div class="div text-center shadow p-3 mb-5 bg-white rounded">
-                <h4><strong>Other Available Rooms</strong></h4>
-                <div class="div">
-                  @foreach ($rooms as $val)
-                  @if ($val->id != $room->id)
-                  <div class="col-md-9" style="position: relative; left:50px;">
-                    <a href="{{route('room.details',$val->id)}}">
-                    <div class="card">
-                      <div class="card-body">
-                        <img src="{{$val->images[0]->file_path}}" alt="" srcset="">
-                        <br>
-                        <br>
-                        <strong>Capacity: {{$val->capacity}}</strong> <br>
-                        <strong>Room Price: Rs.{{$val->room_price}}</strong>
-
-                      </div>
-                    </div>
-                  </a>
-                  </div> <br>
-                  @endif
-                  
-                  @endforeach
-                </div>
-                
-              </div>
-            </div> --}}
-        </div>
+                        <input type="hidden" id="roomId" value="{{$room->id}}">
     </div>
     
 </section>

@@ -9,6 +9,7 @@ use App\Models\Image;
 use App\Models\Room;
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class RoomController extends Controller
 {
@@ -55,6 +56,11 @@ class RoomController extends Controller
             'to' => $request['to'],
             'days' => $request['days'],
         ]);
+        $details = [
+            'title' => 'Mail from Drishya',
+            'body' => 'This email is to notify that we have received your request. we will contact you again with the confirmation mail.'
+        ];
+        Mail::to($request->email)->send(new \App\Mail\SendConfirmationMail($details));
         return redirect()->back()->with('success_message','Thankyou for Booking. Details will be sent to your email');
     }
     public function room()
