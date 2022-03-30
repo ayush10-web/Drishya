@@ -46,13 +46,17 @@ var sticky = main_navigation.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= 220) {
-    main_navigation.classList.add("sticky");
-    $('.navdown').addClass('stricky-fixed slideInDown animated');
-    $('.navbar').addClass('leftPadding');
+    $('.navdownNext').addClass('sticky stricky-fixed slideInDown animated');
+    $('.navbarNext').addClass('leftPadding');
   } else {
-    main_navigation.classList.remove("sticky");
-    $('.navdown').removeClass('stricky-fixed slideInDown animated');
-    $('.navbar').removeClass('leftPadding');
+    $('.navdownNext').removeClass('sticky stricky-fixed slideInDown animated');
+    $('.navbarNext').removeClass('leftPadding');
+  }
+
+  if (window.pageYOffset >= 450) {
+    $('.navdownIndex').removeClass('stickyFirst');
+  } else {
+    $('.navdownIndex').addClass('stickyFirst');
   }
   
 }

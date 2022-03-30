@@ -50,50 +50,18 @@
 </section><!-- header-top -->
 */ ?>
 
-<section class = "header-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <ul class="tn-left">
-                    <li><a href="tel:+{{$setting['phoneNumber']}}"><i class="fa fa-phone-alt"></i><span> {{$setting['phoneNumber']}} | {{$setting['mobileNumber']}}</span>                                </a></li>
 
-                    <li><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <div class="tn-right">
-                    <div class="top-social">
-                        <ul>
-                            <li class="icon_bg1"><a href="{{$setting['facebook']}}" rel="noopener"` target="_blank" accesskey="a"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="icon_bg2"><a href="{{$setting['twitter']}}" rel="noopener"` target="_blank" accesskey="b"><i class="fab fa-twitter"></i></a></li>
-                            <li class="icon_bg1"><a href="{{$setting['instagram']}}" rel="noopener" target="_blank" accesskey="c"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li class="icon_bg2"><a href="{{$setting['youtube']}}" rel="noopener" target="_blank" accesskey="d"><i class="fab fa-youtube"></i></a> </li>
-                            <li class="icon_bg1"><a href="{{$setting['website']}}" target="_blank" rel="noopener" ><i class="fab fa-google-plus-g" accesskey="f"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="header_logo2"
-         style=" visibility: visible;">
+         style=" visibility: visible; position:absolute;">
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <div class="header_logo">
-                    @if ($setting['logo'] != null)
-                    <a href="/"><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
-                    @endif
-                    
-                </div><!-- header_logo -->
+
             </div><!-- col -->
             <div class="col-md-8 heading_main">
-                <h1>Drishya Hotel & Restaurant</h1>
-                <p>FOOD • DRINKS • MUSIC</p>
-                <div class="navdown navdownNext nav_search clearfix" id="main_navigation" style="background-color: rgba(255, 255, 255, 0); margin-top:10px;">
+                <div class="navdown navdownIndex nav_search clearfix sticky stricky-fixed slideInDown animated stickyFirst" id="main_navigation" style="background-color: rgba(255, 255, 255, 0); margin-top:10px;">
                     <div class="main_nav" style="background-color: rgba(255, 255, 255, 0);">
-                        <nav class="navbar navbarNext navbar-expand-lg navbar-light bg-light wow fadeInDown"
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light wow fadeInDown leftPadding"
                              style=" visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;" style="background-color: rgba(255, 255, 255, 0);">
                             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -130,9 +98,9 @@
                                     </li> 
                                     <li style="width: 50px; display:none; margin-left:6% !important; margin-top: -0.3%;
                                     margin-bottom: -1%;" class = "temp">
-                                    <div class="logNav">
-                                        <a href="/"><img src="/images/mini-logo.jpeg" alt="#" style="width: 70px; display:none; border-radius:50%;" class="wow rubberBand"/></a>
-                                    </div>
+                                        <div class="logNav">
+                                            <a href="/"><img src="/images/mini-logo.jpeg" alt="#" style="width: 70px; display:none; border-radius:50%;" class="wow rubberBand"/></a>
+                                        </div>
                                     </li>
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
                                         <a class="nav-link" href="{{route('restaurant')}}">Restaurant</a>
@@ -166,13 +134,8 @@
                     </div><!-- main_search --> --}}
                 </div>
             </div>
-            <div class="col-lg-2">
-                <div class="tn-right">
-                    <a href="{{route('drishya.rooms')}}" class="bk-btn">Book Now</a>
-                </div>
-            </div>
+
         </div><!-- row -->
     </div><!-- container -->
 </section><!-- header_logo -->
-<div style='width:100%; background-color:white;height:3px;'></div>
 

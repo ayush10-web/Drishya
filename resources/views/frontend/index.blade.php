@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+@extends('frontend.layouts.masterIndex')
 @section('content')
 @include('backend.layouts.alerts')
 @if (count($sliders) > 0)
@@ -13,7 +13,7 @@
             <div class="carousel-inner">
 
                 @foreach($sliders as $key => $slides)
-                <div class="carousel-item @if($key == 0) active @endif slider-descripton">
+                <div class="carousel-item @if($key == 0) active @endif slider-descripton" style="height: 100vh;">
                     <img class="d-block w-100" src="{{$slides->images[0]->file_path}}" alt="Grow your Business online" height='500px'>
                     <div class="carousel-caption">
                         {{-- <p class="animated bounceInRight"

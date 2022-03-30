@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('content')
-<section class="service_banner" style="margin-top:15%">
+<section class="service_banner">
     <div class="banner_width">
         <img src="images/restimage.png" alt="#">
     </div><!-- banner_width -->
