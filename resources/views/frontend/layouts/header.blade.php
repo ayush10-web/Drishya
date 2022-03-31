@@ -146,7 +146,7 @@
                                           </div>
                                     </li> 
                                     <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
-                                        <a class="nav-link " href="{{route('gallery.view')}}">Photos</a>
+                                        <a class="nav-link " href="{{route('gallery.view')}}">Gallery</a>
                                     </li>
                                    
                                     <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">

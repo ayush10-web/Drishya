@@ -10,8 +10,8 @@
   </div><!-- service_overlay -->
 </section><!-- service_banner -->
 <section>
-  <div id="checkinout" style="height:150px; background:azure">
-      <div class="container" >
+  <div id="checkinout" style="height:150px; background:azure; padding-left:5%">
+      
         <form action="{{route('book.room',$room->id)}}" method="post">
           @csrf
         <div class="row">
@@ -32,20 +32,27 @@
               <input type="email" name="email" class="form-control" id="room_no" placeholder="Enter Email Address" required> </strong>
 
               </center>          </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                   <center>
                     <strong style="top: 45px; position: relative;">Arrival Date
                       <input type="date" name="from" class="form-control" id="fromdate" placeholder="Enter From Date"  onchange="dsfgrthyju()" min="@php echo date('Y-m-d') @endphp" required> </strong>
                   </center>         
                  </div>
-                 <div class="col-md-2">
+                 <div class="col-md-3">
                   <center>
                     <strong style="top: 45px; position: relative;">Departure Date
 
                       <input type="date" name="to" class="form-control" id="todate" placeholder="Enter To Date" onchange="efgrthyjumk()" min="" required></strong>
                   </center>         
                  </div>
-                 <div class="col-md-2">
+                 <div class="col-md-3">
+                  <center>
+                    <strong style="top: 45px; position: relative;">Number Of People
+
+                      <input type="number" name="people" class="form-control" id="number" placeholder="Enter Number Of People" onchange="efgrthyjumk()" min="" required></strong>
+                  </center>         
+                 </div>
+                 <div class="col-md-3">
                   
                     <strong style="top: 75px; position: relative;">
 
@@ -54,7 +61,7 @@
                  </div>
         </div>
         </form>
-      </div>
+      
   </div>
 </section>
     <div class="container" style="margin-top: -35px;">
