@@ -2620,3 +2620,67 @@ textarea {
 		width: 100% !important;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+    .header-top {
+        display: none;
+    }
+
+	.header_logo2{
+		margin-bottom: 20px;
+	}
+
+	.tn-right{
+		display: none;
+	}
+
+	.heading_main{
+		display: flex;
+	}
+
+	.navbar-toggler{
+		margin-top: -15px;
+	}
+
+	.sticky .navbar-toggler{
+		margin-top: 0 !important;
+	}
+
+	.sticky .temp {
+		display: none !important;
+	}
+
+	.marginFix{
+		margin-left: 6% !important;
+	}
+
+
+	.carousel-item{
+		height: 30vh !important;
+	}
+
+	.marginFix{
+		margin-top: 20px;
+	}
+
+	.main_nav{
+		width: 100% !important;
+	}
+
+	.room-image-block img{
+		transform: none !important;
+	}
+
+	.carousel-inner img {
+		height: auto !important;
+		width: 100% !important;
+	}
+
+	.leftPadding{
+		padding-left: 20%;
+	}
+
+	.header_logo img {
+		width: 60% !important;
+	}
+}
