@@ -27,13 +27,18 @@ class BookingController extends Controller
     public function changeStatus($id)
     {
         $booking = Booking::with('room','customer')->where('id',$id)->first();
+        $room = Room::find($booking->room->id);
+        if ($room->room_number < 1) {
+            return redirect()->back()->with('warning_message','This type of room is full.');
+        }
         $details = [
             'title' => 'Mail from Drishya',
             'body' => 'This email is to notify that your 
             room has been booked in drishya for'.$booking->days.' days.'
         ];
+
         Mail::to($booking->customer->email)->send(new \App\Mail\SendConfirmationMail($details));
-        $room = Room::find($booking->room->id);
+        
         $room->room_number = $room->room_number - 1;
         $room->save();
         $booking->status = 'B';
