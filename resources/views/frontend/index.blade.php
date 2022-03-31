@@ -149,7 +149,7 @@
     </div><!--  -->
 </section>
 @endif
-<section class="choose_blk">
+<section class="choose_blk" style = "border-bottom:0px;">
     <div class="container">
         <div class="choose_head wow fadeInDown">
             <h1>Amenities</h1>
