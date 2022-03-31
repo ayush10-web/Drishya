@@ -401,7 +401,7 @@ p {
 }
 
 .sticky .nav-item {
-    margin-left: 6% !important;
+    margin-left: 6%;
 }
 
 .sticky img{
@@ -2167,7 +2167,7 @@ textarea {
 .contact_form button {
 	color: white;
 	border: none;
-	padding: 10px 85px 10px 85px;
+	padding: 2% 20% 2% 20%;
 	border-radius: 6px;
 	margin-top: 8%;
 	margin-bottom: 8%;
@@ -2561,9 +2561,62 @@ textarea {
 	border-bottom: 0 !important;
 }
 
+.marginFix{
+	margin-left: 0 !important;
+}
 
 @media only screen and (max-width: 991px) {
     .header-top {
         display: none;
     }
+
+	.header_logo2{
+		margin-bottom: 20px;
+	}
+
+	.tn-right{
+		display: none;
+	}
+
+	.heading_main{
+		display: flex;
+	}
+
+	.navbar-toggler{
+		margin-top: -15px;
+	}
+
+	.sticky .navbar-toggler{
+		margin-top: 0 !important;
+	}
+
+	.sticky .temp {
+		display: none !important;
+	}
+
+	.marginFix{
+		margin-left: 6% !important;
+	}
+
+
+	.carousel-item{
+		height: 60vh !important;
+	}
+
+	.marginFix{
+		margin-top: 20px;
+	}
+
+	.main_nav{
+		width: 100% !important;
+	}
+
+	.room-image-block img{
+		transform: none !important;
+	}
+
+	.carousel-inner img {
+		height: auto !important;
+		width: 100% !important;
+	}
 }

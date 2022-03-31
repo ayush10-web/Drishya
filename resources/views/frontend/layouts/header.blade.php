@@ -80,7 +80,7 @@
          style=" visibility: visible;">
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-2">
                 <div class="header_logo">
                     @if ($setting['logo'] != null)
                     <a href="/"><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
@@ -88,7 +88,7 @@
                     
                 </div><!-- header_logo -->
             </div><!-- col -->
-            <div class="col-md-8 heading_main">
+            <div class="col-md-8 col-sm-8 heading_main">
                 <h1 style = "font-family: University Roman LET;">Drishya Hotel</h1>
                 <div class="navdown navdownNext nav_search clearfix" id="main_navigation" style="background-color: rgba(255, 255, 255, 0); margin-top:10px;">
                     <div class="main_nav" style="background-color: rgba(255, 255, 255, 0);">
@@ -102,7 +102,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(255, 255, 255, 0);">
                                 <ul class="navbar-nav" style="background-color: rgba(255, 255, 255, 0);">
                                     
-                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }}" style="margin-left: 0 !important">
+                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }} marginFix">
                                         <a class="nav-link" href="{{route('index')}}">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>

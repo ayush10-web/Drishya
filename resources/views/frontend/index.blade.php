@@ -74,7 +74,7 @@
             <br>
             <div class="row">
                 @foreach ($rooms as $room)
-                    <div class="col-md-3 " >
+                    <div class="col-md-3 marginFix" >
                         <div class="card room-image-block" style="overflow: hidden;">
                             <a href="{{route('room.details',$room->id)}}">
                                 <img src="{{$room->images[0]->file_path}}" alt="#" style="height:300px;transform: translateX(-22%); width:auto !important">

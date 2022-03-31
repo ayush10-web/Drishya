@@ -71,7 +71,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(255, 255, 255, 0);">
                                 <ul class="navbar-nav" style="background-color: rgba(255, 255, 255, 0);">
                                     
-                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }}" style="margin-left: 0 !important">
+                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }} marginFix" >
                                         <a class="nav-link" href="{{route('index')}}">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>
