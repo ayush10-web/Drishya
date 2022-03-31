@@ -65,14 +65,10 @@
                   <input type="hidden" id="sendDays" value="" name="days">
         </div>
         </form>
-<<<<<<< HEAD
-      
-=======
       {{-- </div> --}}
->>>>>>> 0c75f0a8c9044c2acd0d92f3bc36d9b21d72f3ba
   </div>
 </section>
-    <div class="container" style="margin-top: -35px;">
+    <div class="container removeMarginTop" style="margin-top: -35px;">
                       <center>
                         <h3>{{$room->category}}</h3>
                       </center>
@@ -166,7 +162,7 @@
                                 <i class="fa fa-times" style="color: red" aria-hidden="true"></i>
                             @endif
                                 </div>
-                                <div class="colmd-4">
+                                <div class="col-md-4">
                                   <i class="fa fa-tv" aria-hidden="true"></i> <span> Television : </span> 
                                   <i class="fa fa-check" style="color: green" aria-hidden="true"></i> <br> <br>
                                 </div>

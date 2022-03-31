@@ -2619,6 +2619,14 @@ textarea {
 		height: auto !important;
 		width: 100% !important;
 	}
+
+	#checkinout{
+		height: auto !important;
+	}
+
+	.removeMarginTop{
+		margin-top: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -2682,5 +2690,13 @@ textarea {
 
 	.header_logo img {
 		width: 60% !important;
+	}
+
+	#checkinout{
+		height: auto !important;
+	}
+
+	.removeMarginTop{
+		margin-top: 0 !important;
 	}
 }
