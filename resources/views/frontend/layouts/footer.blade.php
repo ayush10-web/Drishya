@@ -86,19 +86,21 @@
 <section style="margin-top: -25px; background: #043249;">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3" style=" margin-top: 55px;">
                 <div class="footer_logo_lead">
                     @if ($setting['logo'] != null)
                     <a href=""><img src="{{$setting['logo']->file_path}}" alt="#" style="width:62%" /></a>
                     @endif
-                    <p style="color: white !important;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
                     <!-- <a href="#">About Us</a> -->
                 </div><!-- footer_logo_lead -->
             </div>
-            <div class="col-md-4">
-                <div class="linksdcs" style="    margin-top: 35px;
+            <div class="col-md-3" style=" margin-top: 45px;">
+                <p style="color: white !important;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
+            </div>
+            <div class="col-md-3">
+                <div class="linksdcs" style=" margin-top: 35px;
                 color: white;">
-                    <h4 class="text-center"><u>Useful Links</u></h4><br>
+                    <h4 class="text-center">Useful Links</h4>
                     <ul style="color:white; margin-left:110px;">
                         <li>
                             <a href="{{route('index')}}" style="color:white"> <i>Home</i> </a>
@@ -121,10 +123,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="linksdcs" style="margin-top: 35px;
                 color: white;">
-                    <h4 style="position: relative; left:70px;"><u>Contact Us</u></h4><br>
+                    <h4 style="position: relative; left:70px;">Contact Us</h4>
                     <ul style="position: relative; left:70px;">
                         <li>
                            <span></span> <i class="fas fa-map-marker-alt text-white fa-sm"> &nbsp;  &nbsp;{{$setting['address']}}</i> &nbsp;
@@ -159,7 +161,7 @@
 
         </div>
     </div>
-    <div class="copyright">
+    <div class="copyright"style="background:black;">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
@@ -167,7 +169,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" style="padding-top:5px;">
                     <div class="copyright_content d-flex flex-row align-items-center justify-content-center">
                         <div class="text-white">
                             Copyright &copy;<script>

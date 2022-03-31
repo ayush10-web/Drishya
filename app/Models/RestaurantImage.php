@@ -11,4 +11,8 @@ class RestaurantImage extends Model
     protected $fillable = [
         'restaurantmenu_id','image_id',
     ];
+    public function restaurantImage()
+    {
+        return $this->hasOne(Image::class ,'id','image_id');
+    }
 }

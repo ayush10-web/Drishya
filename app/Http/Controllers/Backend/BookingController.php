@@ -43,6 +43,6 @@ class BookingController extends Controller
         $room->save();
         $booking->status = 'B';
         $booking->save();
-        return redirect()->route('booked.room');
+        return redirect()->route('booked.room')->with('success_message','Room Booked Succesfully.');
     }
 }

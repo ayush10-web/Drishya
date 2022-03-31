@@ -35,7 +35,7 @@
                       <th>Name</th>
                       <th>Email</th>
                       <th>Contact</th>
-                      <th>Room Booked</th>
+                      <th>NO. Of People</th>
                       <th>Room Price Per Day</th>
                       <th>From Date</th>
                       <th>To Date</th>
@@ -52,7 +52,7 @@
                               <td>{{$booking->customer->name}}</td>
                               <td>{{$booking->customer->email}}</td>
                               <td>{{$booking->customer->contact}}</td>
-                              <td>{{$booking->room->room_number}}</td>
+                              <td>{{$booking->people}}</td>
                               <td>{{$booking->room->room_price}}</td>
                               <td>{{$booking->from}}</td>
                               <td>{{$booking->to}} </td>

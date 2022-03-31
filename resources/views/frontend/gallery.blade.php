@@ -12,50 +12,31 @@
    </div>
    <h1 class="text-center" style="color: #043249;
    text-decoration-color: antiquewhite;
-   font-style: italic; margin-top:30px">PHOTOS</h1>
+    margin-top:30px">PHOTOS</h1>
    <br>
    <center><i class="text-center">Consider this your new travel guide. Here’s a look at how our guests experience life.</i></center>
    <h1 class="text-center" style="color: #043249;
    text-decoration-color: antiquewhite;
-   font-style: italic; margin-top:30px">ROOMS</h1>
+    margin-top:30px">ROOMS</h1>
    <br>
    <div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <img src="images/pictures/DSC07056.jpg" style="height: 225px;" alt="" srcset="">
+        @foreach ($rooms as $room)
+        <div class="col-md-4" style="height: 225px; overflow:hidden; margin-bottom: 20px;">
+            <img src="{{$room->roomImage->file_path}}"  alt="" srcset="">
         </div>
-        <div class="col-md-4">
-            <img src="images/pictures/DSC08497.jpg" style="height: 225px;" alt="" srcset="">
-        </div>
-        <div class="col-md-4">
-            <img src="images/pictures/DSC08515.jpg" style="height: 225px;" alt="" srcset="">
-        </div>
+        @endforeach
     </div>
     <br>
     <h1 class="text-center" style="color: #043249;
-   text-decoration-color: antiquewhite;
-   font-style: italic; margin-top:30px">RESTAURANT</h1>
+   text-decoration-color: antiquewhite;margin-top:30px">RESTAURANT</h1>
    <div class="row">
-    <div class="col-md-4">
-        <img src="images/pictures/DSC07183.jpg" style="height: 225px;" alt="" srcset="">
-    </div>
-    <div class="col-md-4">
-        <img src="images/pictures/DSC08346.jpg" style="height: 225px;" alt="" srcset="">
-    </div>
-    <div class="col-md-4">
-        <img src="images/pictures/DSC07282.jpg" style="height: 225px;" alt="" srcset="">
-    </div>
+    @foreach ($restaurants as $restaurant)
+        <div class="col-md-4" style="height: 225px; overflow:hidden; margin-bottom: 20px;">
+            <img src="{{$restaurant->restaurantImage->file_path}}"  alt="" srcset="">
+        </div>
+        @endforeach
    </div>
-   <br>
-   <div class="row">    <div class="col-md-4">
-        <img src="images/pictures/DSC07144.jpg" style="height: 225px;" alt="" srcset="">
-    </div>
-    <div class="col-md-4">
-        <img src="images/pictures/DSC07276.jpg" style="height: 225px;" alt="" srcset="">
-    </div>
-    <div class="col-md-4">
-        <img src="images/pictures/DSC07276.jpg" style="height: 225px;" alt="" srcset="">
-    </div>
 </div>
 <br>
 <br>

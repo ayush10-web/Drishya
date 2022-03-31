@@ -10,8 +10,8 @@
   </div><!-- service_overlay -->
 </section><!-- service_banner -->
 <section>
-  <div id="checkinout" style="height:150px; background:azure; padding-left:5%">
-      
+  <div id="checkinout" style="height:200px; background:azure; margin-bottom:5%; padding-left:5%; padding-right:5%">
+      {{-- <div class="container" > --}}
         <form action="{{route('book.room',$room->id)}}" method="post">
           @csrf
         <div class="row">
@@ -54,14 +54,22 @@
                  </div>
                  <div class="col-md-3">
                   
-                    <strong style="top: 75px; position: relative;">
+                  <strong style="top: 45px; position: relative;">No. Of People
+                    <input type="number" name="people" class="form-control" id="people" placeholder="Enter NO. of People" required></strong>
 
-                      <button type="submit" class="btn btn-primary">Book Now</button>
-                      <input type="hidden" id="sendDays" value="" name="days">
-                 </div>
+                    
+                  </div>
+        </div>
+        <div class="submit-button text-right" style="position: relative; margin-top: 70px;">
+          <button type="submit" class="btn btn-primary">Book Now</button>
+                  <input type="hidden" id="sendDays" value="" name="days">
         </div>
         </form>
+<<<<<<< HEAD
       
+=======
+      {{-- </div> --}}
+>>>>>>> 0c75f0a8c9044c2acd0d92f3bc36d9b21d72f3ba
   </div>
 </section>
     <div class="container" style="margin-top: -35px;">

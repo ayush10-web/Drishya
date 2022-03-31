@@ -1,5 +1,6 @@
 @extends('backend.layouts.master')
 @section('content')
+@include('backend.layouts.alerts')
  <!-- Content Header (Page header) -->
  <div class="content-header">
   <div class="container-fluid">
@@ -34,7 +35,7 @@
                       <th>Name</th>
                       <th>Email</th>
                       <th>Contact</th>
-                      <th>Room Booked</th>
+                      <th>No. Of People</th>
                       <th>Room Price Per Day</th>
                       <th>From Date</th>
                       <th>To Date</th>
@@ -50,7 +51,7 @@
                               <td>{{$booking->customer->name}}</td>
                               <td>{{$booking->customer->email}}</td>
                               <td>{{$booking->customer->contact}}</td>
-                              <td>{{$booking->room->room_number}}</td>
+                              <td>{{$booking->people}}</td>
                               <td>{{$booking->room->room_price}}</td>
                               <td>{{$booking->from}}</td>
                               <td>{{$booking->to}} </td>

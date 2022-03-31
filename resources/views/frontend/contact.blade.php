@@ -3,37 +3,72 @@
 @include('backend.layouts.alerts')
 <section class="service_banner">
     <div class="banner_width">
-        <img src="images/contactUsBanner.jpg" alt="#">
-
+        <img src="images/restaurant.png" alt="#">
+{{-- <img src="images/contact-us.png" alt="#"> --}}
     </div><!-- banner_width -->
     <div class="service_overlay contact_overlay">
-        <h1>CONTACT</h1>
+        <h1 style="color:#0e334a;">CONTACT US</h1>
     </div><!-- service_overlay -->
 </section><!-- service_banner -->
 <section class="career_blk contact_blk">
-    <div class="row no-pad">
-        <div class="col-md-3">
-        </div><!-- col --> 
-        <div class="col-md-6">
-            <div class="contact_form">
-                <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
-                <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
-                    @csrf
-                    <input type="text" name="name" placeholder="Your Name" required>
-
-                    <input type="email" name="email" placeholder="Your E-mail Address" required>
-
-                    <input type="hidden" name="message_from" value="m">
-                    <input type="text" name="contact_number" placeholder="Your Contact Number">
-                    <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
-
-                    <button class="btn btn-primary">Submit</button>
-
-                </form>
-            </div><!-- contact_form -->
-        </div><!-- col -->
-        <div class="col-md-3" style='overflow-x: hidden;'>
-        </div><!-- col --> 
+    
+        <div class="container">
+            <div class="row ">
+            
+            <div class="col-md-6">
+                <div class="contact_form">
+                    <h1 style="color:#0e334a;">If you have any inquiries then please feel free to contact us.</h1>
+                    <form action="{{route('contact.add')}}" method="post"  enctype="multipart/form-data">
+                        @csrf
+                        <input type="text" name="name" placeholder="Your Name" required>
+    
+                        <input type="email" name="email" placeholder="Your E-mail Address" required>
+    
+                        <input type="hidden" name="message_from" value="m">
+                        <input type="text" name="contact_number" placeholder="Your Contact Number">
+                        <textarea rows="6"  name="message" cols="30" placeholder="Your Message"></textarea>
+    
+                        <button class="btn btn-primary">Submit</button>
+    
+                    </form>
+                </div><!-- contact_form -->
+            </div><!-- col -->
+            <div class="col-md-6" style="position: relative; top:105px;">
+                <div class="card" style="vertical-align: center">
+                    <div class="card-body" style="padding-top: 80px; padding-bottom:80px;">
+                        <div class="contacts text-center" >
+                            <h5>Address </h5>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{$setting['address']}}</p> <br>
+                            <h5>Phone Number</h5>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>{{$setting['phoneNumber']}}</p> <br>
+                            <h5>Email Address</h5>
+                            <p><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></p><br>
+                            <h5>Socials</h5>
+                            <p><ul style="">
+                                <li style="display: inline">
+                                    <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x" aria-hidden="true"></i></a>
+                                </li> &nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['twitter']}}" target='_blank'><i class="fab fa-twitter fa-1x" aria-hidden="true"></i></a>
+                                </li>&nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['instagram']}}" target='_blank'><i class="fab fa-instagram fa-1x" aria-hidden="true"></i></a>
+                                </li>&nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['youtube']}}" target='_blank'><i class="fab fa-youtube fa-1x" aria-hidden="true"></i></a>
+                                </li>&nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['website']}}" target='_blank'><i class="fab fa-google-plus-g fa-1x" aria-hidden="true"></i></a>
+                                </li>
+                            </ul></p>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div><!-- col --> 
+        </div>
+       
     </div>
 </section>
 <section>
