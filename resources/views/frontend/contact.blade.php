@@ -26,41 +26,46 @@
     
                         <input type="hidden" name="message_from" value="m">
                         <input type="text" name="contact_number" placeholder="Your Contact Number">
-                        <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
+                        <textarea rows="6"  name="message" cols="30" placeholder="Your Message"></textarea>
     
                         <button class="btn btn-primary">Submit</button>
     
                     </form>
                 </div><!-- contact_form -->
             </div><!-- col -->
-            <div class="col-md-6" style="position: relative; top:80px;">
-                <div class="contacts text-center" >
-                    <h5>Address </h5>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{$setting['address']}}</p> <br>
-                    <h5>Phone Number</h5>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i>{{$setting['phoneNumber']}}</p> <br>
-                    <h5>Email Address</h5>
-                    <p><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></p><br>
-                    <h5>Socials</h5>
-                    <p><ul style="">
-                        <li style="display: inline">
-                            <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x" aria-hidden="true"></i></a>
-                        </li> &nbsp;&nbsp;
-                        <li style="display: inline">
-                            <a href="{{$setting['twitter']}}" target='_blank'><i class="fab fa-twitter fa-1x" aria-hidden="true"></i></a>
-                        </li>&nbsp;&nbsp;
-                        <li style="display: inline">
-                            <a href="{{$setting['instagram']}}" target='_blank'><i class="fab fa-instagram fa-1x" aria-hidden="true"></i></a>
-                        </li>&nbsp;&nbsp;
-                        <li style="display: inline">
-                            <a href="{{$setting['youtube']}}" target='_blank'><i class="fab fa-youtube fa-1x" aria-hidden="true"></i></a>
-                        </li>&nbsp;&nbsp;
-                        <li style="display: inline">
-                            <a href="{{$setting['website']}}" target='_blank'><i class="fab fa-google-plus-g fa-1x" aria-hidden="true"></i></a>
-                        </li>
-                    </ul></p>
-                    
+            <div class="col-md-6" style="position: relative; top:105px;">
+                <div class="card" style="vertical-align: center">
+                    <div class="card-body" style="padding-top: 80px; padding-bottom:80px;">
+                        <div class="contacts text-center" >
+                            <h5>Address </h5>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{$setting['address']}}</p> <br>
+                            <h5>Phone Number</h5>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>{{$setting['phoneNumber']}}</p> <br>
+                            <h5>Email Address</h5>
+                            <p><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></p><br>
+                            <h5>Socials</h5>
+                            <p><ul style="">
+                                <li style="display: inline">
+                                    <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x" aria-hidden="true"></i></a>
+                                </li> &nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['twitter']}}" target='_blank'><i class="fab fa-twitter fa-1x" aria-hidden="true"></i></a>
+                                </li>&nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['instagram']}}" target='_blank'><i class="fab fa-instagram fa-1x" aria-hidden="true"></i></a>
+                                </li>&nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['youtube']}}" target='_blank'><i class="fab fa-youtube fa-1x" aria-hidden="true"></i></a>
+                                </li>&nbsp;&nbsp;
+                                <li style="display: inline">
+                                    <a href="{{$setting['website']}}" target='_blank'><i class="fab fa-google-plus-g fa-1x" aria-hidden="true"></i></a>
+                                </li>
+                            </ul></p>
+                            
+                        </div>
+                    </div>
                 </div>
+               
             </div><!-- col --> 
         </div>
        

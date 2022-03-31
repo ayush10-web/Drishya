@@ -11,4 +11,8 @@ class ImageRoom extends Model
     protected $fillable = [
         'room_id','image_id',
     ];
+    public function roomImage()
+    {
+        return $this->hasOne(Image::class ,'id','image_id');
+    }
 }

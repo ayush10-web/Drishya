@@ -11,6 +11,7 @@ use App\Models\ImageRoom;
 use App\Models\Room;
 use App\Models\Service;
 use App\Models\Event;
+use App\Models\RestaurantImage;
 use App\Models\restaurantmenu;
 use App\Models\restaurantMenuCategories;
 use Illuminate\Support\Facades\DB;
@@ -70,6 +71,9 @@ class IndexController extends Controller
     public function gallery()
     {
         $menu = "gallery";
-        return view ('frontend.gallery',compact('menu'));
+        $rooms = ImageRoom::with('roomImage')->get();
+        $restaurants = RestaurantImage::with('restaurantImage')->get();
+        // dd($rooms);
+        return view ('frontend.gallery',compact('menu','rooms','restaurants'));
     }
 }
