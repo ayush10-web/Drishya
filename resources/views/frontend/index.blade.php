@@ -40,7 +40,7 @@
 
 @endif
 <br>
-<section class="list_content">
+<section class="list_content" style = "margin-top:-30px;">
         <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
         <br>
     <div class="container">
