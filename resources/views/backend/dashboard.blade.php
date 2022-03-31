@@ -86,7 +86,7 @@
 
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-secondary">
               <div class="inner">
                 <h3>{{$banmcount}}</h3>
                 <p>Banquet Inquiry</p>

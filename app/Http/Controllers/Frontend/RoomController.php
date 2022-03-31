@@ -55,6 +55,7 @@ class RoomController extends Controller
             'from' => $request['from'],
             'to' => $request['to'],
             'days' => $request['days'],
+            'people' => $request['people']
         ]);
         $details = [
             'title' => 'Mail from Drishya',

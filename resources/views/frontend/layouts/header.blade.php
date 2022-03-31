@@ -126,7 +126,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{route('banquet')}}">Banquet</a>
+                                        <a class="nav-link"  href="{{route('banquet')}}">Banquet</a>
                                     </li> 
                                     <li style="width: 50px; display:none; margin-left:6% !important; margin-top: -0.3%;
                                     margin-bottom: -1%;" class = "temp">
@@ -136,7 +136,7 @@
                                     </li>
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
                                         <div class="dropdown show">
-                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a class="dropdown-toggle nav-link"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                               Restaurant
                                             </a>
 
@@ -146,7 +146,7 @@
                                           </div>
                                     </li> 
                                     <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
-                                        <a class="nav-link " href="{{route('gallery.view')}}">Photos</a>
+                                        <a class="nav-link "  href="{{route('gallery.view')}}">Gallery</a>
                                     </li>
                                    
                                     <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
