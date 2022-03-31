@@ -40,7 +40,7 @@
 
 @endif
 <br>
-<section class="list_content">
+<section class="list_content" style = "margin-top:-30px;">
         <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
         <br>
     <div class="container">
@@ -149,7 +149,7 @@
     </div><!--  -->
 </section>
 @endif
-<section class="choose_blk">
+<section class="choose_blk" style = "border-bottom:0px;">
     <div class="container">
         <div class="choose_head wow fadeInDown">
             <h1>Amenities</h1>
