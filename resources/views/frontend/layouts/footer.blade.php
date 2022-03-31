@@ -84,7 +84,7 @@
     </div><!-- container -->
 </section> --}}
 <section style="margin-top: -25px; background: #043249;">
-    <div class="container">
+    <div class="container" style="padding-bottom: 35px; padding-top: 35px;">
         <div class="row">
             <div class="col-md-3" style=" margin-top: 55px;">
                 <div class="footer_logo_lead">
