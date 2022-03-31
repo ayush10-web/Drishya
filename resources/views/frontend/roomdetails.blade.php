@@ -99,7 +99,7 @@
                               Book Room
                             </button> --}}
                         {{-- </div> --}}
-                          <div class="div" style="height: 350px; margin-bottom:5px;">
+                          <div class="div" style="height: 350px; margin-bottom:100px;">
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                   @if (count($room->images) > 0)
@@ -108,11 +108,11 @@
                                       @endforeach
                                   @endif
                                 </ol>
-                                <div class="carousel-inner" style="height: 350px">
+                                <div class="carousel-inner" style="height: 450px; overflow:hidden">
                                   @if (count($room->images) > 0)
                                     @foreach ($room->images as $key=>$value)
                                     <div class="carousel-item @if($key == 0) active @endif">
-                                      <img class="d-block w-100" src="{{$value->file_path}}" style="height: 350px;" alt="First slide">
+                                      <img class="d-block w-100" src="{{$value->file_path}}" style="height:100%" alt="First slide">
                                     </div>
                                     @endforeach
                                   @endif

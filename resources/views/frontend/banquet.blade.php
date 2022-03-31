@@ -2,25 +2,19 @@
 @section('content')
 @include('backend.layouts.alerts')
 
-<section class="about_top_banner">
+<section class="about_top_banner" style="padding-top:0px !important;">
 
     <div class="container">
-        <div class="banner_banquet">
-            <h1>Banquet</h1>
-            
-           
+        <div class="">
+            <h1 style = "font-family:Karla, sans-serif;">Banquet</h1>   
         </div><!-- banner_abt -->
-        <p style = "font-size: 30px;">
+        <p>
             {{-- {!! $about->description !!} --}}
             Our banquet is best for the events, as the food and the venue we offer is of top notch in the town. Our banquet has the capacity of. We offer events like wedding, bartabandha, birthday and so on. Drishya makes the event very much convenient as it offers such as catering, interior decoration, entertainment and many more other facilities upon request.
   
             {{-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. --}}
             At Drishya Hotel, we have two halls to suit your needs for conferences, seminars, parties, meetings, weddings, anniversaries, and other events.
               </p>
-        
-        <p>
-            Come and enjoy our spacious (Halls) that are well equipped with facilities for the smooth operation of programmers, with the capacity to hold pax ranging from 50 to 400, with ample car and motorcycle parking facilities, and with a lift to make accessibly easy and comfortable to the revenue of your choice.
-        </p>
     </div><!-- container -->
 </section><!-- about_top_banner -->
 

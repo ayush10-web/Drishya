@@ -13,13 +13,6 @@
 <section class="career_blk contact_blk">
     <div class="row no-pad">
         <div class="col-md-3">
-            <div class="left_career_img left_contact_img">
-                <div class="career_img_overlay contact_img_overlay">
-
-
-                </div><!-- career_img_overlay -->
-
-            </div><!-- left_career_img -->
         </div><!-- col --> 
         <div class="col-md-6">
             <div class="contact_form">
@@ -40,16 +33,9 @@
             </div><!-- contact_form -->
         </div><!-- col -->
         <div class="col-md-3" style='overflow-x: hidden;'>
-            <div class="right_career_img right_contact_img">
-                <div class="right_career_img_overlay right_contact_img_overlay">
-
-                </div><!-- career_img_overlay -->
-
-            </div><!-- left_career_img -->
         </div><!-- col --> 
     </div>
 </section>
-<br>
 <section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.743903426665!2d85.28259231506178!3d27.694309082797293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19dffb5c3e1f%3A0xb1b59d70fb2b8c55!2sDrishya%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2smy!4v1644655525665!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
