@@ -41,7 +41,7 @@
 @endif
 <br>
 <section class="list_content">
-        <h2 style = "text-align:center; font-size:1.75rem;"><u>Our Services</u></h2>
+        <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
         <br>
     <div class="container">
         <div class="row">                   
@@ -68,8 +68,8 @@
 <br>
         <div class="container">
             <center>
-                <h3 style = "text-align:center;"><u>OUR ROOMS</u></h3>
-            <i>Pick a room that best suits your choice and budget</i>
+                <h3 style = "text-align:center;">OUR ROOMS</h3>
+            Pick a room that best suits your choice and budget
             </center>
             <br>
             <div class="row">

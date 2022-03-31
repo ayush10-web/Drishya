@@ -89,8 +89,7 @@
                 </div><!-- header_logo -->
             </div><!-- col -->
             <div class="col-md-8 heading_main">
-                <h1>Drishya Hotel & Restaurant</h1>
-                <p>FOOD • DRINKS • MUSIC</p>
+                <h1 style = "font-family: University Roman LET;">Drishya Hotel</h1>
                 <div class="navdown navdownNext nav_search clearfix" id="main_navigation" style="background-color: rgba(255, 255, 255, 0); margin-top:10px;">
                     <div class="main_nav" style="background-color: rgba(255, 255, 255, 0);">
                         <nav class="navbar navbarNext navbar-expand-lg navbar-light bg-light wow fadeInDown"

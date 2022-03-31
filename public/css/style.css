@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Karla|Playfair+Display|Roboto&display=swap");
+@import url(//db.onlinewebfonts.com/c/0794f9e082c211b5be653a4cf53bc945?family=University+Roman+LET);
 font-family: "Playfair Display",
 serif;
 font-family: "Roboto",
 sans-serif;
 font-family: "Karla",
+sans-serif;
+font-family: 'university-roman-let-plain', 
 sans-serif;
 
 .clearfix:after,
