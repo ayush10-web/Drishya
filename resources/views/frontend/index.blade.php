@@ -188,14 +188,12 @@
     </div><!-- container -->
 </section><!-- choose_blk -->
 
-<section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.743903426665!2d85.28259231506178!3d27.694309082797293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19dffb5c3e1f%3A0xb1b59d70fb2b8c55!2sDrishya%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2smy!4v1644655525665!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</section>
 
-<section>
+
+{{-- <section>
 <a href="https://www.google.com/"><img src="uploads/tripadvisor/tripadvisor.png" 
     style="width:100px;height:100px; margin-left:500px; padding-button:10px;"></a>
-</section>    
+</section>     --}}
 
 <br>
 @endsection

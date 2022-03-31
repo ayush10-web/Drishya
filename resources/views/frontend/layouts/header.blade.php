@@ -139,7 +139,7 @@
                                             </a>
 
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                              <a class="dropdown-item" href="www.google.com">Menu</a>
+                                              <a class="dropdown-item" href="uploads/sample.pdf" target = "_blank" style="color: black">Menu</a>
                                             </div>
                                           </div>
                                     </li> 
