@@ -71,7 +71,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(255, 255, 255, 0);">
                                 <ul class="navbar-nav" style="background-color: rgba(255, 255, 255, 0);">
                                     
-                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }}" style="margin-left: 0 !important">
+                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }} marginFix" >
                                         <a class="nav-link" href="{{route('index')}}">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>
@@ -98,15 +98,23 @@
                                     </li> 
                                     <li style="width: 50px; display:none; margin-left:6% !important; margin-top: -0.3%;
                                     margin-bottom: -1%;" class = "temp">
-                                        <div class="logNav">
-                                            <a href="/"><img src="/images/mini-logo.jpeg" alt="#" style="width: 70px; display:none; border-radius:50%;" class="wow rubberBand"/></a>
-                                        </div>
+                                    <div class="logNav">
+                                        <a href="/"><img src="/images/mini-logo.jpeg" alt="#" style="width: 70px; display:none; border-radius:50%;" class="wow rubberBand"/></a>
+                                    </div>
                                     </li>
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{route('restaurant')}}">Restaurant</a>
+                                        <div class="dropdown show">
+                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Restaurant
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                              <a class="dropdown-item" href="uploads/sample.pdf" target = "_blank" style="color: black">Menu</a>
+                                            </div>
+                                          </div>
                                     </li> 
                                     <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
-                                        <a class="nav-link " href="{{route('gallery.view')}}">Photos</a>
+                                        <a class="nav-link " href="{{route('gallery.view')}}">Gallery</a>
                                     </li>
                                    
                                     <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
@@ -118,7 +126,6 @@
                                         </div>
                                     </li> --}}
                                 </ul>
-                                
                             </div>
                         </nav>
                     </div><!-- main_nav -->

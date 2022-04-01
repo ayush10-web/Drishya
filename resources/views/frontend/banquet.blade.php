@@ -6,7 +6,7 @@
 
     <div class="container">
         <div class="">
-            <h1 style = "font-family:Karla, sans-serif;">Banquet</h1>   
+            <h1 style = "font-family: University Roman LET;">Banquet</h1>   
         </div><!-- banner_abt -->
         <p>
             {{-- {!! $about->description !!} --}}

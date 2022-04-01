@@ -35,15 +35,16 @@
             </div><!-- col -->
             <div class="col-md-6" style="position: relative; top:105px;">
                 <div class="card" style="vertical-align: center">
-                    <div class="card-body" style="padding-top: 80px; padding-bottom:80px;">
+                    <div class="card-body" style="padding-top: 47px; padding-bottom:47px;">
                         <div class="contacts text-center" >
-                            <h5>Address </h5>
-                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{$setting['address']}}</p> <br>
-                            <h5>Phone Number</h5>
-                            <p><i class="fa fa-phone" aria-hidden="true"></i>{{$setting['phoneNumber']}}</p> <br>
-                            <h5>Email Address</h5>
-                            <p><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope"></i> {{$setting['email']}}</a></p><br>
-                            <h5>Socials</h5>
+                            <h3 style="margin-bottom: 30px;">OR CONTACT US ON:</h3>
+                            <h5 style="font-weight: 600;">Address </h5>
+                            <p><i class="fa fa-map-marker" style="margin-right: 10px;" aria-hidden="true"></i>{{$setting['address']}}</p> <br>
+                            <h5 style="font-weight: 600;">Phone Number</h5>
+                            <p><i class="fa fa-phone-alt" style="margin-right: 10px;" aria-hidden="true"></i>{{$setting['phoneNumber']}}</p> <br>
+                            <h5 style="font-weight: 600;">Email Address</h5>
+                            <p><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope" style="margin-right: 10px;"></i> {{$setting['email']}}</a></p><br>
+                            <h5 style="font-weight: 600;">Socials</h5>
                             <p><ul style="">
                                 <li style="display: inline">
                                     <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x" aria-hidden="true"></i></a>

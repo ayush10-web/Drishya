@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Karla|Playfair+Display|Roboto&display=swap");
+@import url(//db.onlinewebfonts.com/c/0794f9e082c211b5be653a4cf53bc945?family=University+Roman+LET);
 font-family: "Playfair Display",
 serif;
 font-family: "Roboto",
 sans-serif;
 font-family: "Karla",
+sans-serif;
+font-family: 'university-roman-let-plain', 
 sans-serif;
 
 .clearfix:after,
@@ -398,7 +401,7 @@ p {
 }
 
 .sticky .nav-item {
-    margin-left: 6% !important;
+    margin-left: 6%;
 }
 
 .sticky img{
@@ -2164,7 +2167,7 @@ textarea {
 .contact_form button {
 	color: white;
 	border: none;
-	padding: 10px 85px 10px 85px;
+	padding: 2% 20% 2% 20%;
 	border-radius: 6px;
 	margin-top: 8%;
 	margin-bottom: 8%;
@@ -2558,9 +2561,142 @@ textarea {
 	border-bottom: 0 !important;
 }
 
+.marginFix{
+	margin-left: 0 !important;
+}
 
 @media only screen and (max-width: 991px) {
     .header-top {
         display: none;
     }
+
+	.header_logo2{
+		margin-bottom: 20px;
+	}
+
+	.tn-right{
+		display: none;
+	}
+
+	.heading_main{
+		display: flex;
+	}
+
+	.navbar-toggler{
+		margin-top: -15px;
+	}
+
+	.sticky .navbar-toggler{
+		margin-top: 0 !important;
+	}
+
+	.sticky .temp {
+		display: none !important;
+	}
+
+	.marginFix{
+		margin-left: 6% !important;
+	}
+
+
+	.carousel-item{
+		height: 60vh !important;
+	}
+
+	.marginFix{
+		margin-top: 20px;
+	}
+
+	.main_nav{
+		width: 100% !important;
+	}
+
+	.room-image-block img{
+		transform: none !important;
+	}
+
+	.carousel-inner img {
+		height: auto !important;
+		width: 100% !important;
+	}
+
+	#checkinout{
+		height: auto !important;
+	}
+
+	.removeMarginTop{
+		margin-top: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    .header-top {
+        display: none;
+    }
+
+	.header_logo2{
+		margin-bottom: 20px;
+	}
+
+	.tn-right{
+		display: none;
+	}
+
+	.heading_main{
+		display: flex;
+	}
+
+	.navbar-toggler{
+		margin-top: -15px;
+	}
+
+	.sticky .navbar-toggler{
+		margin-top: 0 !important;
+	}
+
+	.sticky .temp {
+		display: none !important;
+	}
+
+	.marginFix{
+		margin-left: 6% !important;
+	}
+
+
+	.carousel-item{
+		height: 30vh !important;
+	}
+
+	.marginFix{
+		margin-top: 20px;
+	}
+
+	.main_nav{
+		width: 100% !important;
+	}
+
+	.room-image-block img{
+		transform: none !important;
+	}
+
+	.carousel-inner img {
+		height: auto !important;
+		width: 100% !important;
+	}
+
+	.leftPadding{
+		padding-left: 20%;
+	}
+
+	.header_logo img {
+		width: 60% !important;
+	}
+
+	#checkinout{
+		height: auto !important;
+	}
+
+	.removeMarginTop{
+		margin-top: 0 !important;
+	}
 }

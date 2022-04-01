@@ -40,8 +40,8 @@
 
 @endif
 <br>
-<section class="list_content">
-        <h2 style = "text-align:center; font-size:1.75rem;"><u>Our Services</u></h2>
+<section class="list_content" style = "margin-top:-30px;">
+        <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
         <br>
     <div class="container">
         <div class="row">                   
@@ -68,13 +68,13 @@
 <br>
         <div class="container">
             <center>
-                <h3 style = "text-align:center;"><u>OUR ROOMS</u></h3>
-            <i>Pick a room that best suits your choice and budget</i>
+                <h3 style = "text-align:center;">OUR ROOMS</h3>
+            Pick a room that best suits your choice and budget
             </center>
             <br>
             <div class="row">
                 @foreach ($rooms as $room)
-                    <div class="col-md-3 " >
+                    <div class="col-md-3 marginFix" >
                         <div class="card room-image-block" style="overflow: hidden;">
                             <a href="{{route('room.details',$room->id)}}">
                                 <img src="{{$room->images[0]->file_path}}" alt="#" style="height:300px;transform: translateX(-22%); width:auto !important">
@@ -149,7 +149,7 @@
     </div><!--  -->
 </section>
 @endif
-<section class="choose_blk">
+<section class="choose_blk" style = "border-bottom:0px;">
     <div class="container">
         <div class="choose_head wow fadeInDown">
             <h1>Amenities</h1>
@@ -158,27 +158,27 @@
             
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-award"></i>
-                    <p>Best Service <br><span>" Drishya service is one of the renowned as it have the best chef and staff to serve. "</span></p>
+                    <i class="fas fa-coffee"></i>
+                    <p>Restaurant<br><span>" Drishya service is one of the renowned as it have the best chef and staff to serve. "</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-chart-bar"></i>
-                    <p>Home Like Experience<br><span>"Our hotel has the best room service which allows our guest to have home like atmosphere."</span>
+                    <i class="fas fa-wifi"></i>
+                    <p>Free Wifi<br><span>"Our hotel has the free, high speed wifi to keep you connected."</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-trophy"></i>
-                    <p>Super Quality<br><span>We Have the best rooms and restaurant quality.</span></p>
+                    <i class="fas fa-cocktail"></i>
+                    <p>Bar<br><span>We have the best bar where you can enjoy taste of your cocktail.</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-dumbbell"></i>
-                    <p>Quick Response<br><span> Our staff would be ready to support in any sort of inconvenience</span>
+                    <i class="fas fa-bed"></i>
+                    <p>Hotel Rooms<br><span> Drishya offers you rooms that are very spacious with perfect view.</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 

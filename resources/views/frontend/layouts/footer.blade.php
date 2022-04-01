@@ -84,7 +84,7 @@
     </div><!-- container -->
 </section> --}}
 <section style="margin-top: -25px; background: #043249;">
-    <div class="container">
+    <div class="container" style="padding-bottom: 35px; padding-top: 35px;">
         <div class="row">
             <div class="col-md-3" style=" margin-top: 55px;">
                 <div class="footer_logo_lead">
@@ -95,30 +95,30 @@
                 </div><!-- footer_logo_lead -->
             </div>
             <div class="col-md-3" style=" margin-top: 45px;">
-                <p style="color: white !important;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
+                <p style="color: white !important;margin-left: -90px;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style ="margin-left:-10px;">
                 <div class="linksdcs" style=" margin-top: 35px;
                 color: white;">
-                    <h4 class="text-center">Useful Links</h4>
-                    <ul style="color:white; margin-left:110px;">
+                    <h4 class="text-center">Services</h4>
+                    <ul style="color:white; margin-left:105px;">
                         <li>
-                            <a href="{{route('index')}}" style="color:white"> <i>Home</i> </a>
+                            <a href="{{route('index')}}" style="color:white">Home </a>
                         </li>
                         <li>
-                            <a href="{{route('drishya.rooms')}}" style="color:white"><i>Rooms</i></a>
+                            <a href="{{route('drishya.rooms')}}" style="color:white">Rooms</a>
                         </li>
                         <li>
-                            <a href="{{('banquet')}}" style="color:white"><i>Banquet</i></a>
+                            <a href="{{('banquet')}}" style="color:white">Banquet</a>
                         </li>
                         <li>
-                            <a href="{{('restaurant')}}" style="color:white"><i>Restaurant</i></a>
+                            <a href="{{('restaurant')}}" style="color:white">Restaurant</a>
                         </li>
                         <li>
-                            <a href="{{route('contact')}}" style="color:white"><i>Contact Us</i></a>
+                            <a href="{{route('contact')}}" style="color:white">Contact Us</a>
                         </li>
                         <li>
-                            <a href="{{('about')}}" style="color:white"><i>About Us</i></a>
+                            <a href="{{('about')}}" style="color:white">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -139,6 +139,25 @@
                         </li>
                     </ul>
                     <br><br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright"style="background: #043249; border-top: 1px solid white; margin-left:10%; margin-right:9%;">
+        <div class="container">
+            <div class="row" style = "padding-top:10px;">
+                <div class="col-md-6"style="padding-top:5px;margin-left: -80px; padding-bottom: 10px;">
+                    <div class="copyright_content d-flex flex-row align-items-center justify-content-center">
+                        <div class="text-white">
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> ,Drishya Hotel. All rights reserve.
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6" style = "text-align:right;">
                     <ul style="position: relative; left:70px;">
                         <li style="display: inline">
                             <a href="{{$setting['facebook']}}" target='_blank'><i class="fab fa-facebook-f fa-1x text-white" aria-hidden="true"></i></a>
@@ -156,32 +175,6 @@
                             <a href="{{$setting['website']}}" target='_blank'><i class="fab fa-google-plus-g fa-1x text-white" aria-hidden="true"></i></a>
                         </li>
                     </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="copyright"style="background:black;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="copyright_hr">
-                        <hr>
-                    </div>
-                </div>
-                <div class="col-md-8" style="padding-top:5px;">
-                    <div class="copyright_content d-flex flex-row align-items-center justify-content-center">
-                        <div class="text-white">
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="copyright_hr">
-                        <hr>
-                    </div>
                 </div>
             </div>
         </div>
