@@ -33,7 +33,7 @@
    <div class="row">
     @foreach ($restaurants as $restaurant)
         <div class="col-md-4" style="height: 225px; overflow:hidden; margin-bottom: 20px;">
-            <img src="{{$restaurant->restaurantImage->file_path}}"  alt="" srcset="">
+            <img src="{{$restaurant->images[0]->file_path}}"  alt="" srcset="">
         </div>
         @endforeach
    </div>

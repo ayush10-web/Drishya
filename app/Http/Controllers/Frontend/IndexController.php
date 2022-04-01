@@ -72,7 +72,8 @@ class IndexController extends Controller
     {
         $menu = "gallery";
         $rooms = ImageRoom::with('roomImage')->get();
-        $restaurants = RestaurantImage::with('restaurantImage')->get();
+        $restaurants = Slider::with('images')->where('slider_code','res')->latest()->get();
+
         // dd($rooms);
         return view ('frontend.gallery',compact('menu','rooms','restaurants'));
     }
