@@ -32,7 +32,7 @@
               <input type="email" name="email" class="form-control" id="room_no" placeholder="Enter Email Address" required> </strong>
 
               </center>          </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <center>
                     <strong style="top: 45px; position: relative;">Arrival Date
                       <input type="date" name="from" class="form-control" id="fromdate" placeholder="Enter From Date"  onchange="dsfgrthyju()" min="@php echo date('Y-m-d') @endphp" required> </strong>
