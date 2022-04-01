@@ -158,27 +158,27 @@
             
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-award"></i>
-                    <p>Best Service <br><span>" Drishya service is one of the renowned as it have the best chef and staff to serve. "</span></p>
+                    <i class="fas fa-coffee"></i>
+                    <p>Restaurant<br><span>" Drishya service is one of the renowned as it have the best chef and staff to serve. "</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-chart-bar"></i>
-                    <p>Home Like Experience<br><span>"Our hotel has the best room service which allows our guest to have home like atmosphere."</span>
+                    <i class="fas fa-wifi"></i>
+                    <p>Free Wifi<br><span>"Our hotel has the free, high speed wifi to keep you connected."</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-trophy"></i>
-                    <p>Super Quality<br><span>We Have the best rooms and restaurant quality.</span></p>
+                    <i class="fas fa-cocktail"></i>
+                    <p>Bar<br><span>We have the best bar where you can enjoy taste of your cocktail.</span></p>
                 </div><!-- choose_block_list -->
             </div><!-- col -->
             <div class="col-6 col-md-3">
                 <div class="choose_block_list">
-                    <i class="fas fa-dumbbell"></i>
-                    <p>Quick Response<br><span> Our staff would be ready to support in any sort of inconvenience</span>
+                    <i class="fas fa-bed"></i>
+                    <p>Hotel Rooms<br><span> Drishya offers you rooms that are very spacious with perfect view.</span>
                     </p>
                 </div><!-- choose_block_list -->
             </div><!-- col --> 
