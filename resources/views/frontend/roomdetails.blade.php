@@ -10,8 +10,8 @@
   </div><!-- service_overlay -->
 </section><!-- service_banner -->
 <section>
-  <div id="checkinout" style="height:200px; background:azure; margin-bottom:5%; padding-left:5%; padding-right:5%">
-      {{-- <div class="container" > --}}
+  <div id="checkinout" style="height:150px; background:azure; padding-left:5%">
+      
         <form action="{{route('book.room',$room->id)}}" method="post">
           @csrf
         <div class="row">
@@ -54,21 +54,17 @@
                  </div>
                  <div class="col-md-3">
                   
-                  <strong style="top: 45px; position: relative;">No. Of People
-                    <input type="number" name="people" class="form-control" id="people" placeholder="Enter NO. of People" required></strong>
+                    <strong style="top: 75px; position: relative;">
 
-                    
-                  </div>
-        </div>
-        <div class="submit-button text-right" style="position: relative; margin-top: 70px;">
-          <button type="submit" class="btn btn-primary">Book Now</button>
-                  <input type="hidden" id="sendDays" value="" name="days">
+                      <button type="submit" class="btn btn-primary">Book Now</button>
+                      <input type="hidden" id="sendDays" value="" name="days">
+                 </div>
         </div>
         </form>
-      {{-- </div> --}}
+      
   </div>
 </section>
-    <div class="container removeMarginTop" style="margin-top: -35px;">
+    <div class="container" style="margin-top: -35px;">
                       <center>
                         <h3>{{$room->category}}</h3>
                       </center>
@@ -162,7 +158,7 @@
                                 <i class="fa fa-times" style="color: red" aria-hidden="true"></i>
                             @endif
                                 </div>
-                                <div class="col-md-4">
+                                <div class="colmd-4">
                                   <i class="fa fa-tv" aria-hidden="true"></i> <span> Television : </span> 
                                   <i class="fa fa-check" style="color: green" aria-hidden="true"></i> <br> <br>
                                 </div>
