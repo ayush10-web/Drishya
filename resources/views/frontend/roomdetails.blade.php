@@ -32,33 +32,28 @@
               <input type="email" name="email" class="form-control" id="room_no" placeholder="Enter Email Address" required> </strong>
 
               </center>          </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <center>
                     <strong style="top: 45px; position: relative;">Arrival Date
                       <input type="date" name="from" class="form-control" id="fromdate" placeholder="Enter From Date"  onchange="dsfgrthyju()" min="@php echo date('Y-m-d') @endphp" required> </strong>
                   </center>         
                  </div>
-                 <div class="col-md-3">
+                 <div class="col-md-2">
                   <center>
                     <strong style="top: 45px; position: relative;">Departure Date
 
                       <input type="date" name="to" class="form-control" id="todate" placeholder="Enter To Date" onchange="efgrthyjumk()" min="" required></strong>
                   </center>         
                  </div>
-                 <div class="col-md-3">
-                  <center>
-                    <strong style="top: 45px; position: relative;">Number Of People
-
-                      <input type="number" name="people" class="form-control" id="number" placeholder="Enter Number Of People" onchange="efgrthyjumk()" min="" required></strong>
-                  </center>         
-                 </div>
-                 <div class="col-md-3">
+                 <div class="col-md-2">
                   
-                    <strong style="top: 75px; position: relative;">
-
-                      <button type="submit" class="btn btn-primary">Book Now</button>
-                      <input type="hidden" id="sendDays" value="" name="days">
-                 </div>
+                  <strong style="top: 45px; position: relative;">No. Of People
+                    <input type="number" name="people" class="form-control" id="people" placeholder="Enter NO. of People" required></strong>
+                  </div>
+        </div>
+        <div class="submit-button text-right" style="position: relative; margin-top: 70px;">
+          <button type="submit" class="btn btn-primary">Book Now</button>
+                  <input type="hidden" id="sendDays" value="" name="days">
         </div>
         </form>
       

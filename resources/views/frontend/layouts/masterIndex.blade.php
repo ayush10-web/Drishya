@@ -27,6 +27,8 @@ gtag('config', 'UA-147460903-1');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" />
+    <link href="https://www.dafontfree.net/embed/dW5pdmVyc2l0eS1yb21hbi1sZXQtcGxhaW4mZGF0YS8xMy91LzY0MzE1LzUwNDE2X19fLlRURg" rel="stylesheet" type="text/css"/>
+    <link href="https://www.dafontfree.net/embed/dW5pdmVyc2l0eS1yb21hbi1sZXQtcGxhaW4mZGF0YS8xMy91LzY0MzE1LzUwNDE2X19fLlRURg" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Karla|Playfair+Display|Roboto&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
