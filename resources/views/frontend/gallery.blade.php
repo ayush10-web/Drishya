@@ -37,6 +37,16 @@
         </div>
         @endforeach
    </div>
+   <br>
+    <h1 class="text-center" style="color: #043249;
+   text-decoration-color: antiquewhite;margin-top:30px">Banquet</h1>
+   <div class="row">
+    @foreach ($banquets as $banquet)
+        <div class="col-md-4" style="height: 225px; overflow:hidden; margin-bottom: 20px;">
+            <img src="{{$banquet->images[0]->file_path}}"  alt="" srcset="">
+        </div>
+        @endforeach
+   </div>
 </div>
 <br>
 <br>
