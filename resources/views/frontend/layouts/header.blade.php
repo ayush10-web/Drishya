@@ -107,22 +107,7 @@
                                                 class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">   
-                                        <div class="dropdown show">
-                                        <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Rooms
-                                        </a>
-                                      
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            @foreach ($navmenurooms as $item)
-                                                <a class="dropdown-item" style="color: black" href="{{route('room.details',$item->id)}}">{{$item->category}}</a>
-                                            @endforeach
-                                          
-                                          {{-- <a class="dropdown-item" style="color: black" href="#">Suit Deluxe Room</a>
-                                          <a class="dropdown-item" style="color: black" href="#">Double Deluxe Room</a>
-                                          <a class="dropdown-item"  style="color: black" href="#">Triple Deluxe Room</a> --}}
-
-                                        </div>
-                                        </div>
+                                        <a class="nav-link"  href="{{route('drishya.rooms')}}">Rooms</a>
                                     </li>
                                     <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
                                         <a class="nav-link"  href="{{route('banquet')}}">Banquet</a>
