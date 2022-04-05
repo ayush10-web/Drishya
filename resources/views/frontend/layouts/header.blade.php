@@ -120,7 +120,7 @@
                                     </li>
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
                                         <div class="dropdown show">
-                                            <a class="dropdown-toggle nav-link"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a class="dropdown-toggle nav-link"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #0e334a; font-weight:200 !important">
                                               Restaurant
                                             </a>
 

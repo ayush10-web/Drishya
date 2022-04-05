@@ -79,10 +79,10 @@
                             <a href="{{route('room.details',$room->id)}}">
                                 <img src="{{$room->images[0]->file_path}}" alt="#" style="height:300px;transform: translateX(-22%); width:auto !important">
                                 <div class="room-details-category">
-                                    <center><h5> <i>{{$room->category}} </i> </h5></center>
+                                    <center><h5> {{$room->category}} </h5></center>
                                 </div>
                                 <div class="room-image-overlay">
-                                    <h5> <i> <u> View Details </u></i> </h5>
+                                    <h5>  <u> View Details </u></h5>
                                 </div>
                                 {{-- <span>Capacity:{{$room->capacity}} | Price: {{$room->room_price}}</span> --}}
                             </a>
