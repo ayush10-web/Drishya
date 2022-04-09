@@ -2627,9 +2627,17 @@ textarea {
 	.removeMarginTop{
 		margin-top: 0 !important;
 	}
+
+	.marginLeftHard{
+		margin-left: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 600px) {
+	.marginLeftHard{
+		margin-left: 0 !important;
+	}
+
     .header-top {
         display: none;
     }

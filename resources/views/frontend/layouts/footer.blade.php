@@ -95,7 +95,7 @@
                 </div><!-- footer_logo_lead -->
             </div>
             <div class="col-md-3" style=" margin-top: 45px;">
-                <p style="color: white !important;margin-left: -90px;" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
+                <p style="color: white !important;margin-left: -90px;" class="marginLeftHard" >Drishya is one of the lively place to be in kathmandu valley right now. As it offers good food and music at its restaurant, With the perfect homely feel hotel underneath of it </p>
             </div>
             <div class="col-md-3" style ="margin-left:-10px;">
                 <div class="linksdcs" style=" margin-top: 35px;
@@ -132,10 +132,10 @@
                            <span></span> <i class="fas fa-map-marker-alt text-white fa-sm"></i> &nbsp;  &nbsp;{{$setting['address']}} &nbsp;
                         </li>
                         <li>
-                            <a href="tel:+{{$setting['phoneNumber']}}" style="color:white"><i class="fas fa-phone-volume text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp; {{$setting['phoneNumber']}}</a> 
+                            <a href="tel:{{$setting['phoneNumber']}}" style="color:white"><i class="fas fa-phone-volume text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp; {{$setting['phoneNumber']}}</a> 
                         </li>
                         <li>
-                            <a href="tel:+{{$setting['mobileNumber']}}" style="color:white"><i class="fas fa-mobile-alt text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp;{{$setting['mobileNumber']}}</a> 
+                            <a href="tel:{{$setting['mobileNumber']}}" style="color:white"><i class="fas fa-mobile-alt text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp;{{$setting['mobileNumber']}}</a> 
                         </li>
                         <li>
                             <a href="mailto:{{$setting['email']}}" style="color:white"><i class="fa fa-envelope text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp;{{$setting['email']}} </a>
@@ -150,7 +150,7 @@
     <div class="copyright"style="background: #043249; border-top: 1px solid white; margin-left:10%; margin-right:9%;">
         <div class="container">
             <div class="row" style = "padding-top:10px;">
-                <div class="col-md-6"style="padding-top:5px;margin-left: -80px; padding-bottom: 10px;">
+                <div class="col-md-6 marginLeftHard" style="padding-top:5px;margin-left: -80px; padding-bottom: 10px;">
                     <div class="copyright_content d-flex flex-row align-items-center justify-content-center">
                         <div class="text-white">
                             Copyright &copy;<script>
