@@ -71,30 +71,15 @@
                             <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(255, 255, 255, 0);">
                                 <ul class="navbar-nav" style="background-color: rgba(255, 255, 255, 0);">
                                     
-                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }} marginFix" >
+                                    <li class="nav-item {{($menu == 'index') ? 'active' : '' }} marginFix">
                                         <a class="nav-link" href="{{route('index')}}">Home <span
                                                 class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item {{($menu == 'rooms') ? 'active' : '' }}">   
-                                        <div class="dropdown show">
-                                        <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Rooms
-                                        </a>
-                                      
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            @foreach ($navmenurooms as $item)
-                                                <a class="dropdown-item" style="color: black" href="{{route('room.details',$item->id)}}">{{$item->category}}</a>
-                                            @endforeach
-                                          
-                                          {{-- <a class="dropdown-item" style="color: black" href="#">Suit Deluxe Room</a>
-                                          <a class="dropdown-item" style="color: black" href="#">Double Deluxe Room</a>
-                                          <a class="dropdown-item"  style="color: black" href="#">Triple Deluxe Room</a> --}}
-
-                                        </div>
-                                        </div>
+                                        <a class="nav-link"  href="{{route('drishya.rooms')}}">Rooms</a>
                                     </li>
                                     <li class="nav-item {{($menu == 'banquet') ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{route('banquet')}}">Banquet</a>
+                                        <a class="nav-link"  href="{{route('banquet')}}">Banquet</a>
                                     </li> 
                                     <li style="width: 50px; display:none; margin-left:6% !important; margin-top: -0.3%;
                                     margin-bottom: -1%;" class = "temp">
@@ -104,7 +89,7 @@
                                     </li>
                                     <li class="nav-item {{($menu == 'restaurant') ? 'active' : '' }}">
                                         <div class="dropdown show">
-                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a class="dropdown-toggle nav-link"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #0e334a; font-weight:200 !important">
                                               Restaurant
                                             </a>
 
@@ -114,7 +99,7 @@
                                           </div>
                                     </li> 
                                     <li class="nav-item {{($menu == 'gallery') ? 'active' : '' }}">
-                                        <a class="nav-link " href="{{route('gallery.view')}}">Gallery</a>
+                                        <a class="nav-link "  href="{{route('gallery.view')}}">Gallery</a>
                                     </li>
                                    
                                     <li class="nav-item {{($menu == 'contact') ? 'active' : '' }}">
@@ -126,6 +111,7 @@
                                         </div>
                                     </li> --}}
                                 </ul>
+                                
                             </div>
                         </nav>
                     </div><!-- main_nav -->

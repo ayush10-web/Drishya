@@ -41,7 +41,7 @@
                             <h5 style="font-weight: 600;">Address </h5>
                             <p><i class="fa fa-map-marker" style="margin-right: 10px;" aria-hidden="true"></i>{{$setting['address']}}</p> <br>
                             <h5 style="font-weight: 600;">Phone Number</h5>
-                            <p><i class="fa fa-phone-alt" style="margin-right: 10px;" aria-hidden="true"></i>{{$setting['phoneNumber']}}</p> <br>
+                            <p><a href="tel:+{{$setting['phoneNumber']}}"><i class="fa fa-phone-alt" style="margin-right: 10px;" aria-hidden="true"></i>{{$setting['phoneNumber']}}</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="tel:+{{$setting['mobileNumber']}}"><i class="fa fa-mobile-alt" style="margin-right: 10px;" aria-hidden="true"></i>{{$setting['mobileNumber']}}</a></p><br>
                             <h5 style="font-weight: 600;">Email Address</h5>
                             <p><a href="mailto:{{$setting['email']}}"><i class="fa fa-envelope" style="margin-right: 10px;"></i> {{$setting['email']}}</a></p><br>
                             <h5 style="font-weight: 600;">Socials</h5>

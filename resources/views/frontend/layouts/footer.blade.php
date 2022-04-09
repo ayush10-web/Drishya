@@ -129,13 +129,16 @@
                     <h4 style="position: relative; left:70px;">Contact Us</h4>
                     <ul style="position: relative; left:70px;">
                         <li>
-                           <span></span> <i class="fas fa-map-marker-alt text-white fa-sm"> &nbsp;  &nbsp;{{$setting['address']}}</i> &nbsp;
+                           <span></span> <i class="fas fa-map-marker-alt text-white fa-sm"></i> &nbsp;  &nbsp;{{$setting['address']}} &nbsp;
                         </li>
                         <li>
-                            <i class="fas fa-phone-volume text-white fa-sm" aria-hidden="true"> &nbsp;  &nbsp; {{$setting['phoneNumber']}} </i>
-                        </li><br>
+                            <a href="tel:+{{$setting['phoneNumber']}}" style="color:white"><i class="fas fa-phone-volume text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp; {{$setting['phoneNumber']}}</a> 
+                        </li>
                         <li>
-                            <i class="fas fa-phone-volume text-white fa-sm" aria-hidden="true"> &nbsp;  &nbsp;{{$setting['mobileNumber']}} </i>
+                            <a href="tel:+{{$setting['mobileNumber']}}" style="color:white"><i class="fas fa-mobile-alt text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp;{{$setting['mobileNumber']}}</a> 
+                        </li>
+                        <li>
+                            <a href="mailto:{{$setting['email']}}" style="color:white"><i class="fa fa-envelope text-white fa-sm" aria-hidden="true"></i> &nbsp;  &nbsp;{{$setting['email']}} </a>
                         </li>
                     </ul>
                     <br><br>

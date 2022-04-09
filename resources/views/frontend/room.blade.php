@@ -32,7 +32,7 @@
     </div>
     <br>
     <br>
-    <div class="text-center"style="color: #0e334a"><h1>AVAILABLE ROOMS</h1></div>
+    <div class="text-center"style="color: #0e334a; margin-top:50px;"><h1>AVAILABLE ROOMS</h1></div>
     <br>
         @foreach ($rooms as $room)
             <div class="row" style="margin-bottom: 35px">

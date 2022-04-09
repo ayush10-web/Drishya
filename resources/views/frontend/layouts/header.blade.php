@@ -50,7 +50,7 @@
 </section><!-- header-top -->
 */ ?>
 
-<section class = "header-top">
+{{-- <section class = "header-top">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -75,7 +75,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <section class="header_logo2"
          style=" visibility: visible;">
     <div class="container">
