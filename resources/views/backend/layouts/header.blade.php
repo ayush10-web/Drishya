@@ -4,7 +4,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="/images/mini-logo.jpeg" alt="AdminLTELogo" height="60" width="60" style="border-radius: 50%;">
   </div>
 
   <!-- Navbar -->
@@ -22,7 +22,7 @@
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <img src="{{asset('backend/dist/img/AdminLTELogo.png')}}" alt="" class="img-size-50 img-circle mr-3">
+          <img src="/images/mini-logo.jpeg" alt="" class="img-size-50 img-circle mr-3" style="border-radius: 50%;">
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <a href="#" class="dropdown-item">

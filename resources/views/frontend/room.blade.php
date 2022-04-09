@@ -41,20 +41,20 @@
                         <a href="{{route('room.details',$room->id)}}"><strong><h4>{{$room->category}}</h4></strong></a>
                     </div>
 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators{{$room->id}}" class="carousel slide" data-ride="carousel">
                         <div class="row">
 
                             <div class="col-md-7">
                                 <ol class="carousel-indicators">
                                     @foreach ($room->images as $key=>$image)
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" @if($key == 0) active @endif></li>
+                                        <li data-target="#carouselExampleIndicators{{$room->id}}" data-slide-to="{{$key}}" @if($key == 0) active @endif></li>
                                     @endforeach
                                 </ol>
                                 <div class="carousel-inner" style="height:400px; overflow:hidden">
                                         <div class="car-image">
                                             @foreach ($room->images as $key=>$image)
                                             <div class="carousel-item @if($key == 0) active @endif">
-                                                <img class="d-block w-100" src="{{$room->images[0]->file_path}}" alt="First slide">
+                                                <img class="d-block w-100" src="{{$image->file_path}}" alt="First slide">
                                             </div>
                                             @endforeach
                                         </div>

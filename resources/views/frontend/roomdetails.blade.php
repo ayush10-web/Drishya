@@ -3,7 +3,7 @@
 @include('backend.layouts.alerts')
 <section class="service_banner" style="height:300px; overflow:hidden">
   <div class="banner_width" >
-      <img src="/images/bedroom-416062_960_720.webp" alt="#" style="height:100%; margin-top: -23%">
+      <img src="/images/suit-deluex-room.jpg" alt="#" style="height:100%;margin-top: -30%;">
   </div><!-- banner_width -->
   <div class="service_overlay contact_overlay">
       <h1 class="text-center" style="color: #043249; margin-top:7%"> {{$room->category}} </h1>

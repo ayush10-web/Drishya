@@ -48,13 +48,13 @@
             <div class="col-md-6">
                 <a href="{{route('banquet')}}">
                     <div class="card service-card-1">
-                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/08/00/17/events-2609526_960_720.jpg" style="height: 350px;" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset('images/banquet.jpg')}}" style="height: 350px;" alt="Card image cap">
                         <h5 class="card-title text-center">Banquet</h5>
                     </div>
                 </a>
             </div>
             <div class="col-md-6">
-                <a href="{{route('restaurant')}}">
+                <a href="uploads/sample.pdf" target = "_blank">
                     <div class="card service-card-1">
                         <img class="card-img-top" style="height: 350px;" src="{{asset('images/restaurant.jpg')}}" alt="Card image cap">
                             <h5 class="card-title text-center">Restaurant</h5>
