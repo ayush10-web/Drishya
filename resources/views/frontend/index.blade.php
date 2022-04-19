@@ -41,6 +41,19 @@
 @endif
 <br>
 <section class="list_content" style = "margin-top:-30px;">
+    <h2 style = "text-align:center; font-size:1.75rem;">About Us</h2>
+    <br>
+    <div class="container">
+        <p>
+            Drishya is a sight of complete parcel of Hospitality, which welcomes everyone with  all of our exceptional services and quality that promises to make your time more delightful. 
+This whole Hotel has sparkle of classical and elegant designing which binds us away in its beauty and soothes you even more with it’s multi-cuisine restaurant and significant banquet halls.
+
+Drishya Hotel and Restaurant is located in south-west prosperous part in Capital of Nepal, Near to Kalanki chowk. 
+You can get more easy access to it with early bookings and reservations.
+        </p>
+    </div>
+</section>
+<section class="list_content" style = "margin-top:-30px;">
         <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
         <br>
     <div class="container">
