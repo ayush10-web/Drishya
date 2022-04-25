@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Image;
 use App\Models\SliderImage;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
 
 class SliderController extends Controller
 {
@@ -43,7 +44,8 @@ class SliderController extends Controller
                $imagename = time().rand('0', '100000').$name;
                $img  = $image->move($path,$imagename);
                $imgpath = '/'.$path.$imagename;
-               
+
+               ImageOptimizer::optimize($path.$imagename);
                $image = Image::create([
                 'file_path' => $imgpath,
                 'file_name' => $imagename,
@@ -88,6 +90,7 @@ class SliderController extends Controller
                $imagename = time().rand('0', '100000').$name;
                $img  = $image->move($path,$imagename);
                $imgpath = '/'.$path.$imagename;
+               ImageOptimizer::optimize($path.$imagename);
                
                $image = Image::create([
                 'file_path' => $imgpath,

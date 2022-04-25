@@ -8,6 +8,7 @@ use App\Models\ImageRoom;
 use App\Models\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Request as FacadesRequest;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
 
 class RoomController extends Controller
 {
@@ -55,6 +56,7 @@ class RoomController extends Controller
                $imagename = time().rand('0', '100000').$name;
                $img  = $image->move($path,$imagename);
                $imgpath = '/'.$path.$imagename;
+               ImageOptimizer::optimize($path.$imagename);
                
                $image = Image::create([
                 'file_path' => $imgpath,
@@ -105,6 +107,7 @@ class RoomController extends Controller
                $imagename = time().rand('0', '100000').$name;
                $img  = $image->move($path,$imagename);
                $imgpath = '/'.$path.$imagename;
+               ImageOptimizer::optimize($path.$imagename);
                
                $image = Image::create([
                 'file_path' => $imgpath,
