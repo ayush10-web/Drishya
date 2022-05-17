@@ -34,7 +34,7 @@ gtag('config', 'UA-147460903-1');
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/0794f9e082c211b5be653a4cf53bc945?family=University+Roman+LET" rel="stylesheet" type="text/css"/>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link href="https://db.onlinewebfonts.com/c/0794f9e082c211b5be653a4cf53bc945?family=University+Roman+LET" rel="stylesheet" type="text/css"/>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}">
     <link rel='stylesheet' href={{asset('css/hover.css')}} type='text/css' media='all' />
