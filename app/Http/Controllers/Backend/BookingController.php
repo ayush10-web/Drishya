@@ -45,4 +45,11 @@ class BookingController extends Controller
         $booking->save();
         return redirect()->route('booked.room')->with('success_message','Room Booked Succesfully.');
     }
+
+    public function deleteStatus($id){
+        $booking =Booking::where('id',$id)->first();
+
+        $booking->delete();
+        return redirect()->back();
+    }
 }

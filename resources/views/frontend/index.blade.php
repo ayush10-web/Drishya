@@ -41,15 +41,32 @@
 @endif
 <br>
 <section class="list_content" style = "margin-top:-30px;">
-        <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
-        <br>
+
+    <div class = "container">
+        <h2 style = "text-align:center; font-size:1.75rem;">About us</h2>
+
+        <p style = "font-size:1.2rem;">This is Drishya, kathmandu kalanki, situated in the heart of 
+            bustling Capital, hotel location will appeal to quest looking to unwind, explore and experience the true 
+            essence of Nepal. We have 360° breathe taking panoramical view of the entire city and Himalayan 
+            ranges.
+        </p>
+        <p style = "font-size:1.2rem;">
+            We provide bespoke service regarding hotel rooms, fine dining restaurant, conference and banqueting as well roof top live grill on your request. 
+            You can enjoy our all services while observing the 360-degree panoramic view of the capital city.
+        </p>
+    </div>
+    <br>
     <div class="container">
+        <h2 style = "text-align:center; font-size:1.75rem;">Our Services</h2>
+<br>
         <div class="row">                   
             <div class="col-md-6">
                 <a href="{{route('banquet')}}">
                     <div class="card service-card-1">
                         <img class="card-img-top" src="{{asset('images/banquet.jpg')}}" style="height: 350px;" alt="Card image cap">
-                        <h5 class="card-title text-center">Banquet</h5>
+                        <h5 style="padding-top: 20px;" class="card-title text-center">Banquet</h5>
+                        <p style = "font-size:1.15rem; padding:0px 20px 20px 20px; text-align:justify">Our conference and banquet halls are well equipped with facilities for smooth functioning of programmers. 
+                            C & B halls have the capacity to hold pax ranging from 50 to 400 with ample amount of car and motorbike parking facilities, with lift to make accessibly easy and comfortable.</p>  
                     </div>
                 </a>
             </div>
@@ -57,7 +74,9 @@
                 <a href="uploads/sample.pdf" target = "_blank">
                     <div class="card service-card-1">
                         <img class="card-img-top" style="height: 350px;" src="{{asset('images/restaurant.jpg')}}" alt="Card image cap">
-                            <h5 class="card-title text-center">Restaurant</h5>
+                            <h5 style="padding-top: 20px;" class="card-title text-center">Restaurant</h5>
+                            <p style = "font-size:1.15rem; padding:0px 20px 20px 20px; text-align:justify;">Enjoy our all-day dining restaurant while observing the view of the Kathmandu city. We offer choices of dishes from breakfast through lunch and dinner. we do provide roof top live grill on your request. 
+                                live music from 6:00 PM till 10:00 PM every Friday.</p>
                     </div>
                 </a>
             </div>

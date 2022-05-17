@@ -106,6 +106,8 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
         Route::get('/booked-room',[BookingController::class,'bookedRoom'])->name('booked.room');
         
         Route::get('/change-status/{id}',[BookingController::class,'changeStatus'])->name('change.status');
+        Route::get('/delete-status/{id}',[BookingController::class,'deleteStatus'])->name('delete.status');
+
     });
     Route::get('/banquet/inquiries',[ContactUsController::class,'banquet'])->name('banquet.inquiry');
 
