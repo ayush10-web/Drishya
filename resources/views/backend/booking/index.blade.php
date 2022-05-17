@@ -36,10 +36,10 @@
                       <th>Email</th>
                       <th>Contact</th>
                       <th>NO. Of People</th>
-                      <th>Room Price Per Day</th>
+                      {{-- <th>Room Price Per Day</th> --}}
                       <th>From Date</th>
                       <th>To Date</th>
-                      <th>Price</th>
+                      {{-- <th>Price</th> --}}
                       <th>Days</th>
                       <th>Action</th>
                     </tr>
@@ -53,12 +53,12 @@
                               <td>{{$booking->customer->email}}</td>
                               <td>{{$booking->customer->contact}}</td>
                               <td>{{$booking->people}}</td>
-                              <td>{{$booking->room->room_price}}</td>
+                              {{-- <td>{{$booking->room->room_price}}</td> --}}
                               <td>{{$booking->from}}</td>
                               <td>{{$booking->to}} </td>
-                              <td>{{$booking->days * $booking->room->room_price}}</td>
+                              {{-- <td>{{$booking->days * $booking->room->room_price}}</td> --}}
                               <td>{{$booking->days}}</td>
-                              <td> <a href="{{route('change.status',$booking->id)}}"><i class="fa fa-check-circle btn btn-success btn btn-sm" aria-hidden="true" title="Accept Booking"></i></a> </td>
+                                <td><a href="{{route('change.status',$booking->id)}}"><i class="fa fa-check-circle btn btn-success btn btn-sm" aria-hidden="true" title="Accept Booking"></i></a> &nbsp; &nbsp; <a onclick="return confirm('you sure want to delete ?')" href="{{route('delete.status',$booking->id)}}"><i class="fa fa-trash text-danger" title="delete"></i></a></td>
                             </tr>
                         @endforeach
                     @endif
