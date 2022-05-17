@@ -22,7 +22,7 @@ class DashboardController extends Controller
         $count_b =count($booked);
         $b_count = count($bookings);
         $contactus = ContactUs::where('status','1')->where('message_from','m')->get();
-        $banm = ContactUs::where('status','1')->where('message_from','m')->get();
+        $banm = ContactUs::where('status','1')->where('message_from','b')->get();
         $banmcount = count($banm);
         $cc_count = count($contactus);
         $c_room = count($rooms);
