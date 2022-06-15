@@ -10,10 +10,11 @@
         </div><!-- banner_abt -->
         <p>
             {{-- {!! $about->description !!} --}}
-            Our banquet is best for the events, as the food and the venue we offer is of top notch in the town. Our banquet has the capacity of. We offer events like wedding, bartabandha, birthday and so on. Drishya makes the event very much convenient as it offers such as catering, interior decoration, entertainment and many more other facilities upon request.
-  
-            {{-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. --}}
-            At Drishya Hotel, we have two halls to suit your needs for conferences, seminars, parties, meetings, weddings, anniversaries, and other events.
+            We have conference and banquet hall for conducting conferences, seminars, parties, meetings, weddings, anniversary and any get together parties as per your need.
+
+            Our conference and banquet halls are well equipped with facilities for smooth functioning of programmers. C & B halls have the capacity to hold pax ranging from 50 to 400 with ample amount of car and motorbike 
+            parking facilities, with lift to make accessibly easy and comfortable.
+
               </p>
     </div><!-- container -->
 </section><!-- about_top_banner -->

@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="KwlJzJeCLJBUSXYnTahL18KQjA8UFE8nNg6iGv6rkZo" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147460903-1"></script>
+{{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147460903-1"></script> --}}
 <script>
 window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -25,7 +25,7 @@ gtag('config', 'UA-147460903-1');
 </script>
     <title>Drishya Hotel & Restaurant</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+    {{-- <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" /> --}}
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" />
     <link href="https://www.dafontfree.net/embed/dW5pdmVyc2l0eS1yb21hbi1sZXQtcGxhaW4mZGF0YS8xMy91LzY0MzE1LzUwNDE2X19fLlRURg" rel="stylesheet" type="text/css"/>
     <link href="https://www.dafontfree.net/embed/dW5pdmVyc2l0eS1yb21hbi1sZXQtcGxhaW4mZGF0YS8xMy91LzY0MzE1LzUwNDE2X19fLlRURg" rel="stylesheet" type="text/css"/>
@@ -34,13 +34,13 @@ gtag('config', 'UA-147460903-1');
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/0794f9e082c211b5be653a4cf53bc945?family=University+Roman+LET" rel="stylesheet" type="text/css"/>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link href="https://db.onlinewebfonts.com/c/0794f9e082c211b5be653a4cf53bc945?family=University+Roman+LET" rel="stylesheet" type="text/css"/>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}">
     <link rel='stylesheet' href={{asset('css/hover.css')}} type='text/css' media='all' />
     <link rel='stylesheet' href="{{asset('css/mobile.css')}}"type='text/css' media='all' />
    <!--  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"> -->
-   <link rel="shortcut icon" href="{{ asset('images/logo.jpeg')}}">
+   {{-- <link rel="shortcut icon" href="{{ asset('images/logo.jpeg')}}"> --}}
 
 
 </head>

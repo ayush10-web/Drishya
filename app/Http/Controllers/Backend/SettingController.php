@@ -19,14 +19,14 @@ class SettingController extends Controller
         }
         $logo = null;
         $sett = Setting::where('key','logo')->first();
-        if ($sett->value != null) {
-            $logo = Image::where('id',$sett->value)->first();
-        }
+        // if ($sett->value != null) {
+        //     $logo = Image::where('id',$sett->value)->first();
+        // }
         $roomimage = null;
         $sett = Setting::where('key','roomimage')->first();
-        if ($sett->value != null) {
-            $roomimage = Image::where('id',$sett->value)->first();
-        }
+        // if ($sett->value != null) {
+        //     $roomimage = Image::where('id',$sett->value)->first();
+        // }
         // dd($setting);
         return view('backend.setting.index',compact('page_name','setting','logo','roomimage'));
     }
