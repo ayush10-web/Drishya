@@ -121,7 +121,7 @@ Route::get('/photos',[IndexController::class,'gallery'])->name('gallery.view');
 
 Route::get('/restaurant',[IndexController::class,'restaurant'])->name('restaurant');
 Route::get('/banquet',[IndexController::class,'banquet'])->name('banquet');
-
+Route::get('reload-captcha', [FrontendContactUsController::class, 'reloadCaptcha']);
 
 
 // frontend Room SIngle Page 
