@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="width: 100vw; overflow:hidden;">
+<html lang="en" style="width: 100vw; overflow-x:hidden;">
 
 <head>
     <title>Drishya Hotel & Restaurant</title>
@@ -43,7 +43,7 @@ gtag('config', 'UA-147460903-1');
 
 </head>
 
-<body style="width: 100vw; overflow:hidden;">
+<body style="width: 100vw; overflow-x:hidden;">
 @include('frontend.layouts.header')
 @yield('content')  
 

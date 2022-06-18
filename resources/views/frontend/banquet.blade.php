@@ -66,7 +66,7 @@
             
                         <input type="text" name="contact_number" placeholder="Your Contact Number">
                         <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
-                        <input id="captcha" type="text"  placeholder="Enter Captcha" name="captcha" >
+                        <input id="captcha" type="text"  placeholder="Enter Captcha" name="captcha" required>
                         
                         <div class="captcha">
                             <span>{!! captcha_img() !!}</span>
