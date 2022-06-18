@@ -60,6 +60,15 @@ gtag('config', 'UA-147460903-1');
 @stack('scripts')
 <!-- <script type="text/javascript"> -->
     <script type="text/javascript">
+    $('#reload').click(function () {
+    $.ajax({
+    type: 'GET',
+    url: 'reload-captcha',
+    success: function (data) {
+    $(".captcha span").html(data.captcha);
+    }
+    });
+    });
         window.onload=function(){
             $('#portfolio-items').slick({
                 slidesToShow: 5,

@@ -27,7 +27,14 @@
                         <input type="hidden" name="message_from" value="m">
                         <input type="text" name="contact_number" placeholder="Your Contact Number">
                         <textarea rows="6"  name="message" cols="30" placeholder="Your Message"></textarea>
-    
+                        <input id="captcha" type="text"  placeholder="Enter Captcha" name="captcha" >
+                        
+                        <div class="captcha">
+                            <span>{!! captcha_img() !!}</span>
+                            <button type="button" class="btn btn-danger" class="reload" id="reload">
+                            ↻
+                            </button>
+                        </div>
                         <button class="btn btn-primary">Submit</button>
     
                     </form>

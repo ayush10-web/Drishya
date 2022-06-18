@@ -66,7 +66,14 @@
             
                         <input type="text" name="contact_number" placeholder="Your Contact Number">
                         <textarea rows="8"  name="message" cols="50" placeholder="Your Message"></textarea>
-            
+                        <input id="captcha" type="text"  placeholder="Enter Captcha" name="captcha" >
+                        
+                        <div class="captcha">
+                            <span>{!! captcha_img() !!}</span>
+                            <button type="button" class="btn btn-danger" class="reload" id="reload">
+                            ↻
+                            </button>
+                        </div>
                         <button class="btn btn-primary">Submit</button>
             
                     </form>
