@@ -82,9 +82,9 @@
         <div class="row">
             <div class="col-md-2 col-sm-2">
                 <div class="header_logo">
-                    @if ($setting['logo'] != null)
+                    {{-- @if ($setting['logo'] != null) --}}
                     <a href="/"><img src="{{$setting['logo']->file_path}}" alt="#" /></a>
-                    @endif
+                    {{-- @endif --}}
                     
                 </div><!-- header_logo -->
             </div><!-- col -->

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100vw; overflow:hidden;">
 
 <head>
     <title>Drishya Hotel & Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
 <meta
   name="description"           
   content="Drishya is one of the lively place to be in kathmandu valley right now.
@@ -45,7 +46,7 @@ gtag('config', 'UA-147460903-1');
 
 </head>
 
-<body>
+<body style="width: 100vw; overflow:hidden;">
 @include('frontend.layouts.headerIndex')
 @yield('content')  
 
