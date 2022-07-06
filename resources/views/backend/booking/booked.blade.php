@@ -32,6 +32,7 @@
                   <thead>
                     <tr>
                       <th>S.N.</th>
+                      <th>Room Type</th>
                       <th>Name</th>
                       <th>Email</th>
                       <th>Contact</th>
@@ -48,6 +49,7 @@
                         @foreach ($bookings as $key=>$booking)
                             <tr>
                               <td>{{$key+1}}</td>
+                              <td>{{$booking->room->category}}</td>
                               <td>{{$booking->customer->name}}</td>
                               <td>{{$booking->customer->email}}</td>
                               <td>{{$booking->customer->contact}}</td>

@@ -60,6 +60,7 @@ gtag('config', 'UA-147460903-1');
 @stack('scripts')
 <!-- <script type="text/javascript"> -->
     <script type="text/javascript">
+    setTimeout(function() { $(".alert").hide(); }, 3000);
     $('#reload').click(function () {
     $.ajax({
     type: 'GET',

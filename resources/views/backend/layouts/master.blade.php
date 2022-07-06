@@ -98,6 +98,11 @@
 <script src="{{asset('backend/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
 <!-- ./scripts -->
 @stack('scripts')
+
+<script type="text/javascript">
+  setTimeout(function() { $(".alert").hide(); }, 3000);
+  
+  </script>
 <!-- ./scripts -->
 
 </body>

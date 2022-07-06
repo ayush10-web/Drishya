@@ -56,7 +56,8 @@
                           <?php } ?>
                         </td>
                         <td> <a class="fa fa-eye btn btn-primary btn btn-sm" data-toggle="modal" data-target="#exampleModal{{$contact->id}}">
-                          </a> </td>
+                          </a> || <a class=" btn btn-danger btn btn-sm" href="{{route('message.delete',$contact->id)}}"><i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>  </td>
                       </tr>
                       @include('backend.contactus.modal',['contact'=>$contact])
                     @endforeach

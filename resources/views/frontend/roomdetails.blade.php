@@ -64,14 +64,17 @@
                         <h3>{{$room->category}}</h3>
                       </center>
                       @if ($room->category == "Suit Deluxe Room")
-                          <center><p>Spacious, Bright Suit Room comes with a king size bed with comfortable mattress, fully equipped bathroom finished with top quality bath tub</p>
-                          <p>{{$room->description}}</p></center>
+                          {{-- <center><p>Spacious, Bright Suit Room comes with a king size bed with comfortable mattress, fully equipped bathroom finished with top quality bath tub</p> --}}
+                          <p>{{$room->description}}</p>
+                        {{-- </center> --}}
                       @elseif ($room->category == "Double Deluxe Room")
-                         <center> <p>High quality parquet floored, spacious, bright deluxe room. The room comes with one king size bed, free WIFI, AC, 32 Led TV, and wall-in showers with rainfall showerheads and including minibar. </p>
-                          <p>{{$room->description}}</p></center>
+                         {{-- <center> <p>High quality parquet floored, spacious, bright deluxe room. The room comes with one king size bed, free WIFI, AC, 32 Led TV, and wall-in showers with rainfall showerheads and including minibar. </p> --}}
+                          <p>{{$room->description}}</p>
+                        {{-- </center> --}}
                       @else
-                        <center><p>High quality parquet floored, spacious, bright rooms are available here at drishya. High quality parquet floored, spacious, bright rooms are available here at drishya.</p>
-                        <p>{{$room->description}}</p></center>
+                        {{-- <center><p>High quality parquet floored, spacious, bright rooms are available here at drishya. High quality parquet floored, spacious, bright rooms are available here at drishya.</p> --}}
+                        <p>{{$room->description}}</p>
+                      {{-- </center> --}}
                       @endif
                       {{-- <br>
                       <div class="row">

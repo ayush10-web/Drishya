@@ -22,4 +22,11 @@ class ContactUsController extends Controller
    //    dd($services);
       return view('backend.contactus.banquetInquiry',compact('page_name','contactus'));
    }
+   public function messageDelete($id)
+   {
+      // dd('here');
+      $contactus = ContactUs::find($id);
+      $contactus->delete();
+      return redirect()->back()->with('success_message','deleted successfully');
+   }
 }

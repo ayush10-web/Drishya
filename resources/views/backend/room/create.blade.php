@@ -64,7 +64,7 @@
                     </div> --}}
                     <div class="col-md-6">
                       <label for="room_no">Room Price</label>
-                      <input type="integer" step="0.01" name="room_price" class="form-control" id="room_price" placeholder="Enter Room Price" required>
+                      <input type="number" step="0.01" name="room_price" class="form-control" id="room_price" placeholder="Enter Room Price" required>
                     </div>
                     <div class="col-md-6">
                       <label for="bed">No. Of  Bed</label>

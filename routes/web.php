@@ -100,6 +100,7 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
     });
     Route::group(['prefix'=> '/contactus'],function(){
         Route::get('',[ContactUsController::class,'index'])->name('contactus.index');
+        Route::get('/delete/{id}',[ContactUsController::class,'messageDelete'])->name('message.delete');
     });
     Route::group(['prefix'=> '/bookings'],function(){
         Route::get('',[BookingController::class,'index'])->name('bookingrequest.index');
@@ -116,6 +117,8 @@ Route::group(['prefix'=> 'backend','middleware'=>'auth'],function(){
 // frontend
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/contact',[IndexController::class,'contact'])->name('contact');
+
+
 Route::get('/about',[IndexController::class,'about'])->name('about');
 Route::get('/photos',[IndexController::class,'gallery'])->name('gallery.view');
 
